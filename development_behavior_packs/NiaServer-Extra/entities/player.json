@@ -1,0 +1,346 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "minecraft:player",
+      "spawn_category": "creature",
+      "is_spawnable": false,
+      "is_summonable": false
+    },
+
+    "component_groups": {
+      "minecraft:add_raid_omen": {
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "raid_omen",
+              "duration": 30,
+              "display_on_screen_animation": true
+            }
+          ],
+          "remove_effects": "bad_omen"
+        },
+        "minecraft:timer": {
+          "time": [ 0.0, 0.0 ],
+          "looping": false,
+          "time_down_event": {
+            "event": "minecraft:clear_add_raid_omen",
+            "target": "self"
+          }
+        }
+      },
+      "minecraft:clear_raid_omen_spell_effect": {
+        "minecraft:spell_effects": {
+        }
+      },
+      "minecraft:raid_trigger": {
+        "minecraft:raid_trigger": {
+          "triggered_event": {
+            "event": "minecraft:remove_raid_trigger",
+            "target": "self"
+          }
+        }
+      },
+      "mcnia:normal_player": {
+        "minecraft:breathable": {
+          "breathes_water": true,
+          "breathes_lava": false,
+          "breathes_air": false,
+          "total_supply": 100,
+          "suffocate_time": -5,
+          "inhale_time": 10,
+          "generates_bubbles": true
+        }
+      },
+      "mcnia:nether_player": {
+        "minecraft:breathable": {
+          "breathes_water": true,
+          "breathes_lava": false,
+          "breathes_air": false,
+          "total_supply": 20,
+          "suffocate_time": -3,
+          "inhale_time": 15,
+          "generates_bubbles": true
+        }
+      },
+      "mcnia:end_player": {
+        "minecraft:breathable": {
+          "breathes_water": true,
+          "breathes_lava": false,
+          "breathes_air": false,
+          "total_supply": 50,
+          "suffocate_time": -3,
+          "inhale_time": 10,
+          "generates_bubbles": true
+        }
+      }
+    },
+
+    "components": {
+      "minecraft:experience_reward": {
+        "on_death": "Math.Min(query.player_level * 7, 100)"
+      },
+      "minecraft:type_family": {
+        "family": [ "player" ]
+      },
+      "minecraft:is_hidden_when_invisible": {
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/empty.json"
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 1.8
+      },
+      "minecraft:can_climb": {
+      },
+      "minecraft:movement": {
+        "value": 0.1
+      },
+      "minecraft:underwater_movement": {
+        "value": 0.08
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:attack": {
+        "damage": 1
+      },
+      "minecraft:exhaustion_values": {
+        "heal": 6,
+        "jump": 0.05,
+        "sprint_jump": 0.2,
+        "mine": 0.005,
+        "attack": 0.1,
+        "damage": 0.1,
+        "walk": 0.0,
+        "sprint": 0.1,
+        "swim": 0.01
+      },
+      "minecraft:player.saturation": {
+        "value": 5,
+        "max": 20
+      },
+      "minecraft:player.exhaustion": {
+        "value": 0,
+        "max": 20
+      },
+      "minecraft:player.level": {
+        "value": 0,
+        "max": 24791
+      },
+      "minecraft:player.experience": {
+        "value": 0,
+        "max": 1
+      },
+      "minecraft:nameable": {
+        "always_show": true,
+        "allow_name_tag_renaming": false
+      },
+      "minecraft:physics": {
+        "push_towards_closest_space": true
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:insomnia": {
+        "days_until_insomnia": 3
+      },
+      "minecraft:rideable": {
+        "seat_count": 2,
+        "family_types": [
+          "parrot_tame"
+        ],
+        "pull_in_entities": true,
+        "seats": [
+          {
+            "position": [ 0.4, -0.2, -0.1 ],
+            "min_rider_count": 0,
+            "max_rider_count": 0,
+            "lock_rider_rotation": 0
+          },
+          {
+            "position": [ -0.4, -0.2, -0.1 ],
+            "min_rider_count": 1,
+            "max_rider_count": 2,
+            "lock_rider_rotation": 0
+          }
+        ]
+      },
+      "minecraft:conditional_bandwidth_optimization": {
+      },
+      "minecraft:block_climber": {},
+      "minecraft:environment_sensor": {
+        "triggers": [
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_mob_effect",
+                  "subject": "self",
+                  "value": "bad_omen"
+                },
+                {
+                  "test": "is_in_village",
+                  "subject": "self",
+                  "value": true
+                }
+              ]
+            },
+            "event": "minecraft:gain_raid_omen"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_biome_tag",
+                  "operator": "==",
+                  "value": "overworld"
+                },
+                {
+                  "test": "has_tag",
+                  "subject": "self",
+                  "operator": "!=",
+                  "value": "normal"
+                }
+              ]
+            },
+            "event": "mcnia:change_player_to_normal"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_biome_tag",
+                  "operator": "==",
+                  "value": "nether"
+                },
+                {
+                  "test": "has_tag",
+                  "subject": "self",
+                  "operator": "!=",
+                  "value": "nether"
+                }
+              ]
+            },
+            "event": "mcnia:change_player_to_nether"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_biome_tag",
+                  "operator": "==",
+                  "value": "end"
+                },
+                {
+                  "test": "has_tag",
+                  "subject": "self",
+                  "operator": "!=",
+                  "value": "end"
+                }
+              ]
+            },
+            "event": "mcnia:change_player_to_end"
+          }
+        ]
+      }
+    },
+
+    "events": {
+      "minecraft:gain_raid_omen": {
+        "add": {
+          "component_groups": [
+            "minecraft:add_raid_omen"
+          ]
+        }
+      },
+      "minecraft:clear_add_raid_omen": {
+        "remove": {
+          "component_groups": [
+            "minecraft:add_raid_omen"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:clear_raid_omen_spell_effect"
+          ]
+        }
+      },
+      "minecraft:trigger_raid": {
+        "add": {
+          "component_groups": [ "minecraft:raid_trigger" ]
+        }
+      },
+      "minecraft:remove_raid_trigger": {
+        "remove": {
+          "component_groups": [ "minecraft:raid_trigger" ]
+        }
+      },
+      "mcnia:change_player_to_normal": {
+        "add": {
+          "component_groups": [ "mcnia:normal_player" ]
+        },
+        "remove": {
+          "component_groups": [ "mcnia:nether_player", "mcnia:end_player" ]
+        },
+        "queue_command": {
+          "target": "self",
+          "command": [
+            "tag @s remove nether",
+            "tag @s remove end",
+            "tag @s add normal"
+          ]
+        }
+      },
+      "mcnia:change_player_to_nether": {
+        "add": {
+          "component_groups": [ "mcnia:nether_player" ]
+        },
+        "remove": {
+          "component_groups": [ "mcnia:normal_player", "mcnia:end_player" ]
+        },
+        "queue_command": {
+          "target": "self",
+          "command": [
+            "tag @s remove normal",
+            "tag @s remove end",
+            "tag @s add nether"
+          ]
+        }
+      },
+      "mcnia:change_player_to_end": {
+        "add": {
+          "component_groups": [ "mcnia:end_player" ]
+        },
+        "remove": {
+          "component_groups": [ "mcnia:normal_player", "mcnia:nether_player" ]
+        },
+        "queue_command": {
+          "target": "self",
+          "command": [
+            "tag @s remove normal",
+            "tag @s remove nether",
+            "tag @s add end"
+          ]
+        }
+      }
+    }
+  }
+}
+
+
+
+

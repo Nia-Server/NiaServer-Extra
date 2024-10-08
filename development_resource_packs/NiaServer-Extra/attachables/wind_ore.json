@@ -1,0 +1,27 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:attachable": {
+        "description": {
+
+            "identifier": "mcnia:wind_ore",
+            "materials": {
+                "default": "entity_alphatest",
+                "enchanted": "entity_alphatest_glint"
+            },
+            "textures": {
+                "default": "textures/items/ore/wind_ore.png",
+                "enchanted": "textures/misc/enchanted_item_glint"
+            },
+            "geometry": {
+                "default": "geometry.large_item"
+            },
+            "animations": {
+                "hold": "animation.large_item.hold"
+            },
+            "scripts": {
+                "animate": ["hold"]
+            },
+            "render_controllers": ["controller.render.large_item"]
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:structure_template_feature": {
+		"description": {
+			"identifier": "mcnia:oak_log_5_feature"
+		},
+		"structure_name": "mystructure:oak_log_5",
+		"adjustment_radius": 4,
+		"facing_direction": "random",
+		"constraints": {
+			"block_intersection": {
+				"block_allowlist": [
+					"minecraft:water"
+				]
+			}
+		}
+	}
+}
