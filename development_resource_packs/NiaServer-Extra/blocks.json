@@ -1,11 +1,38 @@
 {
-    "format_version": "1.19.30",
-    "mcnia:dark_dirt": {
-        "textures": "dark_dirt",
-        "sound": "dirt"
+    "format_version" : "1.21.30",
+    "mcnia:dark_raw_ore" : {
+        "textures" : "dark_raw_ore",
+        "carried_textures" : "dark_raw_ore",
+        "sound": "stone"
     },
-    "random_ore" : {
-        "sound" : "stone",
-        "textures" : "random_ore"
+    "mcnia:fire_raw_ore" : {
+        "textures" : "fire_raw_ore",
+        "carried_textures" : "fire_raw_ore",
+        "sound": "stone"
+    },
+    "mcnia:rock_raw_ore" : {
+        "textures" : "rock_raw_ore",
+        "carried_textures" : "rock_raw_ore",
+        "sound": "stone"
+    },
+    "mcnia:spirit_raw_ore" : {
+        "textures" : "spirit_raw_ore",
+        "carried_textures" : "spirit_raw_ore",
+        "sound": "stone"
+    },
+    "mcnia:thunder_raw_ore" : {
+        "textures" : "thunder_raw_ore",
+        "carried_textures" : "thunder_raw_ore",
+        "sound": "stone"
+    },
+    "mcnia:water_raw_ore" : {
+        "textures" : "water_raw_ore",
+        "carried_textures" : "water_raw_ore",
+        "sound": "stone"
+    },
+    "mcnia:wind_raw_ore" : {
+        "textures" : "wind_raw_ore",
+        "carried_textures" : "wind_raw_ore",
+        "sound": "stone"
     }
 }

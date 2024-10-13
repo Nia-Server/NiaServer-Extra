@@ -2,12 +2,28 @@
     "num_mip_levels" : 4,
     "padding" : 8,
     "resource_pack_name" : "NIA V4 RP",
+    "texture_name": "atlas.terrain",
     "texture_data": {
-        "random_ore":{
-            "textures": "textures/blocks/raw_ore/random_raw_ore"
+        "dark_raw_ore" : {
+            "textures" : "textures/blocks/raw_ore/dark_raw_ore"
         },
-        "dark_dirt": {
-            "textures": "textures/blocks/dirt/dark_dirt"
+        "fire_raw_ore" : {
+            "textures" : "textures/blocks/raw_ore/fire_raw_ore"
+        },
+        "rock_raw_ore" : {
+            "textures" : "textures/blocks/raw_ore/rock_raw_ore"
+        },
+        "spirit_raw_ore" : {
+            "textures" : "textures/blocks/raw_ore/spirit_raw_ore"
+        },
+        "thunder_raw_ore" : {
+            "textures" : "textures/blocks/raw_ore/thunder_raw_ore"
+        },
+        "water_raw_ore" : {
+            "textures" : "textures/blocks/raw_ore/water_raw_ore"
+        },
+        "wind_raw_ore" : {
+            "textures" : "textures/blocks/raw_ore/wind_raw_ore"
         }
     }
 }

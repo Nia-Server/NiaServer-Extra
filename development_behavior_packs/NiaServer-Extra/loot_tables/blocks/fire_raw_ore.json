@@ -1,0 +1,26 @@
+{
+    "pools": [
+        {
+            "rolls": {
+                "min" : 1,
+                "max" : 3
+            },
+            "conditions": [
+                {
+                    "condition": "match_tool",
+                    "item": [
+                        "minecraft:diamond_pickaxe","minecraft:netherite_pickaxe"
+                    ],
+                    "count": 1
+                }
+            ],
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "mcnia:fire_ore",
+                    "weight" : 1
+                }
+            ]
+        }
+    ]
+}

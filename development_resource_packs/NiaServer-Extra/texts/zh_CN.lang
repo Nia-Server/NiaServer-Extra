@@ -33,6 +33,14 @@ item.mcnia:thunder_crystal=雷元素晶体
 item.mcnia:water_crystal=水元素晶体
 item.mcnia:wind_crystal=空元素晶体
 
+tile.mcnia:dark_raw_ore.name=暗元素原矿
+tile.mcnia:fire_raw_ore.name=火元素原矿
+tile.mcnia:rock_raw_ore.name=岩元素原矿
+tile.mcnia:spirit_raw_ore.name=灵元素原矿
+tile.mcnia:thunder_raw_ore.name=雷元素原矿
+tile.mcnia:water_raw_ore.name=水元素原矿
+tile.mcnia:wind_raw_ore.name=空元素原矿
+
 item.mcnia:dark_bottle=暗元素之瓶
 item.mcnia:fire_bottle=火元素之瓶
 item.mcnia:rock_bottle=岩元素之瓶
