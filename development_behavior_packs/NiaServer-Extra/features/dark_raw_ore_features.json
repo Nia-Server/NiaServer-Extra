@@ -1,24 +1,27 @@
 {
 	"format_version": "1.21.1",
 	"minecraft:ore_feature": {
-	  "description": {
-		"identifier": "mcnia:dark_raw_ore_feature"
-	  },
-	  "count": 64,
-	  "replace_rules": [
-		{
-		  "places_block": "mcnia:dark_raw_ore",
-		  "may_replace": [
-			"minecraft:stone"
-		  ]
+		"description": {
+			"identifier": "mcnia:dark_raw_ore_feature"
 		},
-		{
-		  "places_block": "mcnia:dark_raw_ore",
-		  "may_replace": [
-			"minecraft:deepslate"
-		  ]
-		}
-	  ]
+		"count": 64,
+		"replace_rules": [
+			{
+				"places_block": "mcnia:dark_raw_ore",
+				"may_replace": [
+					{
+						"name": "minecraft:stone"
+					}
+				]
+			},
+			{
+				"places_block": "mcnia:dark_raw_ore",
+				"may_replace": [
+				  {
+					"name": "minecraft:deepslate"
+				  }
+				]
+			  }
+		]
 	}
-  }
-  
+}

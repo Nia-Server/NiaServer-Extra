@@ -9,7 +9,14 @@
       }
     },
     "components": {
-      "minecraft:loot" : "loot_tables/blocks/dark_raw_ore.json"
+      "minecraft:loot": "loot_tables/blocks/dark_raw_ore.json",
+      "minecraft:material_instances": {
+        "*": {
+          "render_method": "opaque",
+          "texture": "dark_raw_ore"
+        }
+      },
+      "minecraft:geometry": "minecraft:geometry.full_block"
     }
   }
 }
