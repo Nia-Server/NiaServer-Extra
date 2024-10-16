@@ -1,5 +1,5 @@
 {
-	"format_version": "1.17.0",
+	"format_version": "1.21.1",
 	"minecraft:feature_rules": {
 		"description": {
 			"identifier": "mcnia:dark_raw_ore_feature_rules",
@@ -35,10 +35,10 @@
 				]
 			},
 			"y": {
-				"distribution": "triangle",
+				"distribution": "uniform",
 				"extent": [
-					-144,
-					16
+					-44,
+					80
 				]
 			},
 			"z": {
