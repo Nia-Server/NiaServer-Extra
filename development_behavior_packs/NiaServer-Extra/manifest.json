@@ -3,7 +3,7 @@
 	"header": {
 	  "name": "NiaServer-Core-Extra",
 	  "description": "§b核心扩展项目",
-	  "uuid": "d9f5a258-e8fb-2b20-3457-a58cea12279c",
+	  "uuid": "679d9e3d-df70-483e-8853-e6e508d9e97e",
 	  "version": [ 1, 0, 0 ],
 	  "min_engine_version": [ 1, 20, 30 ]
 	},
@@ -25,6 +25,10 @@
 		{
 			"module_name": "@minecraft/server-ui",
 			"version": "1.4.0-beta"
+		},
+		{
+			"uuid": "5eacff27-138c-4b82-a09e-8de7c0f34b3d",
+            "version": [1, 0, 0]
 		}
 	],
 	"metadata": {

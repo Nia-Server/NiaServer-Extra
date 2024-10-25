@@ -1,8 +1,9 @@
 {
-  "format_version": "1.21.10",
+  "format_version": "1.21.30",
   "minecraft:block": {
     "description": {
       "identifier": "mcnia:dark_raw_ore",
+      "is_experimental": false,
       "menu_category": {
         "category": "nature",
         "group": "itemGroup.name.ore"
@@ -10,13 +11,22 @@
     },
     "components": {
       "minecraft:loot": "loot_tables/blocks/dark_raw_ore.json",
+      "minecraft:light_dampening": 15,
+      "minecraft:light_emission": 0,
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 1.2
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 8
+      },
       "minecraft:material_instances": {
         "*": {
           "render_method": "opaque",
           "texture": "dark_raw_ore"
         }
       },
-      "minecraft:geometry": "minecraft:geometry.full_block"
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "tag:stone": {}
     }
   }
 }
