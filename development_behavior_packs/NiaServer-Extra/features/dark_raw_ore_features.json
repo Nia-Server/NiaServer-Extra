@@ -4,12 +4,10 @@
 	  "description": {
 		"identifier": "mcnia:dark_raw_ore_feature"
 	  },
-	  "count": 8,
+	  "count": 4,
 	  "replace_rules": [
 		{
 		  "may_replace": [
-			
-		  
 			{
 			  "name": "minecraft:stone",
 			  "states": {

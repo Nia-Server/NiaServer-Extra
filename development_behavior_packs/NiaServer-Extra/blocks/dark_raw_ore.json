@@ -17,16 +17,13 @@
         "seconds_to_destroy": 1.2
       },
       "minecraft:destructible_by_explosion": {
-        "explosion_resistance": 8
+        "explosion_resistance": 2
       },
-      "minecraft:material_instances": {
-        "*": {
-          "render_method": "opaque",
-          "texture": "dark_raw_ore"
-        }
-      },
-      "minecraft:geometry": "minecraft:geometry.full_block",
-      "tag:stone": {}
+      "minecraft:tags": {
+        "tags": [
+          "stone"
+        ]
+      }
     }
   }
 }
