@@ -1,21 +1,23 @@
 {
 	"format_version": 2,
+	"metadata": {
+		"authors": ["Nia-Server"],
+		"license": "AGPL-3.0",
+		"url": "https://github.com/Nia-Server/NiaServer-Extra"
+	},
 	"header": {
-	  "name": "NiaServer-Core-Extra-RP",
-	  "description": "§b核心扩展项目",
-	  "uuid": "1f557a95-cde9-b35c-0f8f-79e1edbc2bb7",
-	  "version": [ 1, 0, 0 ],
-	  "min_engine_version": [ 1, 20, 30 ]
+		"name": "NiaServer-Extra-RP",
+		"description": "§bCopyright (C) 2025 Nia-Server\n版本：v1.0.0\n项目地址：https://github.com/Nia-Server/NiaServer-Extra",
+		"uuid": "5eacff27-138c-4b82-a09e-8de7c0f34b3d",
+		"version": [ 1, 0, 0],
+		"min_engine_version": [ 1, 21, 50]
 	},
 	"modules": [
 		{
-			"description": "NIANIANKNIA",
+			"description": "NiaServer-Extra-RP",
 			"type": "resources",
 			"uuid": "7e41869f-82f7-40f5-87c0-4dcfbc61d91b",
-			"version": [1, 0, 0]
+			"version": [ 1, 0, 0]
 		}
-	],
-	"metadata": {
-		"authors": ["NIANIANKNIA"]
-	}
+	]
 }

@@ -1,11 +1,16 @@
 {
 	"format_version": 2,
+	"metadata": {
+		"authors": ["Nia-Server"],
+		"license": "AGPL-3.0",
+		"url": "https://github.com/Nia-Server/NiaServer-Extra"
+	},
 	"header": {
-	  "name": "NiaServer-Core-Extra",
-	  "description": "§b核心扩展项目",
-	  "uuid": "d9f5a258-e8fb-2b20-3457-a58cea12279c",
+	  "name": "NiaServer-Extra-BP",
+	  "description": "§bCopyright (C) 2025 Nia-Server\n版本：v1.0.0\n项目地址：https://github.com/Nia-Server/NiaServer-Extra",
+	  "uuid": "679d9e3d-df70-483e-8853-e6e508d9e97e",
 	  "version": [ 1, 0, 0 ],
-	  "min_engine_version": [ 1, 20, 30 ]
+	  "min_engine_version": [ 1, 21, 50 ]
 	},
 	"modules": [
 		{
@@ -15,19 +20,22 @@
 			"uuid": "92cd3fe1-e764-425a-aa40-a7e4d7760922",
 			"entry": "scripts/main.js",
 			"version": [ 1, 0, 0 ]
+		},
+		{
+			"description": "NiaServer-Extra-BP",
+			"type": "data",
+			"uuid": "dbab995c-68ca-4357-a6b9-49f746d5960f",
+			"version": [ 1, 0, 0 ]
 		}
 	],
 	"dependencies": [
 		{
 			"module_name": "@minecraft/server",
-			"version": "1.15.0-beta"
+			"version": "1.17.0-beta"
 		},
 		{
 			"module_name": "@minecraft/server-ui",
 			"version": "1.4.0-beta"
 		}
-	],
-	"metadata": {
-	  "authors": ["NIANIANKNIA"]
-	}
+	]
 }
