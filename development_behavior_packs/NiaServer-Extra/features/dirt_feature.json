@@ -1,0 +1,22 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:scatter_feature": {
+        "description": {
+            "identifier": "mcnia:dirt_feature"
+        },
+        "places_feature": "mcnia:dirt_single_feature",
+        "iterations": 41984,
+        "x": {
+            "distribution": "fixed_grid",
+            "extent": [ 0, 15 ]
+        },
+        "y": {
+            "distribution": "fixed_grid",
+            "extent": [ -64, 99 ]
+        },
+        "z": {
+            "distribution": "fixed_grid",
+            "extent": [ 0, 15 ]
+        }
+    }
+}
