@@ -17,7 +17,14 @@
       },
       "minecraft:destructible_by_explosion": {
         "explosion_resistance": 2
-      }
+      },
+      "minecraft:geometry": "geometry.default_block",
+      "minecraft:material_instances": {
+				"*": {
+					"texture": "fire_raw_ore",
+					"render_method": "alpha_test"
+				}
+			}
     }
   }
 }
