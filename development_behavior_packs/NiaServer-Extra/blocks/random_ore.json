@@ -6,10 +6,14 @@
         },
         "components": {
             "minecraft:loot": "loot_tables/blocks/random_ore.json",
+            "minecraft:light_dampening": 15,
+            "minecraft:light_emission": 0,
             "minecraft:destructible_by_mining": {
-                "seconds_to_destroy": 3
+              "seconds_to_destroy": 1.2
             },
-            "minecraft:light_emission": 5
+            "minecraft:destructible_by_explosion": {
+              "explosion_resistance": 2
+            }
         }
     }
 }
