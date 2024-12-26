@@ -9,7 +9,15 @@
       }
     },
     "components": {
-      "minecraft:loot" : "loot_tables/blocks/spirit_raw_ore.json"
+      "minecraft:loot" : "loot_tables/blocks/spirit_raw_ore.json",
+      "minecraft:light_dampening": 15,
+      "minecraft:light_emission": 0,
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 1.2
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 2
+      }
     }
   }
 }

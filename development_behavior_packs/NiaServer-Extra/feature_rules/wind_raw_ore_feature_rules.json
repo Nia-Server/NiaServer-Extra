@@ -2,8 +2,8 @@
 	"format_version": "1.21.1",
 	"minecraft:feature_rules": {
 		"description": {
-			"identifier": "mcnia:dark_raw_ore_feature_rules",
-			"places_feature": "mcnia:dark_raw_ore_feature"
+			"identifier": "mcnia:wind_raw_ore_feature_rules",
+			"places_feature": "mcnia:wind_raw_ore_feature"
 		},
 		"conditions": {
 			"placement_pass": "underground_pass",

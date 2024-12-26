@@ -2,13 +2,13 @@
 	"format_version": "1.13.0",
 	"minecraft:ore_feature": {
 	  "description": {
-		"identifier": "mcnia:dark_raw_ore_feature"
+		"identifier": "mcnia:fire_raw_ore_feature"
 	  },
 	  "count": 8,
 	  "replace_rules": [
 			{
-				"places_block": "mcnia:dark_raw_ore",
-				"may_replace": ["minecraft:end_stone"]
+				"places_block": "mcnia:fire_raw_ore",
+				"may_replace": ["minecraft:netherrack"]
 			}
 		]
 	}
