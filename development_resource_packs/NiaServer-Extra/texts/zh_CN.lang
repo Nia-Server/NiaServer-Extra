@@ -1,5 +1,7 @@
 tile.nia:random_ore.name=原初之石
 
+tile.mcnia:water_flower.name=原初之花
+
 item.mcnia:op_sword=OP之剑
 item.mcnia:dark_sword=暗·剑
 item.mcnia:fire_sword=火·剑

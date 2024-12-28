@@ -19,5 +19,8 @@
     },
     "wind_raw_ore" : {
         "sound": "stone"
+    },
+    "water_flower" : {
+        "sound": "grass"
     }
 }

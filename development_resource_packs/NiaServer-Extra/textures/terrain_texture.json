@@ -24,6 +24,9 @@
         },
         "wind_raw_ore" : {
             "textures" : "textures/blocks/raw_ore/wind_raw_ore"
+        },
+        "water_flower" : {
+            "textures" : "textures/blocks/plant/water_flower"
         }
     }
 }

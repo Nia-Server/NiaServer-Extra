@@ -22,7 +22,7 @@
       "minecraft:material_instances": {
 				"*": {
 					"texture": "spirit_raw_ore",
-					"render_method": "alpha_test"
+					"render_method": "opaque"
 				}
 			}
     }
