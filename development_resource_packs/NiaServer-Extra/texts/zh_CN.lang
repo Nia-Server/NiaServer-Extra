@@ -53,6 +53,13 @@ item.mcnia:wind_bottle=空元素之瓶
 
 tile.mcnia:dark_dirt.name=暗之泥土
 
+tile.mcnia:marble_block_stone.name=大理石
+tile.mcnia:moss_block_stone.name=苔石
+tile.mcnia:end_grass_block.name=末地草方块
+
+tile.mcnia:water_root_board.name=水根树木板
+tile.mcnia:water_root_wood.name=水根木
+tile.mcnia:water_root_leaf.name=水根树叶
 
 enchantment.oxygen=海的佑护
 

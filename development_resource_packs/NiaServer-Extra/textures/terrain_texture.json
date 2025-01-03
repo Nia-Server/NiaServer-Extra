@@ -27,6 +27,33 @@
         },
         "water_flower" : {
             "textures" : "textures/blocks/plant/water_flower"
+        },
+        "marble_block_stone" : {
+            "textures" : "textures/blocks/stone/marble_block_stone"
+        },
+        "moss_block_stone" : {
+            "textures" : "textures/blocks/stone/moss_block_stone"
+        },
+        "end_grass_top" : {
+            "textures" : "textures/blocks/grass/end_grass_top"
+        },
+        "end_grass_side" : {
+            "textures" : "textures/blocks/grass/end_grass_side"
+        },
+        "end_grass_down" : {
+            "textures" : "textures/blocks/grass/end_grass_down"
+        },
+        "water_root_board" : {
+            "textures" : "textures/blocks/tree/water_root_board"
+        },
+        "water_root_pith" : {
+            "textures" : "textures/blocks/tree/water_root_pith"
+        },
+        "water_root_wood" : {
+            "textures" : "textures/blocks/tree/water_root_wood"
+        },
+        "water_root_leaf" : {
+            "textures" : "textures/blocks/tree/water_root_leaf"
         }
     }
 }
