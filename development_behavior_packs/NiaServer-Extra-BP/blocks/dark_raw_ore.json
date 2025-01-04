@@ -1,31 +1,31 @@
 {
-  "format_version": "1.21.30",
-  "minecraft:block": {
-    "description": {
-      "identifier": "mcnia:dark_raw_ore",
-      "is_experimental": false,
-      "menu_category": {
-        "category": "nature",
-        "group": "itemGroup.name.ore"
-      }
-    },
-    "components": {
-      "minecraft:loot": "loot_tables/blocks/dark_raw_ore.json",
-      "minecraft:light_dampening": 15,
-      "minecraft:light_emission": 0,
-      "minecraft:destructible_by_mining": {
-        "seconds_to_destroy": 1.2
-      },
-      "minecraft:destructible_by_explosion": {
-        "explosion_resistance": 2
-      },
-      "minecraft:geometry": "geometry.default_block",
-      "minecraft:material_instances": {
-				"*": {
-					"texture": "dark_raw_ore",
-					"render_method": "opaque"
-				}
-			}
+    "format_version": "1.21.30",
+    "minecraft:block": {
+        "description": {
+            "identifier": "mcnia:dark_raw_ore",
+            "is_experimental": false,
+            "menu_category": {
+                "category": "nature",
+                "group": "itemGroup.name.ore"
+            }
+        },
+        "components": {
+            "minecraft:loot": "loot_tables/blocks/dark_raw_ore.json",
+            "minecraft:light_dampening": 15,
+            "minecraft:light_emission": 0,
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 1.2
+            },
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 2
+            },
+            "minecraft:geometry": "geometry.default_block",
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "dark_raw_ore",
+                    "render_method": "opaque"
+                }
+            }
+        }
     }
-  }
 }

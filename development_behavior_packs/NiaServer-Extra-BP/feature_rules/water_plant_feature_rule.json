@@ -1,36 +1,45 @@
 {
-	"format_version": "1.13.0",
-	"minecraft:feature_rules": {
-		"description": {
-			"identifier": "mcnia:water_plant_feature_rule",
-			"places_feature": "mcnia:water_plant_feature"
-		},
-		"conditions": {
-			"placement_pass": "final_pass",
-			"minecraft:biome_filter": {
-				"test": "has_biome_tag",
-				"operator": "==",
-				"value": "overworld"
-			}
-		},
-		"distribution": {
-			"iterations": 100,
-			"x": {
-				"extent": [0, 16],
-				"distribution": "uniform"
-			},
-			"y": {
-				"extent": [0, 100],
-				"distribution": "uniform"
-			},
-			"z": {
-				"extent": [0, 16],
-				"distribution": "uniform"
-			},
-			"scatter_chance": {
-				"numerator": 1,
-				"denominator": 25
-			}
-		}
-	}
+    "format_version": "1.13.0",
+    "minecraft:feature_rules": {
+        "description": {
+            "identifier": "mcnia:water_plant_feature_rule",
+            "places_feature": "mcnia:water_plant_feature"
+        },
+        "conditions": {
+            "placement_pass": "final_pass",
+            "minecraft:biome_filter": {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "overworld"
+            }
+        },
+        "distribution": {
+            "iterations": 100,
+            "x": {
+                "extent": [
+                    0,
+                    16
+                ],
+                "distribution": "uniform"
+            },
+            "y": {
+                "extent": [
+                    0,
+                    100
+                ],
+                "distribution": "uniform"
+            },
+            "z": {
+                "extent": [
+                    0,
+                    16
+                ],
+                "distribution": "uniform"
+            },
+            "scatter_chance": {
+                "numerator": 1,
+                "denominator": 25
+            }
+        }
+    }
 }

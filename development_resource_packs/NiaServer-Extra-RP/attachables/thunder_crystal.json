@@ -2,7 +2,6 @@
     "format_version": "1.10.0",
     "minecraft:attachable": {
         "description": {
-
             "identifier": "mcnia:thunder_crystal",
             "materials": {
                 "default": "entity_alphatest",
@@ -19,9 +18,13 @@
                 "hold": "animation.large_item.hold"
             },
             "scripts": {
-                "animate": ["hold"]
+                "animate": [
+                    "hold"
+                ]
             },
-            "render_controllers": ["controller.render.large_item"]
+            "render_controllers": [
+                "controller.render.large_item"
+            ]
         }
     }
 }

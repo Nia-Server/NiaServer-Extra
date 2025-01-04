@@ -1,31 +1,29 @@
 {
-	"format_version": "1.13.0",
-	"minecraft:feature_rules": {
-		"description": {
-			"identifier": "mcnia:overworld_water_feature",
-			"places_feature": "mcnia:water_feature"
-		},
-		"conditions": {
+    "format_version": "1.13.0",
+    "minecraft:feature_rules": {
+        "description": {
+            "identifier": "mcnia:overworld_water_feature",
+            "places_feature": "mcnia:water_feature"
+        },
+        "conditions": {
             "placement_pass": "final_pass",
-			"minecraft:biome_filter": [
-				{
-					"any_of": [
-						{
-							"test": "has_biome_tag",
-							"operator": "==",
-							"value": "overworld"
-						}
-					]
-				}
-			]
-		},
-		"distribution": {
-			"iterations": 1,
-			"x": 0,
-			"y": 0,
-			"z": 0
-		}
-	}
+            "minecraft:biome_filter": [
+                {
+                    "any_of": [
+                        {
+                            "test": "has_biome_tag",
+                            "operator": "==",
+                            "value": "overworld"
+                        }
+                    ]
+                }
+            ]
+        },
+        "distribution": {
+            "iterations": 1,
+            "x": 0,
+            "y": 0,
+            "z": 0
+        }
+    }
 }
-
-

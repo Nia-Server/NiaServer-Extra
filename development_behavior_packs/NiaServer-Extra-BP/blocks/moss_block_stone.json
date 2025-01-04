@@ -1,29 +1,29 @@
 {
     "format_version": "1.21.10",
     "minecraft:block": {
-      "description": {
-        "identifier": "mcnia:moss_block_stone",
-        "menu_category": {
-          "category": "nature",
-          "group": "itemGroup.name.ore"
+        "description": {
+            "identifier": "mcnia:moss_block_stone",
+            "menu_category": {
+                "category": "nature",
+                "group": "itemGroup.name.ore"
+            }
+        },
+        "components": {
+            "minecraft:light_dampening": 15,
+            "minecraft:light_emission": 0,
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 1.2
+            },
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 2
+            },
+            "minecraft:geometry": "geometry.default_block",
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "moss_block_stone",
+                    "render_method": "opaque"
+                }
+            }
         }
-      },
-      "components": {
-        "minecraft:light_dampening": 15,
-        "minecraft:light_emission": 0,
-        "minecraft:destructible_by_mining": {
-          "seconds_to_destroy": 1.2
-        },
-        "minecraft:destructible_by_explosion": {
-          "explosion_resistance": 2
-        },
-        "minecraft:geometry": "geometry.default_block",
-        "minecraft:material_instances": {
-                  "*": {
-                      "texture": "moss_block_stone",
-                      "render_method": "opaque"
-                  }
-              }
-      }
     }
-  }
+}

@@ -1,36 +1,36 @@
 {
     "format_version": "1.13.0",
-    "dark_raw_ore" : {
+    "dark_raw_ore": {
         "sound": "stone"
     },
-    "fire_raw_ore" : {
+    "fire_raw_ore": {
         "sound": "stone"
     },
-    "rock_raw_ore" : {
+    "rock_raw_ore": {
         "sound": "stone"
     },
-    "spirit_raw_ore" : {
+    "spirit_raw_ore": {
         "sound": "stone"
     },
-    "thunder_raw_ore" : {
+    "thunder_raw_ore": {
         "sound": "stone"
     },
-    "water_raw_ore" : {
+    "water_raw_ore": {
         "sound": "stone"
     },
-    "wind_raw_ore" : {
+    "wind_raw_ore": {
         "sound": "stone"
     },
-    "water_flower" : {
+    "water_flower": {
         "sound": "grass"
     },
-    "marble_block_stone" : {
+    "marble_block_stone": {
         "sound": "stone"
     },
-    "moss_block_stone" : {
+    "moss_block_stone": {
         "sound": "stone"
     },
-    "sand_dirt" : {
+    "sand_dirt": {
         "sound": "grass"
     }
 }

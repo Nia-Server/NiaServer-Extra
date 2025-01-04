@@ -9,7 +9,8 @@
                 {
                     "condition": "match_tool",
                     "item": [
-                        "minecraft:diamond_pickaxe","minecraft:netherite_pickaxe"
+                        "minecraft:diamond_pickaxe",
+                        "minecraft:netherite_pickaxe"
                     ],
                     "count": 1
                 }
