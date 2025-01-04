@@ -5,7 +5,7 @@
 			"identifier": "mcnia:dirt_single_feature"
 		},
 		"places_block": {
-			"name": "minecraft:dirt"
+			"name": "mcnia:sand_dirt"
 		},
 		"enforce_survivability_rules": false,
 		"enforce_placement_rules": false,
@@ -14,6 +14,3 @@
 		]
 	}
 }
-
-
-
