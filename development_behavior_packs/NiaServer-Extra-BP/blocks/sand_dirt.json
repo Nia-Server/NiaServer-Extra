@@ -1,0 +1,36 @@
+    {
+    "format_version": "1.21.10",
+    "minecraft:block": {
+        "description": {
+            "identifier": "mcnia:sand_dirt",
+            "menu_category": {
+                "category": "nature"
+            }
+        },
+        "components": {
+            "minecraft:light_dampening": 15,
+            "minecraft:light_emission": 0,
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 1.2
+            },
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 2
+            },
+            "minecraft:geometry": "geometry.default_block",
+            "minecraft:material_instances": {
+                "up": {
+                    "texture": "sand_dirt_up",
+                    "render_method": "opaque"
+                },
+                "down": {
+                    "texture": "sand_dirt_down",
+                    "render_method": "opaque"
+                },
+                "*": {
+                    "texture": "sand_dirt_side",
+                    "render_method": "opaque"
+                }
+            }
+        }
+    }
+}

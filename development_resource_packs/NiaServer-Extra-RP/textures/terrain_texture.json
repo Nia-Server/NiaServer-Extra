@@ -54,6 +54,15 @@
         },
         "water_root_leaf" : {
             "textures" : "textures/blocks/tree/water_root_leaf"
+        },
+        "sand_dirt_down" : {
+            "textures" : "textures/blocks/dirt/sand_dirt_down"
+        },
+        "sand_dirt_side" : {
+            "textures" : "textures/blocks/dirt/sand_dirt_side"
+        },
+        "sand_dirt_up" : {
+            "textures" : "textures/blocks/dirt/sand_dirt_up"
         }
     }
 }

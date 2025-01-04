@@ -29,5 +29,8 @@
     },
     "moss_block_stone" : {
         "sound": "stone"
+    },
+    "sand_dirt" : {
+        "sound": "grass"
     }
 }

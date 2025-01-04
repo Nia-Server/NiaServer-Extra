@@ -51,7 +51,7 @@ item.mcnia:thunder_bottle=雷元素之瓶
 item.mcnia:water_bottle=水元素之瓶
 item.mcnia:wind_bottle=空元素之瓶
 
-tile.mcnia:dark_dirt.name=暗之泥土
+tile.mcnia:sand_dirt.name=沙土
 
 tile.mcnia:marble_block_stone.name=大理石
 tile.mcnia:moss_block_stone.name=苔石
