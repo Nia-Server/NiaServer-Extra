@@ -1,0 +1,37 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "atlas_trees",
+		"description": "pack.description",
+		"uuid": "64f66656-4659-45a7-bef0-0bea6cee0791",
+		"version": [
+			1,
+			0,
+			0
+		],
+		"min_engine_version": [
+			1,
+			20,
+			30
+		]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "e8f69c57-f6da-431d-938c-8937243950c7",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"metadata": {
+		"generated_with": {
+			"bridge": [
+				"1.8.4",
+				"1.8.5"
+			]
+		}
+	}
+}

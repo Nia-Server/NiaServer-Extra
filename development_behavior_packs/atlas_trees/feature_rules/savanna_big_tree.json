@@ -1,0 +1,48 @@
+//bridge-file-version: #14
+{
+	"format_version": "1.16.100",
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "flour_tree:savanna_big_tree",
+			"places_feature": "flour_tree:savanna_tree_big"
+		},
+		"conditions": {
+			"placement_pass": "surface_pass",
+			"minecraft:biome_filter": [
+				{
+					"test": "has_biome_tag",
+					"operator": "==",
+					"value": "savanna"
+				}
+			]
+		},
+		"distribution": {
+			"iterations": 1,
+			"x": {
+				"distribution": "uniform",
+				"extent": [
+					0,
+					16
+				]
+			},
+			"y": {
+				"distribution": "uniform",
+				"extent": [
+					"query.above_top_solid(variable.worldx, variable.worldz) - 1",
+					"query.above_top_solid(variable.worldx, variable.worldz) - 1"
+				]
+			},
+			"z": {
+				"distribution": "uniform",
+				"extent": [
+					0,
+					16
+				]
+			},
+			"scatter_chance": {
+				"numerator": 1,
+				"denominator": 14
+			}
+		}
+	}
+}

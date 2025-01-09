@@ -1,0 +1,46 @@
+//bridge-file-version: #16
+{
+	"format_version": "1.16.100",
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "minecraft:swamp_surface_swamp_foliage_feature",
+			"places_feature": "minecraft:swamp_tree_feature"
+		},
+		"conditions": {
+			"placement_pass": "surface_pass",
+			"minecraft:biome_filter": {
+				"all_of": [
+					{
+						"test": "has_biome_tag",
+						"operator": "==",
+						"value": "swamp"
+					}
+				]
+			}
+		},
+		"distribution": {
+			"iterations": 1,
+			"x": {
+				"distribution": "uniform",
+				"extent": [
+					0,
+					16
+				]
+			},
+			"y": {
+				"distribution": "uniform",
+				"extent": [
+					"query.above_top_solid(variable.worldx, variable.worldz)",
+					"query.above_top_solid(variable.worldx, variable.worldz)"
+				]
+			},
+			"z": {
+				"distribution": "uniform",
+				"extent": [
+					0,
+					16
+				]
+			}
+		}
+	}
+}

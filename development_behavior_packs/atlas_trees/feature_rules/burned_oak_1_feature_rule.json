@@ -1,0 +1,55 @@
+//bridge-file-version: #1
+{
+	"format_version": "1.16.100",
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "flour_tree:burned_oak_1_feature_rule",
+			"places_feature": "flour_tree:burned_oak_1_feature"
+		},
+		"conditions": {
+			"placement_pass": "first_pass",
+			"minecraft:biome_filter": {
+				"all_of": [
+					{
+						"test": "has_biome_tag",
+						"operator": "==",
+						"value": "forest"
+					},
+					{
+						"test": "has_biome_tag",
+						"operator": "!=",
+						"value": "taiga"
+					}
+				]
+			}
+		},
+		"distribution": {
+			"iterations": 1,
+			"x": {
+				"extent": [
+					1,
+					16
+				],
+				"distribution": "uniform"
+			},
+			"z": {
+				"extent": [
+					1,
+					16
+				],
+				"distribution": "uniform"
+			},
+			"y": {
+				"extent": [
+					"query.heightmap(variable.worldx, variable.worldz) - 1",
+					"query.heightmap(variable.worldx, variable.worldz)"
+				],
+				"distribution": "uniform"
+			},
+			"scatter_chance": {
+				"numerator": 1,
+				"denominator": 1000
+			}
+		}
+	}
+}

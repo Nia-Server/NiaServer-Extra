@@ -1,0 +1,28 @@
+//bridge-file-version: #2
+{
+	"format_version": "1.13.0",
+	"minecraft:scatter_feature": {
+		"description": {
+			"identifier": "minecraft:scatter_pale_hanging_moss_feature"
+		},
+		"iterations": 50,
+		"scatter_chance": 100,
+		"x": {
+			"extent": [
+				-8,
+				8
+			],
+			"distribution": "uniform"
+		},
+		"z": {
+			"extent": [
+				-8,
+				8
+			],
+			"distribution": "uniform"
+		},
+		"y": 2,
+		"project_input_to_floor": false,
+		"places_feature": "minecraft:pale_hanging_moss_snap_to_ceiling_feature"
+	}
+}

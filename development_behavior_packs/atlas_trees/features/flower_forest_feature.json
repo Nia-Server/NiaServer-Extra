@@ -1,0 +1,35 @@
+//bridge-file-version: #5
+{
+	"format_version": "1.16.100",
+	"minecraft:weighted_random_feature": {
+		"description": {
+			"identifier": "flour_tree:flower_forest_feature"
+		},
+		"features": [
+			[
+				"minecraft:fancy_oak_tree_feature",
+				100
+			],
+			[
+				"minecraft:oak_tree_feature",
+				300
+			],
+			[
+				"minecraft:oak_tree_with_beehive_feature",
+				100
+			],
+			[
+				"flour_tree:giant_birch_tree",
+				80
+			],
+			[
+				"minecraft:oak_tree_with_vines_feature",
+				3
+			],
+			[
+				"flour_tree:branched_birch_feature",
+				80
+			]
+		]
+	}
+}

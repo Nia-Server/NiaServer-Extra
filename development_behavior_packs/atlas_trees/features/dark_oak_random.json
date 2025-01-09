@@ -1,0 +1,23 @@
+//bridge-file-version: #17
+{
+	"format_version": "1.16.100",
+	"minecraft:weighted_random_feature": {
+		"description": {
+			"identifier": "flour_tree:dark_oak_random"
+		},
+		"features": [
+			[
+				"minecraft:fancy_oak_tree_feature",
+				60
+			],
+			[
+				"minecraft:roofed_tree_feature",
+				240
+			],
+			[
+				"minecraft:oak_tree_with_vines_feature",
+				50
+			]
+		]
+	}
+}

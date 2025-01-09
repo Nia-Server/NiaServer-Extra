@@ -1,0 +1,56 @@
+//bridge-file-version: #1
+{
+	"format_version": "1.16.100",
+	"minecraft:structure_template_feature": {
+		"description": {
+			"identifier": "flour_tree:3x3_spruce_feature"
+		},
+		"structure_name": "mystructure:3x3_spruce",
+		"adjustment_radius": 3,
+		"facing_direction": "random",
+		"constraints": {
+			"grounded": {},
+			"unburied": {},
+			"block_intersection": {
+				"block_allowlist": [
+					{
+						"name": "minecraft:stone"
+					},
+					{
+						"name": "minecraft:dirt"
+					},
+					{
+						"name": "minecraft:air"
+					},
+					{
+						"name": "minecraft:log"
+					},
+					{
+						"name": "minecraft:log2"
+					},
+					{
+						"name": "minecraft:grass"
+					},
+					{
+						"name": "minecraft:grass_path"
+					},
+					{
+						"name": "minecraft:cobblestone"
+					},
+					{
+						"name": "minecraft:water"
+					},
+					{
+						"name": "minecraft:gravel"
+					},
+					{
+						"name": "minecraft:sand"
+					},
+					{
+						"name": "minecraft:clay"
+					}
+				]
+			}
+		}
+	}
+}

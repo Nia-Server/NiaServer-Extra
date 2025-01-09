@@ -1,0 +1,55 @@
+//bridge-file-version: #1
+{
+	"format_version": "1.16.100",
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "flour_tree:2x2_b_stump2_feature_rule",
+			"places_feature": "flour_tree:2x2_b_stump2_feature"
+		},
+		"conditions": {
+			"placement_pass": "first_pass",
+			"minecraft:biome_filter": {
+				"any_of": [
+					{
+						"test": "has_biome_tag",
+						"operator": "==",
+						"value": "forest"
+					},
+					{
+						"test": "has_biome_tag",
+						"operator": "==",
+						"value": "swamp"
+					}
+				]
+			}
+		},
+		"distribution": {
+			"iterations": 1,
+			"x": {
+				"extent": [
+					1,
+					16
+				],
+				"distribution": "uniform"
+			},
+			"z": {
+				"extent": [
+					1,
+					16
+				],
+				"distribution": "uniform"
+			},
+			"y": {
+				"extent": [
+					"query.heightmap(variable.worldx, variable.worldz) - 1",
+					"query.heightmap(variable.worldx, variable.worldz)"
+				],
+				"distribution": "uniform"
+			},
+			"scatter_chance": {
+				"numerator": 1,
+				"denominator": 1000
+			}
+		}
+	}
+}

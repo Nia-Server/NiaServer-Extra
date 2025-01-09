@@ -1,0 +1,44 @@
+//bridge-file-version: #14
+{
+	"format_version": "1.13.0",
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "flour_tree:crimson_fungus_large_1_feature_rule",
+			"places_feature": "flour_tree:crimson_ag"
+		},
+		"conditions": {
+			"placement_pass": "surface_pass",
+			"minecraft:biome_filter": [
+				{
+					"test": "has_biome_tag",
+					"operator": "==",
+					"value": "crimson_forest"
+				}
+			]
+		},
+		"distribution": {
+			"iterations": 8,
+			"x": {
+				"extent": [
+					1,
+					16
+				],
+				"distribution": "uniform"
+			},
+			"z": {
+				"extent": [
+					1,
+					16
+				],
+				"distribution": "uniform"
+			},
+			"y": {
+				"extent": [
+					0,
+					120
+				],
+				"distribution": "uniform"
+			}
+		}
+	}
+}

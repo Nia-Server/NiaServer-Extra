@@ -1,0 +1,70 @@
+//bridge-file-version: #4
+{
+	"format_version": "1.16.100",
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "flour_tree:ooo_a_mushroom",
+			"places_feature": "flour_tree:mushroom_mix"
+		},
+		"conditions": {
+			"placement_pass": "underground_pass",
+			"minecraft:biome_filter": {
+				"all_of": [
+					{
+						"test": "has_biome_tag",
+						"operator": "==",
+						"value": "forest"
+					},
+					{
+						"test": "has_biome_tag",
+						"operator": "!=",
+						"value": "taiga"
+					},
+					{
+						"test": "has_biome_tag",
+						"operator": "!=",
+						"value": "swamp"
+					},
+					{
+						"test": "has_biome_tag",
+						"operator": "!=",
+						"value": "roofed"
+					},
+					{
+						"test": "has_biome_tag",
+						"operator": "!=",
+						"value": "extreme_hills"
+					}
+				]
+			}
+		},
+		"distribution": {
+			"iterations": 1,
+			"x": {
+				"extent": [
+					1,
+					16
+				],
+				"distribution": "uniform"
+			},
+			"z": {
+				"extent": [
+					1,
+					16
+				],
+				"distribution": "uniform"
+			},
+			"y": {
+				"extent": [
+					"query.heightmap(variable.worldx, variable.worldz) - 1",
+					"query.heightmap(variable.worldx, variable.worldz)"
+				],
+				"distribution": "uniform"
+			},
+			"scatter_chance": {
+				"numerator": 1,
+				"denominator": 2000
+			}
+		}
+	}
+}

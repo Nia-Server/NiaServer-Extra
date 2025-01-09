@@ -1,0 +1,51 @@
+//bridge-file-version: #7
+{
+	"format_version": "1.16.100",
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "flour_tree:dark_oak_upper",
+			"places_feature": "flour_tree:dark_oak_ag"
+		},
+		"conditions": {
+			"placement_pass": "surface_pass",
+			"minecraft:biome_filter": {
+				"all_of": [
+					{
+						"test": "has_biome_tag",
+						"operator": "==",
+						"value": "roofed"
+					},
+					{
+						"test": "has_biome_tag",
+						"operator": "==",
+						"value": "forest"
+					}
+				]
+			}
+		},
+		"distribution": {
+			"iterations": 120,
+			"x": {
+				"distribution": "uniform",
+				"extent": [
+					0,
+					16
+				]
+			},
+			"z": {
+				"extent": [
+					0,
+					16
+				],
+				"distribution": "uniform"
+			},
+			"y": {
+				"extent": [
+					81,
+					180
+				],
+				"distribution": "uniform"
+			}
+		}
+	}
+}

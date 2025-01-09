@@ -5,27 +5,18 @@
             "identifier": "mcnia:dirt_feature"
         },
         "places_feature": "mcnia:dirt_single_feature",
-        "iterations": 41984,
+        "iterations": 41728,
         "x": {
             "distribution": "fixed_grid",
-            "extent": [
-                0,
-                15
-            ]
+            "extent": [ 0, 15 ]
         },
         "y": {
             "distribution": "fixed_grid",
-            "extent": [
-                -64,
-                99
-            ]
+            "extent": [ -64, 99 ]
         },
         "z": {
             "distribution": "fixed_grid",
-            "extent": [
-                0,
-                15
-            ]
+            "extent": [ 0, 15 ]
         }
     }
 }

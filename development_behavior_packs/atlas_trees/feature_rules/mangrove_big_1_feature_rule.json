@@ -1,0 +1,46 @@
+//bridge-file-version: #10
+{
+	"format_version": "1.19.10",
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "flour_tree:mangrove_big_1_feature_rule",
+			"places_feature": "flour_tree:mangrove_mix_large"
+		},
+		"conditions": {
+			"placement_pass": "first_pass",
+			"minecraft:biome_filter": {
+				"all_of": [
+					{
+						"test": "has_biome_tag",
+						"operator": "==",
+						"value": "mangrove_swamp"
+					}
+				]
+			}
+		},
+		"distribution": {
+			"iterations": 1,
+			"x": {
+				"extent": [
+					1,
+					16
+				],
+				"distribution": "uniform"
+			},
+			"z": {
+				"extent": [
+					1,
+					16
+				],
+				"distribution": "uniform"
+			},
+			"y": {
+				"extent": [
+					"query.heightmap(variable.worldx, variable.worldz) - 4",
+					"query.heightmap(variable.worldx, variable.worldz) - 3"
+				],
+				"distribution": "uniform"
+			}
+		}
+	}
+}

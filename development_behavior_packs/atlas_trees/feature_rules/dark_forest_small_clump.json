@@ -1,0 +1,46 @@
+//bridge-file-version: #16
+{
+	"format_version": "1.16.100",
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "flour_tree:dark_forest_small_clump",
+			"places_feature": "flour_tree:small_roofed"
+		},
+		"conditions": {
+			"placement_pass": "surface_pass",
+			"minecraft:biome_filter": {
+				"all_of": [
+					{
+						"test": "has_biome_tag",
+						"operator": "==",
+						"value": "roofed"
+					}
+				]
+			}
+		},
+		"distribution": {
+			"iterations": "math.clamp(math.trunc(math.round((query.noise(math.trunc(variable.originx / 80), math.trunc(variable.originz / 80)) + 0.3))), 0, 6)",
+			"x": {
+				"distribution": "uniform",
+				"extent": [
+					0,
+					16
+				]
+			},
+			"y": {
+				"distribution": "uniform",
+				"extent": [
+					"query.heightmap(variable.worldx, variable.worldz) - 1",
+					"query.heightmap(variable.worldx, variable.worldz)"
+				]
+			},
+			"z": {
+				"distribution": "uniform",
+				"extent": [
+					0,
+					16
+				]
+			}
+		}
+	}
+}

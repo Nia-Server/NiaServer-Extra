@@ -1,0 +1,77 @@
+//bridge-file-version: #4
+{
+	"format_version": "1.16.100",
+	"minecraft:structure_template_feature": {
+		"description": {
+			"identifier": "flour_tree:warped_fungus_l1_feature"
+		},
+		"structure_name": "mystructure:warped_fungus_l1",
+		"adjustment_radius": 10,
+		"facing_direction": "random",
+		"constraints": {
+			"grounded": {},
+			"unburied": {},
+			"block_intersection": {
+				"block_allowlist": [
+					{
+						"name": "minecraft:stone"
+					},
+					{
+						"name": "minecraft:dirt"
+					},
+					{
+						"name": "minecraft:air"
+					},
+					{
+						"name": "minecraft:log"
+					},
+					{
+						"name": "minecraft:log2"
+					},
+					{
+						"name": "minecraft:grass"
+					},
+					{
+						"name": "minecraft:grass_path"
+					},
+					{
+						"name": "minecraft:cobblestone"
+					},
+					{
+						"name": "minecraft:water"
+					},
+					{
+						"name": "minecraft:gravel"
+					},
+					{
+						"name": "minecraft:sand"
+					},
+					{
+						"name": "minecraft:clay"
+					},
+					{
+						"name": "minecraft:warped_roots"
+					},
+					{
+						"name": "minecraft:warped_stem"
+					},
+					{
+						"name": "minecraft:warped_wart_block"
+					},
+					{
+						"name": "minecraft:warped_fungus"
+					},
+					{
+						"name": "minecraft:twisting_vines"
+					},
+					{
+						"name": "minecraft:nether_sprouts"
+					},
+					{
+						"name": "minecraft:warped_nylium"
+					}
+				]
+			}
+		}
+	}
+}

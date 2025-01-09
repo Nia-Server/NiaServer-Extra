@@ -1,0 +1,53 @@
+//bridge-file-version: #22
+{
+	"format_version": "1.16.0",
+	"minecraft:snap_to_surface_feature": {
+		"description": {
+			"identifier": "flour_tree:dark_oak_hanging_leaves_snap_to_ceiling_feature"
+		},
+		"feature_to_snap": "flour_tree:dark_oak_hanging_leaves_feature",
+		"vertical_search_range": 64,
+		"surface": "ceiling",
+		"allowed_surface_blocks": [
+			{
+				"name": "minecraft:leaves2"
+			},
+			{
+				"name": "minecraft:log"
+			},
+			{
+				"name": "minecraft:leaves"
+			},
+			{
+				"name": "minecraft:log2"
+			},
+			{
+				"name": "minecraft:leaves2",
+				"states": {
+					"persistent_bit": true
+				}
+			},
+			{
+				"name": "minecraft:leaves",
+				"states": {
+					"persistent_bit": true
+				}
+			},
+			{
+				"name": "minecraft:jungle_leaves",
+				"states": {
+					"persistent_bit": true
+				}
+			},
+			{
+				"name": "minecraft:dark_oak_leaves",
+				"states": {
+					"persistent_bit": true
+				}
+			},
+			{
+				"name": "minecraft:dark_oak_leaves"
+			}
+		]
+	}
+}

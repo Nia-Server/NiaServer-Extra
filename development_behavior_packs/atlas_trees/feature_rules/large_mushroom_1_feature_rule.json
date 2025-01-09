@@ -1,0 +1,60 @@
+//bridge-file-version: #17
+{
+	"format_version": "1.16.100",
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "flour_tree:large_mushroom_1_feature_rule",
+			"places_feature": "flour_tree:large_mushroom_1_feature"
+		},
+		"conditions": {
+			"placement_pass": "before_surface_pass",
+			"minecraft:biome_filter": {
+				"any_of": [
+					{
+						"test": "has_biome_tag",
+						"operator": "==",
+						"value": "roofed"
+					},
+					{
+						"test": "has_biome_tag",
+						"operator": "==",
+						"value": "swamp"
+					},
+					{
+						"test": "has_biome_tag",
+						"operator": "==",
+						"value": "mooshroom_island"
+					}
+				]
+			}
+		},
+		"distribution": {
+			"iterations": 1,
+			"x": {
+				"extent": [
+					1,
+					16
+				],
+				"distribution": "uniform"
+			},
+			"z": {
+				"extent": [
+					1,
+					16
+				],
+				"distribution": "uniform"
+			},
+			"y": {
+				"extent": [
+					"query.heightmap(variable.worldx, variable.worldz) - 1",
+					"query.heightmap(variable.worldx, variable.worldz)"
+				],
+				"distribution": "uniform"
+			},
+			"scatter_chance": {
+				"numerator": 1,
+				"denominator": 60
+			}
+		}
+	}
+}

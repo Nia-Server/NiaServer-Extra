@@ -1,0 +1,53 @@
+//bridge-file-version: #9
+{
+	"format_version": "1.16.100",
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "minecraft:mesa_plateau_stone_surface_trees_feature",
+			"places_feature": "flour_tree:mesa_forest_random"
+		},
+		"conditions": {
+			"placement_pass": "surface_pass",
+			"minecraft:biome_filter": [
+				{
+					"test": "has_biome_tag",
+					"operator": "==",
+					"value": "stone"
+				},
+				{
+					"test": "has_biome_tag",
+					"operator": "==",
+					"value": "mesa"
+				}
+			]
+		},
+		"distribution": {
+			"iterations": 1,
+			"x": {
+				"extent": [
+					0,
+					16
+				],
+				"distribution": "gaussian"
+			},
+			"y": {
+				"distribution": "uniform",
+				"extent": [
+					"query.above_top_solid(variable.worldx, variable.worldz)",
+					"query.above_top_solid(variable.worldx, variable.worldz)"
+				]
+			},
+			"z": {
+				"extent": [
+					0,
+					16
+				],
+				"distribution": "gaussian"
+			},
+			"scatter_chance": {
+				"numerator": 4,
+				"denominator": 5
+			}
+		}
+	}
+}

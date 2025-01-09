@@ -10,7 +10,7 @@ world.beforeEvents.worldInitialize.subscribe(({ blockComponentRegistry }) => {
                 if (event.initialSpawn) {
                     system.runTimeout(() => {
                         event.player.sendMessage("test");
-                    }, 10);
+                    },10);
                 }
             });
             const equippable = player?.getComponent("minecraft:equippable");

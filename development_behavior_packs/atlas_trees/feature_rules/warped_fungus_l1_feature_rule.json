@@ -1,0 +1,44 @@
+//bridge-file-version: #5
+{
+	"format_version": "1.13.0",
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "flour_tree:warped_fungus_l1_feature_rule",
+			"places_feature": "flour_tree:warped_ag"
+		},
+		"conditions": {
+			"placement_pass": "surface_pass",
+			"minecraft:biome_filter": [
+				{
+					"test": "has_biome_tag",
+					"operator": "==",
+					"value": "warped_forest"
+				}
+			]
+		},
+		"distribution": {
+			"iterations": 8,
+			"x": {
+				"extent": [
+					1,
+					16
+				],
+				"distribution": "uniform"
+			},
+			"z": {
+				"extent": [
+					1,
+					16
+				],
+				"distribution": "uniform"
+			},
+			"y": {
+				"extent": [
+					0,
+					120
+				],
+				"distribution": "uniform"
+			}
+		}
+	}
+}

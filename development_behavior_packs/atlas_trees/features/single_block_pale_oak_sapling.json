@@ -1,0 +1,28 @@
+//bridge-file-version: #1
+{
+	"format_version": "1.16.100",
+	"minecraft:single_block_feature": {
+		"description": {
+			"identifier": "flour_tree:single_block_pale_oak_sapling"
+		},
+		"places_block": {
+			"name": "minecraft:pale_oak_sapling"
+		},
+		"enforce_survivability_rules": true,
+		"enforce_placement_rules": true,
+		"may_replace": [
+			{
+				"name": "minecraft:tallgrass"
+			},
+			{
+				"name": "minecraft:pale_moss_carpet"
+			},
+			{
+				"name": "minecraft:double_plant"
+			},
+			{
+				"name": "minecraft:air"
+			}
+		]
+	}
+}

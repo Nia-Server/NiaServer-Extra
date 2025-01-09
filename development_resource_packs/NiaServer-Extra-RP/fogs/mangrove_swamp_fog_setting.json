@@ -1,16 +1,16 @@
 {
-    "format_version": "1.16.100",
-    "minecraft:fog_settings": {
-        "description": {
-            "identifier": "mcnia:fog_mangrove_swamp"
-        },
-        "distance": {
-            "water": {
-                "fog_start": 0.0,
-                "fog_end": 256,
-                "fog_color": "#4d7a60",
-                "render_distance_type": "fixed"
-            }
-        }
+  "format_version": "1.16.100",
+  "minecraft:fog_settings": {
+    "description": {
+      "identifier": "mcnia:fog_mangrove_swamp"
+    },
+    "distance": {
+      "water": {
+        "fog_start": 0.0,
+        "fog_end": 256,
+        "fog_color": "#4d7a60",
+        "render_distance_type": "fixed"
+      }
     }
+  }
 }

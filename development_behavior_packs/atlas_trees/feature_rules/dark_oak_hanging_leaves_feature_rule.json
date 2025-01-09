@@ -1,0 +1,33 @@
+//bridge-file-version: #35
+{
+	"format_version": "1.16.100",
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "flour_tree:dark_oak_hanging_leaves_feature_rule",
+			"places_feature": "flour_tree:scatter_dark_oak_hanging_leaves_feature"
+		},
+		"conditions": {
+			"placement_pass": "final_pass",
+			"minecraft:biome_filter": {
+				"any_of": [
+					{
+						"test": "has_biome_tag",
+						"operator": "==",
+						"value": "roofed"
+					},
+					{
+						"test": "has_biome_tag",
+						"operator": "==",
+						"value": "jungle"
+					}
+				]
+			}
+		},
+		"distribution": {
+			"iterations": 3,
+			"x": 8,
+			"y": "query.heightmap(variable.worldx, variable.worldz)",
+			"z": 8
+		}
+	}
+}

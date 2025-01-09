@@ -1,0 +1,13 @@
+//bridge-file-version: #1
+{
+	"format_version": "1.16.100",
+	"minecraft:aggregate_feature": {
+		"description": {
+			"identifier": "flour_tree:warped_ag"
+		},
+		"early_out": "none",
+		"features": [
+			"flour_tree:warped_fungus_l1_feature"
+		]
+	}
+}

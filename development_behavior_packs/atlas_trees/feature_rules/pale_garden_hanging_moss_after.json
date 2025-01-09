@@ -1,0 +1,34 @@
+//bridge-file-version: #31
+{
+	"format_version": "1.16.100",
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "flour_tree:pale_garden_hanging_moss_after",
+			"places_feature": "minecraft:scatter_pale_hanging_moss_feature"
+		},
+		"conditions": {
+			"placement_pass": "final_pass",
+			"minecraft:biome_filter": {
+				"all_of": [
+					{
+						"test": "has_biome_tag",
+						"operator": "==",
+						"value": "pale_garden"
+					}
+				]
+			}
+		},
+		"distribution": {
+			"iterations": 8,
+			"x": 8,
+			"y": {
+				"distribution": "uniform",
+				"extent": [
+					"query.heightmap(variable.worldx, variable.worldz)",
+					"query.heightmap(variable.worldx, variable.worldz)"
+				]
+			},
+			"z": 8
+		}
+	}
+}

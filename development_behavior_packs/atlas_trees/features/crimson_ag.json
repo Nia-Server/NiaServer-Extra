@@ -1,0 +1,14 @@
+//bridge-file-version: #0
+{
+	"format_version": "1.19.10",
+	"minecraft:aggregate_feature": {
+		"description": {
+			"identifier": "flour_tree:crimson_ag"
+		},
+		"early_out": "none",
+		"features": [
+			"flour_tree:crimson_fungus_large_1_feature",
+			"flour_tree:crimson_fungus_large_1_feature"
+		]
+	}
+}

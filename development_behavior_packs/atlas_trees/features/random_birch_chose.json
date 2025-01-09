@@ -1,0 +1,27 @@
+//bridge-file-version: #9
+{
+	"format_version": "1.16.100",
+	"minecraft:weighted_random_feature": {
+		"description": {
+			"identifier": "flour_tree:random_birch_chose"
+		},
+		"features": [
+			[
+				"minecraft:birch_tree_feature",
+				70
+			],
+			[
+				"minecraft:fallen_birch_tree_feature",
+				15
+			],
+			[
+				"minecraft:super_birch_tree_feature",
+				50
+			],
+			[
+				"minecraft:birch_tree_with_beehive_feature",
+				30
+			]
+		]
+	}
+}

@@ -1,0 +1,58 @@
+//bridge-file-version: #8
+{
+	"format_version": "1.16.100",
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "minecraft:birch_forest_surface_trees_feature",
+			"places_feature": "flour_tree:random_birch_feature"
+		},
+		"conditions": {
+			"placement_pass": "surface_pass",
+			"minecraft:biome_filter": [
+				{
+					"test": "has_biome_tag",
+					"operator": "==",
+					"value": "forest"
+				},
+				{
+					"all_of": [
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "birch"
+						},
+						{
+							"test": "has_biome_tag",
+							"operator": "!=",
+							"value": "mutated"
+						}
+					]
+				}
+			]
+		},
+		"distribution": {
+			"iterations": 5,
+			"x": {
+				"distribution": "uniform",
+				"extent": [
+					0,
+					16
+				]
+			},
+			"z": {
+				"extent": [
+					0,
+					16
+				],
+				"distribution": "uniform"
+			},
+			"y": {
+				"extent": [
+					"query.above_top_solid(variable.worldx, variable.worldz) - 1",
+					"query.above_top_solid(variable.worldx, variable.worldz) - 1"
+				],
+				"distribution": "uniform"
+			}
+		}
+	}
+}

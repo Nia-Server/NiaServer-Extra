@@ -1,0 +1,23 @@
+//bridge-file-version: #1
+{
+	"format_version": "1.16.100",
+	"minecraft:weighted_random_feature": {
+		"description": {
+			"identifier": "flour_tree:savanna_trees_chose"
+		},
+		"features": [
+			[
+				"minecraft:oak_tree_feature",
+				4
+			],
+			[
+				"minecraft:savanna_tree_feature",
+				20
+			],
+			[
+				"flour_tree:savanna_tree_big",
+				12
+			]
+		]
+	}
+}

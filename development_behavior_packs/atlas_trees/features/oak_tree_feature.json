@@ -1,0 +1,27 @@
+//bridge-file-version: #166
+{
+	"format_version": "1.16.100",
+	"minecraft:weighted_random_feature": {
+		"description": {
+			"identifier": "minecraft:oak_tree_feature"
+		},
+		"features": [
+			[
+				"flour_tree:medium_oak_tree",
+				60
+			],
+			[
+				"flour_tree:small_oak_tree",
+				10
+			],
+			[
+				"flour_tree:lower_oak_tree",
+				10
+			],
+			[
+				"flour_tree:forest_bushes",
+				5
+			]
+		]
+	}
+}

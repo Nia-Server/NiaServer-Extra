@@ -1,0 +1,33 @@
+//bridge-file-version: #10
+{
+	"format_version": "1.16.100",
+	"minecraft:single_block_feature": {
+		"description": {
+			"identifier": "flour_tree:creaking_heart_single_block_feature"
+		},
+		"places_block": {
+			"name": "minecraft:creaking_heart",
+			"states": {
+				"natural": true,
+				"active": true
+			}
+		},
+		"enforce_survivability_rules": false,
+		"enforce_placement_rules": false,
+		"may_replace": [
+			{
+				"name": "minecraft:pale_oak_log"
+			}
+		],
+		"may_attach_to": {
+			"min_sides_must_attach": 2,
+			"auto_rotate": false,
+			"top": [
+				"minecraft:pale_oak_log"
+			],
+			"bottom": [
+				"minecraft:pale_oak_log"
+			]
+		}
+	}
+}

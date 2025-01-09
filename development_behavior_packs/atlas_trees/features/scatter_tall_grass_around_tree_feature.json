@@ -1,0 +1,33 @@
+//bridge-file-version: #0
+{
+	"format_version": "1.13.0",
+	"minecraft:scatter_feature": {
+		"description": {
+			"identifier": "minecraft:scatter_tall_grass_around_tree_feature"
+		},
+		"iterations": 23,
+		"x": {
+			"distribution": "gaussian",
+			"extent": [
+				-6,
+				6
+			]
+		},
+		"y": {
+			"distribution": "gaussian",
+			"extent": [
+				-6,
+				6
+			]
+		},
+		"z": {
+			"distribution": "gaussian",
+			"extent": [
+				-6,
+				6
+			]
+		},
+		"coordinate_eval_order": "zyx",
+		"places_feature": "minecraft:tall_grass_feature"
+	}
+}

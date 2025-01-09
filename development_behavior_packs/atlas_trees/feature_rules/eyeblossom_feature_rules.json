@@ -1,0 +1,38 @@
+//bridge-file-version: #7
+{
+	"format_version": "1.16.100",
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "minecraft:eyeblossom_feature_rules",
+			"places_feature": "minecraft:scatter_eyeblossom_feature"
+		},
+		"conditions": {
+			"minecraft:biome_filter": [
+				{
+					"test": "has_biome_tag",
+					"operator": "==",
+					"value": "pale_garden"
+				}
+			],
+			"placement_pass": "surface_pass"
+		},
+		"distribution": {
+			"iterations": 30,
+			"y": 0,
+			"x": {
+				"extent": [
+					0,
+					16
+				],
+				"distribution": "uniform"
+			},
+			"z": {
+				"extent": [
+					0,
+					16
+				],
+				"distribution": "uniform"
+			}
+		}
+	}
+}

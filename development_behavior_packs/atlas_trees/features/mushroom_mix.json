@@ -1,0 +1,19 @@
+//bridge-file-version: #1
+{
+	"format_version": "1.16.100",
+	"minecraft:weighted_random_feature": {
+		"description": {
+			"identifier": "flour_tree:mushroom_mix"
+		},
+		"features": [
+			[
+				"flour_tree:large_mushroom_1_feature",
+				30
+			],
+			[
+				"flour_tree:large_red_mushroom_1_feature",
+				30
+			]
+		]
+	}
+}

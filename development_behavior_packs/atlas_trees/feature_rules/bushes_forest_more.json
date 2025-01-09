@@ -1,0 +1,65 @@
+//bridge-file-version: #13
+{
+	"format_version": "1.16.100",
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "flour_tree:bushes_forest_more",
+			"places_feature": "flour_tree:forest_bushes"
+		},
+		"conditions": {
+			"placement_pass": "final_pass",
+			"minecraft:biome_filter": {
+				"all_of": [
+					{
+						"test": "has_biome_tag",
+						"operator": "!=",
+						"value": "birch"
+					},
+					{
+						"test": "has_biome_tag",
+						"operator": "==",
+						"value": "forest"
+					},
+					{
+						"test": "has_biome_tag",
+						"operator": "!=",
+						"value": "taiga"
+					},
+					{
+						"test": "has_biome_tag",
+						"operator": "!=",
+						"value": "jungle"
+					}
+				]
+			}
+		},
+		"distribution": {
+			"iterations": 3,
+			"x": {
+				"extent": [
+					1,
+					16
+				],
+				"distribution": "uniform"
+			},
+			"z": {
+				"extent": [
+					1,
+					16
+				],
+				"distribution": "uniform"
+			},
+			"y": {
+				"extent": [
+					"query.heightmap(variable.worldx, variable.worldz)",
+					"query.heightmap(variable.worldx, variable.worldz) + 1"
+				],
+				"distribution": "uniform"
+			},
+			"scatter_chance": {
+				"numerator": 1,
+				"denominator": 12
+			}
+		}
+	}
+}

@@ -1,0 +1,55 @@
+//bridge-file-version: #8
+{
+	"format_version": "1.16.100",
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "flour_tree:tiny_spruce_feature_rules",
+			"places_feature": "flour_tree:tiny_spruce"
+		},
+		"conditions": {
+			"placement_pass": "surface_pass",
+			"minecraft:biome_filter": {
+				"any_of": [
+					{
+						"test": "has_biome_tag",
+						"operator": "==",
+						"value": "taiga"
+					},
+					{
+						"test": "has_biome_tag",
+						"operator": "==",
+						"value": "meadow"
+					}
+				]
+			}
+		},
+		"distribution": {
+			"iterations": 1,
+			"x": {
+				"distribution": "uniform",
+				"extent": [
+					0,
+					16
+				]
+			},
+			"y": {
+				"distribution": "uniform",
+				"extent": [
+					"query.above_top_solid(variable.worldx, variable.worldz) - 1",
+					"query.above_top_solid(variable.worldx, variable.worldz) - 1"
+				]
+			},
+			"z": {
+				"distribution": "uniform",
+				"extent": [
+					0,
+					16
+				]
+			},
+			"scatter_chance": {
+				"numerator": 2,
+				"denominator": 3
+			}
+		}
+	}
+}

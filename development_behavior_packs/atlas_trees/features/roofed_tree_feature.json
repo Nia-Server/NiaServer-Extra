@@ -1,0 +1,23 @@
+//bridge-file-version: #184
+{
+	"format_version": "1.16.100",
+	"minecraft:weighted_random_feature": {
+		"description": {
+			"identifier": "minecraft:roofed_tree_feature"
+		},
+		"features": [
+			[
+				"minecraft:roofed_tree_with_vines_feature",
+				5
+			],
+			[
+				"flour_tree:roofed_tree_normal",
+				80
+			],
+			[
+				"flour_tree:small_roofed",
+				1
+			]
+		]
+	}
+}

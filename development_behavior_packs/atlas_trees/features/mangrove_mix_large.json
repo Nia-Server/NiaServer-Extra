@@ -1,0 +1,23 @@
+//bridge-file-version: #1
+{
+	"format_version": "1.16.100",
+	"minecraft:weighted_random_feature": {
+		"description": {
+			"identifier": "flour_tree:mangrove_mix_large"
+		},
+		"features": [
+			[
+				"flour_tree:mangrove_big_1_feature",
+				10
+			],
+			[
+				"flour_tree:mangrove_big_2",
+				10
+			],
+			[
+				"flour_tree:mangrove_big_3",
+				10
+			]
+		]
+	}
+}

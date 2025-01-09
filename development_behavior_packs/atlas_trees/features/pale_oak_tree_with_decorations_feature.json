@@ -1,0 +1,15 @@
+//bridge-file-version: #0
+{
+	"format_version": "1.13.0",
+	"minecraft:aggregate_feature": {
+		"description": {
+			"identifier": "minecraft:pale_oak_tree_with_decorations_feature"
+		},
+		"early_out": "first_failure",
+		"features": [
+			"flour_tree:pale_oak_tree_standard_feature",
+			"minecraft:scatter_pale_hanging_moss_feature",
+			"minecraft:pale_moss_patch_feature"
+		]
+	}
+}

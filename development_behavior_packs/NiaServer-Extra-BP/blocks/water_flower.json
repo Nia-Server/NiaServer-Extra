@@ -1,67 +1,59 @@
 {
-    "format_version": "1.20.20",
-    "minecraft:block": {
-        "description": {
-            "identifier": "mcnia:water_flower",
-            "menu_category": {
-                "category": "nature"
-            }
-        },
-        "components": {
-            "minecraft:collision_box": false,
-            "minecraft:selection_box": {
-                "origin": [
-                    -3,
-                    0,
-                    -3
-                ],
-                "size": [
-                    6,
-                    12,
-                    6
-                ]
-            },
-            "minecraft:destructible_by_mining": {
-                "seconds_to_destroy": 0
-            },
-            "minecraft:destructible_by_explosion": {
-                "explosion_resistance": 0
-            },
-            "minecraft:liquid_detection": {
-                "detection_rules": [
-                    {
-                        "liquid_type": "water",
-                        "can_contain_liquid": true,
-                        "on_liquid_touches": "no_reaction"
-                    }
-                ]
-            },
-            "minecraft:geometry": "geometry.water_flower",
-            "minecraft:material_instances": {
-                "*": {
-                    "texture": "water_flower",
-                    "render_method": "alpha_test",
-                    "face_dimming": false,
-                    "ambient_occlusion": false
-                }
-            },
-            "minecraft:light_emission": 10,
-            "minecraft:map_color": "#32a852",
-            "minecraft:placement_filter": {
-                "conditions": [
-                    {
-                        "allowed_faces": [
-                            "up"
-                        ],
-                        "block_filter": [
-                            "minecraft:dirt",
-                            "minecraft:grass_block",
-                            "minecraft:sand",
-                            "mcnia:water_flower"
-                        ]
-                    }
-                ]
-            }
-        }
-    }
+	"format_version": "1.20.20",
+	"minecraft:block": {
+		"description": {
+			"identifier": "mcnia:water_flower",
+			"menu_category": {
+				"category": "nature"
+			}
+		},
+		"components": {
+			"minecraft:collision_box": false,
+			"minecraft:selection_box": {
+				"origin": [-3, 0, -3],
+    			"size": [6, 12, 6]
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 0
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 0
+			},
+			"minecraft:liquid_detection": {
+				"detection_rules": [
+					{
+						"liquid_type": "water",
+						"can_contain_liquid": true,
+						"on_liquid_touches": "no_reaction"
+					}
+				]
+			},
+			"minecraft:geometry": "geometry.water_flower",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "water_flower",
+					"render_method": "alpha_test",
+					"face_dimming": false,
+					"ambient_occlusion": false
+				}
+			},
+			"minecraft:light_emission": 10,
+			"minecraft:map_color": "#32a852",
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"allowed_faces": [
+							"up"
+						],
+						"block_filter": [
+							"minecraft:dirt",
+							"minecraft:grass_block",
+							"minecraft:sand",
+							"mcnia:water_flower"
+						]
+					}
+				]
+			}
+		}
+	}
 }

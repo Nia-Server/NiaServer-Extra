@@ -1,0 +1,78 @@
+//bridge-file-version: #34
+{
+	"format_version": "1.16.100",
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "flour_tree:oak_forest_brich_clump",
+			"places_feature": "minecraft:birch_tree_feature"
+		},
+		"conditions": {
+			"placement_pass": "after_surface_pass",
+			"minecraft:biome_filter": [
+				{
+					"any_of": [
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "forest"
+						},
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "forest_generation"
+						}
+					]
+				},
+				{
+					"test": "has_biome_tag",
+					"operator": "!=",
+					"value": "birch"
+				},
+				{
+					"test": "has_biome_tag",
+					"operator": "!=",
+					"value": "roofed"
+				},
+				{
+					"test": "has_biome_tag",
+					"operator": "!=",
+					"value": "extreme_hills"
+				},
+				{
+					"test": "has_biome_tag",
+					"operator": "!=",
+					"value": "taiga"
+				},
+				{
+					"test": "has_biome_tag",
+					"operator": "!=",
+					"value": "savanna"
+				}
+			]
+		},
+		"distribution": {
+			"iterations": "query.noise(v.originx, v.originz) * 10",
+			"x": {
+				"distribution": "uniform",
+				"extent": [
+					0,
+					16
+				]
+			},
+			"y": {
+				"distribution": "uniform",
+				"extent": [
+					"query.heightmap(variable.worldx, variable.worldz) - 1",
+					"query.heightmap(variable.worldx, variable.worldz)"
+				]
+			},
+			"z": {
+				"distribution": "uniform",
+				"extent": [
+					0,
+					16
+				]
+			}
+		}
+	}
+}

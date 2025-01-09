@@ -2,15 +2,14 @@
     "pools": [
         {
             "rolls": {
-                "min": 1,
-                "max": 3
+                "min" : 1,
+                "max" : 3
             },
             "conditions": [
                 {
                     "condition": "match_tool",
                     "item": [
-                        "minecraft:diamond_pickaxe",
-                        "minecraft:netherite_pickaxe"
+                        "minecraft:diamond_pickaxe","minecraft:netherite_pickaxe"
                     ],
                     "count": 1
                 }
@@ -19,7 +18,7 @@
                 {
                     "type": "item",
                     "name": "mcnia:water_ore",
-                    "weight": 1
+                    "weight" : 1
                 }
             ]
         }

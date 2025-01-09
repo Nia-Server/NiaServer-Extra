@@ -1,0 +1,19 @@
+//bridge-file-version: #88
+{
+	"format_version": "1.16.100",
+	"minecraft:weighted_random_feature": {
+		"description": {
+			"identifier": "minecraft:cherry_tree_feature"
+		},
+		"features": [
+			[
+				"flour_tree:normal_cherry_tree",
+				200
+			],
+			[
+				"flour_tree:big_cherry_tree",
+				20
+			]
+		]
+	}
+}

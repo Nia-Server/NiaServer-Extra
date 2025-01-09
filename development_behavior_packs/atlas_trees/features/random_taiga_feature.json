@@ -1,0 +1,19 @@
+//bridge-file-version: #20
+{
+	"format_version": "1.16.100",
+	"minecraft:weighted_random_feature": {
+		"description": {
+			"identifier": "flour_tree:random_taiga_feature"
+		},
+		"features": [
+			[
+				"minecraft:mega_spruce_tree_feature",
+				100
+			],
+			[
+				"minecraft:mega_pine_tree_feature",
+				50
+			]
+		]
+	}
+}
