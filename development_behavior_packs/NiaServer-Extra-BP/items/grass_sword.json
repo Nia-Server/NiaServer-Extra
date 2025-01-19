@@ -2,7 +2,7 @@
     "format_version": "1.21.10",
     "minecraft:item": {
         "description": {
-            "identifier": "mcnia:spirit_sword",
+            "identifier": "mcnia:grass_sword",
             "menu_category": {
                 "category": "equipment",
                 "group": "itemGroup.name.sword"
@@ -20,7 +20,7 @@
                 "value": 10,
                 "slot": "sword"
             },
-            "minecraft:icon": "spirit_sword",
+            "minecraft:icon": "grass_sword",
             "minecraft:digger": {
                 "use_efficiency": true,
                 "destroy_speeds": [

@@ -1,0 +1,22 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:scatter_feature": {
+        "description": {
+            "identifier": "mcnia:grass_dirt_feature"
+        },
+        "places_feature": "mcnia:grass_dirt_single_feature",
+        "iterations": 51200,
+        "x": {
+            "distribution": "fixed_grid",
+            "extent": [0, 15]
+        },
+        "y": {
+            "distribution": "fixed_grid",
+            "extent": [0, 200]
+        },
+        "z": {
+            "distribution": "fixed_grid",
+            "extent": [0, 15]
+        }
+    }
+}

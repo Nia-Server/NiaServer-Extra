@@ -13,12 +13,27 @@
                         {
                             "test": "has_biome_tag",
                             "operator": "==",
-                            "value": "overworld"
+                            "value": "mesa"
                         },
                         {
                             "test": "has_biome_tag",
                             "operator": "==",
-                            "value": "overworld_generation"
+                            "value": "mesa_bryce"
+                        },
+                        {
+                            "test": "has_biome_tag",
+                            "operator": "==",
+                            "value": "mesa_plateau_mutated"
+                        },
+                        {
+                            "test": "has_biome_tag",
+                            "operator": "==",
+                            "value": "mesa_plateau_stone"
+                        },
+                        {
+                            "test": "has_biome_tag",
+                            "operator": "==",
+                            "value": "mesa_plateau_stone_mutated"
                         }
                     ]
                 }

@@ -13,8 +13,8 @@
         "rock_raw_ore" : {
             "textures" : "textures/blocks/raw_ore/rock_raw_ore"
         },
-        "spirit_raw_ore" : {
-            "textures" : "textures/blocks/raw_ore/spirit_raw_ore"
+        "grass_raw_ore" : {
+            "textures" : "textures/blocks/raw_ore/grass_raw_ore"
         },
         "thunder_raw_ore" : {
             "textures" : "textures/blocks/raw_ore/thunder_raw_ore"
@@ -63,6 +63,9 @@
         },
         "sand_dirt_up" : {
             "textures" : "textures/blocks/dirt/sand_dirt_up"
+        },
+        "grass_dirt" : {
+            "textures" : "textures/blocks/dirt/grass_dirt"
         }
     }
 }

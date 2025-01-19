@@ -16,7 +16,7 @@
             "minecraft:destructible_by_explosion": {
                 "explosion_resistance": 2
             },
-            "minecraft:geometry": "geometry.default_block",
+            "minecraft:geometry": "minecraft:geometry.full_block",
             "minecraft:material_instances": {
                 "up": {
                     "texture": "sand_dirt_up",

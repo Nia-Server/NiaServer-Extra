@@ -2,14 +2,12 @@
     "format_version": "1.21.10",
     "minecraft:block": {
         "description": {
-            "identifier": "mcnia:spirit_raw_ore",
+            "identifier": "mcnia:grass_dirt",
             "menu_category": {
-                "category": "nature",
-                "group": "itemGroup.name.ore"
+                "category": "nature"
             }
         },
         "components": {
-            "minecraft:loot": "loot_tables/blocks/spirit_raw_ore.json",
             "minecraft:light_dampening": 15,
             "minecraft:light_emission": 0,
             "minecraft:destructible_by_mining": {
@@ -18,10 +16,10 @@
             "minecraft:destructible_by_explosion": {
                 "explosion_resistance": 2
             },
-            "minecraft:geometry": "geometry.default_block",
+            "minecraft:geometry": "minecraft:geometry.full_block",
             "minecraft:material_instances": {
                 "*": {
-                    "texture": "spirit_raw_ore",
+                    "texture": "grass_dirt",
                     "render_method": "opaque"
                 }
             }

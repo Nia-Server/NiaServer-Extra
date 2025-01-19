@@ -1,0 +1,99 @@
+{
+    "format_version": "1.21.1",
+    "minecraft:feature_rules": {
+        "description": {
+            "identifier": "mcnia:grass_raw_ore_feature_rules",
+            "places_feature": "mcnia:ore/grass_raw_ore_feature"
+        },
+        "conditions": {
+            "placement_pass": "underground_pass",
+            "minecraft:biome_filter": [
+                {
+                    "any_of": [
+                        {
+                            "test": "has_biome_tag",
+                            "operator": "==",
+                            "value": "jungle"
+                        },
+                        {
+                            "test": "has_biome_tag",
+                            "operator": "==",
+                            "value": "jungle_edge"
+                        },
+                        {
+                            "test": "has_biome_tag",
+                            "operator": "==",
+                            "value": "jungle_edge_mutated"
+                        },
+                        {
+                            "test": "has_biome_tag",
+                            "operator": "==",
+                            "value": "jungle_hills"
+                        },
+                        {
+                            "test": "has_biome_tag",
+                            "operator": "==",
+                            "value": "jungle_mutated"
+                        },
+                        {
+                            "test": "has_biome_tag",
+                            "operator": "==",
+                            "value": "bamboo_jungle_hills"
+                        },
+                        {
+                            "test": "has_biome_tag",
+                            "operator": "==",
+                            "value": "forest"
+                        },
+                        {
+                            "test": "has_biome_tag",
+                            "operator": "==",
+                            "value": "forest_hills"
+                        },
+                        {
+                            "test": "has_biome_tag",
+                            "operator": "==",
+                            "value": "birch_forest_hills"
+                        },
+                        {
+                            "test": "has_biome_tag",
+                            "operator": "==",
+                            "value": "birch_forest_hills_mutated"
+                        },
+                        {
+                            "test": "has_biome_tag",
+                            "operator": "==",
+                            "value": "birch_forest_mutated"
+                        },
+                        {
+                            "test": "has_biome_tag",
+                            "operator": "==",
+                            "value": "roofed_forest_mutated"
+                        },
+                        {
+                            "test": "has_biome_tag",
+                            "operator": "==",
+                            "value": "lush_caves"
+                        }
+                    ]
+                }
+            ]
+        },
+        "distribution": {
+            "iterations": 2,
+            "coordinate_eval_order": "zyx",
+            "x": {
+                "distribution": "uniform",
+                "extent": [0, 16]
+            },
+            "y": {
+                "distribution": "uniform",
+                "extent": [20, 50]
+            },
+            "z": {
+                "distribution": "uniform",
+                "extent": [0, 16]
+            }
+        }
+    }
+}

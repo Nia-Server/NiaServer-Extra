@@ -2,7 +2,7 @@
     "format_version": "1.21.10",
     "minecraft:item": {
         "description": {
-            "identifier": "mcnia:spirit_ore",
+            "identifier": "mcnia:grass_crystal",
             "menu_category": {
                 "category": "items"
             }
@@ -10,7 +10,7 @@
         "components": {
             "minecraft:hand_equipped": false,
             "minecraft:max_stack_size": 64,
-            "minecraft:icon": "spirit_ore"
+            "minecraft:icon": "grass_crystal"
         }
     }
 }

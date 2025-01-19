@@ -9,7 +9,7 @@
     "rock_raw_ore" : {
         "sound": "stone"
     },
-    "spirit_raw_ore" : {
+    "grass_raw_ore" : {
         "sound": "stone"
     },
     "thunder_raw_ore" : {
@@ -31,6 +31,9 @@
         "sound": "stone"
     },
     "sand_dirt" : {
+        "sound": "grass"
+    },
+    "grass_block" : {
         "sound": "grass"
     }
 }

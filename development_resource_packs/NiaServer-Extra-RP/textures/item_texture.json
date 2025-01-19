@@ -14,8 +14,8 @@
 		"rock_sword": {
 			"textures": "textures/items/sword/rock_sword"
 		},
-		"spirit_sword": {
-			"textures": "textures/items/sword/spirit_sword"
+		"grass_sword": {
+			"textures": "textures/items/sword/grass_sword"
 		},
 		"thunder_sword": {
 			"textures": "textures/items/sword/thunder_sword"
@@ -35,8 +35,8 @@
 		"rock_gem": {
 			"textures": "textures/items/gem/rock_gem"
 		},
-		"spirit_gem": {
-			"textures": "textures/items/gem/spirit_gem"
+		"grass_gem": {
+			"textures": "textures/items/gem/grass_gem"
 		},
 		"thunder_gem": {
 			"textures": "textures/items/gem/thunder_gem"
@@ -56,8 +56,8 @@
 		"rock_ore": {
 			"textures": "textures/items/ore/rock_ore"
 		},
-		"spirit_ore": {
-			"textures": "textures/items/ore/spirit_ore"
+		"grass_ore": {
+			"textures": "textures/items/ore/grass_ore"
 		},
 		"thunder_ore": {
 			"textures": "textures/items/ore/thunder_ore"
@@ -77,8 +77,8 @@
 		"rock_crystal": {
 			"textures": "textures/items/crystal/rock_crystal"
 		},
-		"spirit_crystal": {
-			"textures": "textures/items/crystal/spirit_crystal"
+		"grass_crystal": {
+			"textures": "textures/items/crystal/grass_crystal"
 		},
 		"thunder_crystal": {
 			"textures": "textures/items/crystal/thunder_crystal"
@@ -98,8 +98,8 @@
 		"rock_bottle": {
 			"textures": "textures/items/bottle/rock_bottle"
 		},
-		"spirit_bottle": {
-			"textures": "textures/items/bottle/spirit_bottle"
+		"grass_bottle": {
+			"textures": "textures/items/bottle/grass_bottle"
 		},
 		"thunder_bottle": {
 			"textures": "textures/items/bottle/thunder_bottle"

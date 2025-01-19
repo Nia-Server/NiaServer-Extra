@@ -3,13 +3,13 @@
     "minecraft:attachable": {
         "description": {
 
-            "identifier": "mcnia:spirit_crystal",
+            "identifier": "mcnia:grass_bottle",
             "materials": {
                 "default": "entity_alphatest",
                 "enchanted": "entity_alphatest_glint"
             },
             "textures": {
-                "default": "textures/items/crystal/spirit_crystal.png",
+                "default": "textures/items/bottle/grass_bottle.png",
                 "enchanted": "textures/misc/enchanted_item_glint"
             },
             "geometry": {

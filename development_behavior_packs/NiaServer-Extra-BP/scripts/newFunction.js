@@ -6,7 +6,7 @@ const can_cr_id = [
     "mcnia:dark_sword",
     "mcnia:fire_sword",
     "mcnia:rock_sword",
-    "mcnia:spirit_sword",
+    "mcnia:grass_sword",
     "mcnia:thunder_sword",
     "mcnia:water_sword",
     "mcnia:wind_sword"
@@ -16,7 +16,7 @@ const can_cr_data = {
     "mcnia:dark_sword": "暗·剑",
     "mcnia:fire_sword": "火·剑",
     "mcnia:rock_sword": "岩·剑",
-    "mcnia:spirit_sword": "灵·剑",
+    "mcnia:grass_sword": "灵·剑",
     "mcnia:thunder_sword": "雷·剑",
     "mcnia:water_sword": "水·剑",
     "mcnia:wind_sword": "空·剑"

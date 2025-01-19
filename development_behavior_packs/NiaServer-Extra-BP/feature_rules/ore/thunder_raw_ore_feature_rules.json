@@ -13,12 +13,17 @@
                         {
                             "test": "has_biome_tag",
                             "operator": "==",
-                            "value": "overworld"
+                            "value": "swampland"
                         },
                         {
                             "test": "has_biome_tag",
                             "operator": "==",
-                            "value": "overworld_generation"
+                            "value": "swampland_mutated"
+                        },
+                        {
+                            "test": "has_biome_tag",
+                            "operator": "==",
+                            "value": "mangrove_swamp"
                         }
                     ]
                 }
