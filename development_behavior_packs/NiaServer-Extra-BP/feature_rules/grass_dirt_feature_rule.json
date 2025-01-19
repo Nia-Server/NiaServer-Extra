@@ -2,7 +2,7 @@
     "format_version": "1.13.0",
     "minecraft:feature_rules": {
         "description": {
-            "identifier": "mcnia:overworld_grass_dirt_feature",
+            "identifier": "mcnia:grass_dirt_feature_rule",
             "places_feature": "mcnia:grass_dirt_feature"
         },
         "conditions": {

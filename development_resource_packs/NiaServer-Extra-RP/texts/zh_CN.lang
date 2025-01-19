@@ -54,6 +54,7 @@ item.mcnia:wind_bottle=空元素之瓶
 tile.mcnia:sand_dirt.name=沙土
 
 tile.mcnia:grass_dirt.name=草元素泥土
+tile.mcnia:thunder_dirt.name=雷元素泥土
 
 tile.mcnia:marble_block_stone.name=大理石
 tile.mcnia:moss_block_stone.name=苔石

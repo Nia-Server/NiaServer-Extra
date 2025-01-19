@@ -35,5 +35,8 @@
     },
     "grass_block" : {
         "sound": "grass"
+    },
+    "thunder_dirt" : {
+        "sound": "grass"
     }
 }

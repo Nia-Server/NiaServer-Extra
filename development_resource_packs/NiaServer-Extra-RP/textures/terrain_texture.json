@@ -66,6 +66,9 @@
         },
         "grass_dirt" : {
             "textures" : "textures/blocks/dirt/grass_dirt"
+        },
+        "thunder_dirt" : {
+            "textures" : "textures/blocks/dirt/thunder_dirt"
         }
     }
 }
