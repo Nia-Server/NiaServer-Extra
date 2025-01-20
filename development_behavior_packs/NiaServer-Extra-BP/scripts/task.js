@@ -9,9 +9,11 @@ const task_data = {
         "next": "ZHCN0100100",
         "data": {
             "ZHCN0100100":{
-                "mode": "text",
+                "type": "text",
                 "name": "第一章 第一节",
                 "description": "第一章 第一节内容",
+                "checkmode": "none",
+                "check":[],
                 "reward": [
                     {
                         "type": "item",
@@ -24,11 +26,12 @@ const task_data = {
                         "command": "give @s minecraft:iron_sword 1",
                     }
                 ],
-                "button": "下一节",
-                "next": "ZHCN0100200"
+                "button": {
+                    "下一节": "ZHCN0100200"
+                }
             },
             "ZHCN0100200":{
-                "mode": "check",
+                "type": "test",
                 "name": "第一章 第二节",
                 "description": "第一章 第二节内容",
                 "checkmode": "and",
@@ -45,8 +48,14 @@ const task_data = {
                     {
                         "type": "scoreboard",
                         "name": "money",
+                        "mode": "add",
                         "value": 100
-                    }
+                    },
+                    {
+                        "type": "tag",
+                        "name": "test",
+                        "operator": "add",
+                    },
                 ],
                 "reward": [
                     {
@@ -71,6 +80,10 @@ const task_data = {
 
 function task_main(player, task_id) {
     //首先检查task_id是否为章节id格式
+    if (task_data[task_id] == undefined) {
+        return false;
+    }
+
 }
 
 

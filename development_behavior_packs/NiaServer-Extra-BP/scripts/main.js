@@ -1,5 +1,7 @@
 import {world, system, ScreenDisplay} from "@minecraft/server";
+import { log,warn,error } from "./API/logger.js";
 import './task.js';
+import './newFunction.js';
 
 world.afterEvents.playerSpawn.subscribe((event) => {
     if (event.initialSpawn) {
@@ -8,6 +10,8 @@ world.afterEvents.playerSpawn.subscribe((event) => {
         },100);
     }
 });
+
+log("NiaServer-Extra加载完成！");
 
 //调试代码
 // system.runInterval(() => {
