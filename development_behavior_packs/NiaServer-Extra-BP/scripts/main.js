@@ -1,6 +1,5 @@
 import {world, system, ScreenDisplay} from "@minecraft/server";
 import { log,warn,error } from "./API/logger.js";
-import './task.js';
 import './newFunction.js';
 
 world.afterEvents.playerSpawn.subscribe((event) => {
