@@ -1,0 +1,19 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mcnia:rock_gem"
+        },
+
+        "tags": ["crafting_table"],
+        "pattern": ["AAA", "AAA", "AAA"],
+        "key": {
+            "A": {
+                "item": "mcnia:rock_bottle"
+            }
+        },
+        "result": {
+            "item": "mcnia:rock_gem"
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mcnia:dark_crystal"
+        },
+
+        "tags": ["crafting_table"],
+        "pattern": ["AAA", "AAA", "AAA"],
+        "key": {
+            "A": {
+                "item": "mcnia:dark_gem"
+            }
+        },
+        "result": {
+            "item": "mcnia:dark_crystal"
+        }
+    }
+}

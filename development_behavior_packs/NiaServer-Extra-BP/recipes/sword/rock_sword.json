@@ -1,0 +1,22 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mcnia:rock_sword"
+        },
+
+        "tags": ["crafting_table"],
+        "pattern": ["ABA"],
+        "key": {
+            "A": {
+                "item": "mcnia:rock_crystal"
+            },
+            "B": {
+                "item": "minecraft:diamond_sword"
+            }
+        },
+        "result": {
+            "item": "mcnia:rock_sword"
+        }
+    }
+}

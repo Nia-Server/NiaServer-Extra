@@ -1,0 +1,12 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_furnace": {
+        "description": {
+            "identifier": "mcnia:wind_gem_firing"
+        },
+
+        "tags": ["furnace"],
+        "input": "mcnia:wind_ore",
+        "output": "mcnia:wind_gem"
+    }
+}

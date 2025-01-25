@@ -1,0 +1,19 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mcnia:thunder_crystal"
+        },
+
+        "tags": ["crafting_table"],
+        "pattern": ["AAA", "AAA", "AAA"],
+        "key": {
+            "A": {
+                "item": "mcnia:thunder_gem"
+            }
+        },
+        "result": {
+            "item": "mcnia:thunder_crystal"
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mcnia:water_crystal"
+        },
+
+        "tags": ["crafting_table"],
+        "pattern": ["AAA", "AAA", "AAA"],
+        "key": {
+            "A": {
+                "item": "mcnia:water_gem"
+            }
+        },
+        "result": {
+            "item": "mcnia:water_crystal"
+        }
+    }
+}

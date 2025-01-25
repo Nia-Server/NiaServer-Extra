@@ -1,0 +1,19 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mcnia:grass_gem"
+        },
+
+        "tags": ["crafting_table"],
+        "pattern": ["AAA", "AAA", "AAA"],
+        "key": {
+            "A": {
+                "item": "mcnia:grass_bottle"
+            }
+        },
+        "result": {
+            "item": "mcnia:grass_gem"
+        }
+    }
+}

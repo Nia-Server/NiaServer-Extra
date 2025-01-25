@@ -1,0 +1,12 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_furnace": {
+        "description": {
+            "identifier": "mcnia:dark_gem_firing"
+        },
+
+        "tags": ["furnace"],
+        "input": "mcnia:dark_ore",
+        "output": "mcnia:dark_gem"
+    }
+}
