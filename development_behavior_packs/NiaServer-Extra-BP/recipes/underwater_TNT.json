@@ -1,0 +1,22 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mcnia:underwater_tnt"
+        },
+
+        "tags": ["crafting_table"],
+        "pattern": ["A","B"],
+        "key": {
+            "A": {
+                "item": "mcnia:seaweed_potion"
+            },
+            "B": {
+                "item": "minecraft:tnt"
+            }
+        },
+        "result": {
+            "item": "minecraft:underwater_tnt"
+        }
+    }
+}

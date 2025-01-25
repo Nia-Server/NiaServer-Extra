@@ -1,0 +1,19 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mcnia:seaweed_potion"
+        },
+
+        "tags": ["crafting_table"],
+        "pattern": ["AA","AA"],
+        "key": {
+            "A": {
+                "item": "minecraft:seagrass"
+            }
+        },
+        "result": {
+            "item": "mcnia:seaweed_potion"
+        }
+    }
+}
