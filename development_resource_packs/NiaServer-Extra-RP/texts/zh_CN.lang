@@ -64,6 +64,9 @@ tile.mcnia:water_root_board.name=水根树木板
 tile.mcnia:water_root_wood.name=水根木
 tile.mcnia:water_root_leaf.name=水根树叶
 
+item.mcnia:seaweed_potion=海草丹
+item.mcnia:super_seaweed_potion=超级海草丹
+
 enchantment.oxygen=海的佑护
 
 potion.waterBreathing=海的佑护

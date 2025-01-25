@@ -12,3 +12,7 @@ world_templates
 ud433451130.dat
 ud457108128.dat
 ud3899365346.dat
+
+development_behavior_packs/NiaServer-Extra-BP/node_modules
+development_behavior_packs/NiaServer-Extra-BP/package-lock.json
+development_behavior_packs/NiaServer-Extra-BP/package.json

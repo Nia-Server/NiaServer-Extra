@@ -112,6 +112,9 @@
 		},
 		"test_pickaxe": {
 			"textures": "textures/items/pickaxe/test_pickaxe"
+		},
+		"seaweed_potion": {
+			"textures": "textures/items/seaweed_potion"
 		}
 	}
 }
