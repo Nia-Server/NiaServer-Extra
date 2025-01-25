@@ -9,7 +9,7 @@
         "pattern": ["ABA"],
         "key": {
             "A": {
-                "item": "mcnia:wind_crystal"
+                "item": "mcnia:water_crystal"
             },
             "B": {
                 "item": "minecraft:diamond_sword"
