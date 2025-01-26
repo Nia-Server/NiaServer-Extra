@@ -1,0 +1,16 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "mcnia:water_root_board"
+        },
+        "tags": ["crafting_table"],
+        "ingredients": [
+            "mcnia:water_root_wood"
+        ],
+        "result": {
+            "item": "mcnia:water_root_board",
+            "count": 4
+        }
+    }
+}
