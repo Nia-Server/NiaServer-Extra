@@ -1,0 +1,36 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mcnia:piston_from_water_root_planks"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "AAA",
+            "BCB",
+            "BDB"
+        ],
+        "key": {
+            "A": {
+                "item": "mcnia:water_root_board"
+            },
+            "B": {
+                "item": "cobblestone"
+            },
+            "C": {
+                "item": "iron_ingot"
+            },
+            "D": {
+                "item": "redstone"
+            }
+        },
+        "result": {
+            "item": "piston",
+            "count": 1,
+            "data": 1
+        },
+        "priority": 2
+    }
+}

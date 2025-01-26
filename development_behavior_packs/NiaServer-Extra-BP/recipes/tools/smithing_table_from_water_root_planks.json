@@ -1,0 +1,29 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mcnia:smithing_table_from_water_root_planks"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "AA",
+            "BB",
+            "BB"
+        ],
+        "key": {
+            "A": {
+                "item": "iron_ingot"
+            },
+            "B": {
+                "item": "mcnia:water_root_board"
+            }
+        },
+        "result": {
+            "item": "smithing_table",
+            "count": 1
+        },
+        "priority": 2
+    }
+}

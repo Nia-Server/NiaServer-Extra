@@ -1,0 +1,29 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mcnia:jukebox_from_water_root_planks"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "AAA",
+            "ABA",
+            "AAA"
+        ],
+        "key": {
+            "A": {
+                "item": "mcnia:water_root_board"
+            },
+            "B": {
+                "item": "diamond"
+            }
+        },
+        "result": {
+            "item": "jukebox",
+            "count": 1
+        },
+        "priority": 2
+    }
+}

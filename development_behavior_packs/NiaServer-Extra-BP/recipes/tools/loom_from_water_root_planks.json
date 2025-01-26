@@ -1,0 +1,28 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mcnia:loom_from_water_root_planks"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "AA",
+            "BB"
+        ],
+        "key": {
+            "A": {
+                "item": "string"
+            },
+            "B": {
+                "item": "mcnia:water_root_board"
+            }
+        },
+        "result": {
+            "item": "loom",
+            "count": 1
+        },
+        "priority": 2
+    }
+}

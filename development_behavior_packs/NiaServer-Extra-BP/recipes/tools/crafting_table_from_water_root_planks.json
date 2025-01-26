@@ -1,0 +1,25 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mcnia:crafting_table_from_water_root_planks"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "AA",
+            "AA"
+        ],
+        "key": {
+            "A": {
+                "item": "mcnia:water_root_board"
+            }
+        },
+        "result": {
+            "item": "crafting_table",
+            "count": 1
+        },
+        "priority": 2
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mcnia:tripwire_hook_from_water_root_planks"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "A",
+            "B",
+            "C"
+        ],
+        "key": {
+            "A": {
+                "item": "iron_ingot"
+            },
+            "B": {
+                "item": "stick"
+            },
+            "C": {
+                "item": "mcnia:water_root_board"
+            }
+        },
+        "result": {
+            "item": "tripwire_hook",
+            "count": 1
+        },
+        "priority": 2
+    }
+}
