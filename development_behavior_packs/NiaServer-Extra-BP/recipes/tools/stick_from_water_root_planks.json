@@ -1,0 +1,25 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mcnia:stick_from_water_root_planks"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "A",
+            "A"
+        ],
+        "key": {
+            "A": {
+                "item": "mcnia:water_root_board"
+            }
+        },
+        "result": {
+            "item": "stick",
+            "count": 4
+        },
+        "priority": 2
+    }
+}

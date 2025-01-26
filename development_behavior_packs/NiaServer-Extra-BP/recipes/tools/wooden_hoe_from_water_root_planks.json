@@ -1,0 +1,29 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mcnia:wooden_hoe_from_water_root_planks"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "AA ",
+            " B ",
+            " B "
+        ],
+        "key": {
+            "A": {
+                "item": "mcnia:water_root_board"
+            },
+            "B": {
+                "item": "stick"
+            }
+        },
+        "result": {
+            "item": "wooden_hoe",
+            "count": 1
+        },
+        "priority": 2
+    }
+}
