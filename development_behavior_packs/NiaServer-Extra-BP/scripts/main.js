@@ -130,7 +130,7 @@ world.beforeEvents.worldInitialize.subscribe(({ itemComponentRegistry }) => {
     itemComponentRegistry.registerCustomComponent("mcnia:item_collector_small", item_collector_small_component);
     itemComponentRegistry.registerCustomComponent("mcnia:item_collector_middle", item_collector_middle_component);
     itemComponentRegistry.registerCustomComponent("mcnia:item_collector_big", item_collector_big_component);
-    itemComponentRegistry.registerCustomComponent("mcnia:dark_sword", dark_sword_component);
+    //itemComponentRegistry.registerCustomComponent("mcnia:dark_sword", dark_sword_component);
 })
 
 system.runInterval(() => {
