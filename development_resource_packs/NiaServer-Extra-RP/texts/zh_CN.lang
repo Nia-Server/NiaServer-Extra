@@ -67,6 +67,12 @@ tile.mcnia:water_root_leaf.name=水根树叶
 item.mcnia:seaweed_potion=海草丹
 item.mcnia:super_seaweed_potion=超级海草丹
 
+item.mcnia:kelp_potion_small=海带丹(小)
+item.mcnia:kelp_potion_big=海带丹(大)
+item.mcnia:item_collector_small=物品收集器Ⅰ
+item.mcnia:item_collector_middle=物品收集器Ⅱ
+item.mcnia:item_collector_big=物品收集器Ⅲ
+
 enchantment.oxygen=海的佑护
 
 potion.waterBreathing=海的佑护

@@ -1,0 +1,25 @@
+{
+    "format_version": "1.21.10",
+    "minecraft:item": {
+        "description": {
+            "identifier": "mcnia:item_collector_middle",
+            "menu_category": {
+                "category": "items"
+            }
+        },
+        "components": {
+            "minecraft:cooldown": {
+                "category": "item_collector",
+                "duration": 10
+            },
+            "minecraft:use_modifiers": {
+                "movement_modifier": 0.5,
+                "use_duration": 10
+            },
+            "minecraft:hand_equipped": false,
+            "minecraft:max_stack_size": 64,
+            "minecraft:icon": "item_collector_middle",
+            "minecraft:custom_components": ["mcnia:item_collector_middle"]
+        }
+    }
+}

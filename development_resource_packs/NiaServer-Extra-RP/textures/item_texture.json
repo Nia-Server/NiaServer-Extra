@@ -115,6 +115,21 @@
 		},
 		"seaweed_potion": {
 			"textures": "textures/items/seaweed_potion"
+		},
+		"kelp_potion_small": {
+			"textures": "textures/items/kelp_potion_small"
+		},
+		"kelp_potion_big": {
+			"textures": "textures/items/kelp_potion_big"
+		},
+		"item_collector_small": {
+			"textures": "textures/items/item_collector_small"
+		},
+		"item_collector_big": {
+			"textures": "textures/items/item_collector_big"
+		},
+		"item_collector_middle": {
+			"textures": "textures/items/item_collector_middle"
 		}
 	}
 }

@@ -1,0 +1,32 @@
+{
+    "format_version": "1.21.10",
+    "minecraft:item": {
+        "description": {
+            "identifier": "mcnia:item_collector_small",
+            "menu_category": {
+                "category": "items"
+            }
+        },
+        "components": {
+            "minecraft:durability": {
+                "max_durability": 100,
+                "damage_chance": {
+                    "min": 0,
+                    "max": 0
+                }
+            },
+            "minecraft:cooldown": {
+                "category": "item_collector",
+                "duration": 5
+            },
+            "minecraft:use_modifiers": {
+                "movement_modifier": 0.5,
+                "use_duration": 5
+            },
+            "minecraft:hand_equipped": false,
+            "minecraft:max_stack_size": 64,
+            "minecraft:icon": "item_collector_small",
+            "minecraft:custom_components": ["mcnia:item_collector_small"]
+        }
+    }
+}
