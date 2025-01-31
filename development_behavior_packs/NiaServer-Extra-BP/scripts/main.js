@@ -1,4 +1,4 @@
-import {world, system, ScreenDisplay, ItemComponentTypes} from "@minecraft/server";
+import {world, system, ScreenDisplay, ItemComponentTypes,  EntityComponentTypes} from "@minecraft/server";
 import { log,warn,error } from "./API/logger.js";
 import './newFunction.js';
 
@@ -114,6 +114,13 @@ const item_collector_big_component = {
     }
 }
 
+// const dark_sword_component = {
+//     onHitEntity(event) {
+//         let player_health = event.hitEntity.getComponent(EntityComponentTypes.Health);
+//         player_health.setCurrentValue(player_health.currentValue - 20);
+//     }
+// }
+
 
 
 world.beforeEvents.worldInitialize.subscribe(({ itemComponentRegistry }) => {
@@ -123,6 +130,7 @@ world.beforeEvents.worldInitialize.subscribe(({ itemComponentRegistry }) => {
     itemComponentRegistry.registerCustomComponent("mcnia:item_collector_small", item_collector_small_component);
     itemComponentRegistry.registerCustomComponent("mcnia:item_collector_middle", item_collector_middle_component);
     itemComponentRegistry.registerCustomComponent("mcnia:item_collector_big", item_collector_big_component);
+    itemComponentRegistry.registerCustomComponent("mcnia:dark_sword", dark_sword_component);
 })
 
 system.runInterval(() => {

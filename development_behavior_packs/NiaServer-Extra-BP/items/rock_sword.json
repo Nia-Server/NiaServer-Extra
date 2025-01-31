@@ -35,8 +35,12 @@
                 ]
             },
             "minecraft:cooldown": {
-                "category": "attack",
-                "duration": 100
+                "category": "rock_sword_attack",
+                "duration": 1
+            },
+            "minecraft:use_modifiers": {
+                "movement_modifier": 0.5,
+                "use_duration": 1
             }
         }
     }

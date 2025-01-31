@@ -1,5 +1,6 @@
-import {world,system} from '@minecraft/server';
+import {world,system, ItemComponentTypes, EntityComponentTypes} from '@minecraft/server';
 import { ActionFormData,ModalFormData,MessageFormData } from '@minecraft/server-ui'
+import { log } from './API/logger';
 
 const can_cr_id = [
     "mcnia:op_sword",
@@ -22,134 +23,13 @@ const can_cr_data = {
     "mcnia:wind_sword": "空·剑"
 }
 
-
-
 world.afterEvents.entityHurt.subscribe((event) => {
     //判断是不是玩家使用攻击
     if (event.damageSource.cause == "entityAttack" && event.damageSource.damagingEntity.typeId == "minecraft:player") {
         //判断玩家拿的武器
-        try {
-            let selectedItem = event.damageSource.damagingEntity.getComponent("minecraft:inventory").container.getItem(event.damageSource.damagingEntity.selectedSlot);
-            //判断武器，看有没有特殊效果
-            if (selectedItem.typeId) {
-                switch (selectedItem.typeId) {
-                    case "mcnia:fire_sword":
-                        event.hurtEntity.setOnFire(5,false);
-                        break;
-                    case "mcnia:rock_sword":
-                        if (event.hurtEntity.hasComponent("minecraft:equipment_inventory")) {
-                            if (event.hurtEntity.getComponent("minecraft:equipment_inventory").getEquipment("chest") != undefined) {
-                                let equ_chest = event.hurtEntity.getComponent("minecraft:equipment_inventory").getEquipment("chest");
-                                if (equ_chest.getComponent("minecraft:durability").maxDurability >= equ_chest.getComponent("minecraft:durability").damage + 30) {
-                                    equ_chest.getComponent("minecraft:durability").damage = equ_chest.getComponent("minecraft:durability").damage + 10;
-                                    event.hurtEntity.getComponent("minecraft:equipment_inventory").setEquipment("chest", equ_chest);
-                                }
-                            }
-                            if (event.hurtEntity.getComponent("minecraft:equipment_inventory").getEquipment("feet") != undefined) {
-                                let equ_feet = event.hurtEntity.getComponent("minecraft:equipment_inventory").getEquipment("feet");
-                                if (equ_feet.getComponent("minecraft:durability").maxDurability >= equ_feet.getComponent("minecraft:durability").damage + 30) {
-                                    equ_feet.getComponent("minecraft:durability").damage = equ_feet.getComponent("minecraft:durability").damage + 10;
-                                    event.hurtEntity.getComponent("minecraft:equipment_inventory").setEquipment("feet", equ_feet);
-                                }
-                            }
-                            if (event.hurtEntity.getComponent("minecraft:equipment_inventory").getEquipment("head") != undefined) {
-                                let equ_head = event.hurtEntity.getComponent("minecraft:equipment_inventory").getEquipment("head");
-                                if (equ_head.getComponent("minecraft:durability").maxDurability >= equ_head.getComponent("minecraft:durability").damage + 30) {
-                                    equ_head.getComponent("minecraft:durability").damage = equ_head.getComponent("minecraft:durability").damage + 10;
-                                    event.hurtEntity.getComponent("minecraft:equipment_inventory").setEquipment("head", equ_head);
-                                }
-                            }
-                            if (event.hurtEntity.getComponent("minecraft:equipment_inventory").getEquipment("legs") != undefined) {
-                                let equ_legs = event.hurtEntity.getComponent("minecraft:equipment_inventory").getEquipment("legs");
-                                if (equ_legs.getComponent("minecraft:durability").maxDurability >= equ_legs.getComponent("minecraft:durability").damage + 30) {
-                                    equ_legs.getComponent("minecraft:durability").damage = equ_legs.getComponent("minecraft:durability").damage + 10;
-                                    event.hurtEntity.getComponent("minecraft:equipment_inventory").setEquipment("legs", equ_legs);
-                                }
-                            }
-                        }
-                        break;
-                    case "mcnia:water_sword":
-                        event.damageSource.damagingEntity.getComponent("minecraft:health").setCurrentValue(event.damageSource.damagingEntity.getComponent("minecraft:health").currentValue + 2);
-                        break;
-                }
-                if (can_cr_id.includes(selectedItem.typeId) && selectedItem.getLore().length != 0 && selectedItem.getLore()[0].slice(0,3) == "§c+") {
-                    //开始计算暴击率
-                    let cr = Number(selectedItem.getLore()[1].split("：")[1].slice(2, -1));
-                    let cd = Number(selectedItem.getLore()[2].split("：")[1].slice(2, -1));
-                    let random = Math.random() * 100;
-                    //event.damageSource.damagingEntity.sendMessage("hh"+ cr + " " + cd + " " + random)
-                    if (random <= cr) {
-                        //暴击了
-                        //首先先减血
-                        event.hurtEntity.getComponent("minecraft:health").setCurrentValue(event.hurtEntity.getComponent("minecraft:health").currentValue - event.damage * cd * 0.01)
-                        //判断怪物血量是否小于0
-                        if (event.hurtEntity.getComponent("minecraft:health").currentValue.toFixed(2) <= 0) {
-                            //判断怪物有没有名称标签
-                            if (event.hurtEntity.nameTag != "") {
-                                event.damageSource.damagingEntity.sendMessage("§7你对 §r" + event.hurtEntity.nameTag + " §7造成了 §c§l" + (event.damage*(1 + cd * 0.01)).toFixed(2) + " §r§7暴击伤害,对目标生物造成致命一击！");
-                                event.hurtEntity.runCommand("particle mcnia:crit ~ ~1 ~");
-                                event.hurtEntity.runCommand("particle minecraft:critical_hit_emitter ~ ~1 ~");
-                            } else {
-                                let target_entity = "entity." + event.hurtEntity.typeId.split(":")[1] + ".name"
-                                let rawText = [{"text": "§7你对 §r"},{"translate": target_entity},{"text": " §7造成了 §c§l" + (event.damage*(1 + cd * 0.01)).toFixed(2) + " §r§7暴击伤害,对目标生物造成致命一击！"}]
-                                event.damageSource.damagingEntity.sendMessage(rawText);
-                                event.hurtEntity.runCommand("particle mcnia:crit ~ ~1 ~");
-                                event.hurtEntity.runCommand("particle minecraft:critical_hit_emitter ~ ~1 ~");
-                            }
-                        } else {
-                            if (event.hurtEntity.nameTag != "") {
-                                event.damageSource.damagingEntity.sendMessage("§7你对 §r" + event.hurtEntity.nameTag + " §7造成了 §c§l" + (event.damage*(1 + cd * 0.01)).toFixed(2) + " §r§7暴击伤害,目标当前血量剩余：§c§l " + event.hurtEntity.getComponent("minecraft:health").currentValue.toFixed(2));
-                                event.hurtEntity.runCommand("particle mcnia:crit ~ ~1 ~");
-                                event.hurtEntity.runCommand("particle minecraft:critical_hit_emitter ~ ~1 ~");
-                            } else {
-                                let target_entity = "entity." + event.hurtEntity.typeId.split(":")[1] + ".name"
-                                let rawText = [{"text": "§7你对 §r"},{"translate": target_entity},{"text": " §7造成了 §c§l" + (event.damage*(1 + cd * 0.01)).toFixed(2) + " §r§7暴击伤害,目标当前血量剩余：§c§l " + event.hurtEntity.getComponent("minecraft:health").currentValue.toFixed(2)}]
-                                event.damageSource.damagingEntity.sendMessage(rawText);
-                                event.hurtEntity.runCommand("particle mcnia:crit ~ ~1 ~");
-                                event.hurtEntity.runCommand("particle minecraft:critical_hit_emitter ~ ~1 ~");
-                            }
-                        }
-                    } else {
-                        if (event.hurtEntity.getComponent("minecraft:health").currentValue.toFixed(2) <= 0) {
-                            if (event.hurtEntity.nameTag != "") {
-                                event.damageSource.damagingEntity.sendMessage("§7你对 §r" + event.hurtEntity.nameTag + " §7造成了 §e§l" + event.damage.toFixed(2) + " §r§7伤害,对目标生物造成致命一击！");
-                            } else {
-                                let target_entity = "entity." + event.hurtEntity.typeId.split(":")[1] + ".name"
-                                let rawText = [{"text": "§7你对 §r"},{"translate": target_entity},{"text": " §7造成了 §e§l" + event.damage.toFixed(2) + " §r§7伤害,对目标生物造成致命一击！"}]
-                                event.damageSource.damagingEntity.sendMessage(rawText);
-                            }
-                        } else {
-                            if (event.hurtEntity.nameTag != "") {
-                                event.damageSource.damagingEntity.sendMessage("§7你对 §r" + event.hurtEntity.nameTag + " §7造成了 §e§l" + event.damage.toFixed(2) + " §r§7伤害,目标当前血量剩余：§e§l " + event.hurtEntity.getComponent("minecraft:health").currentValue.toFixed(2));
-                            } else {
-                                let target_entity = "entity." + event.hurtEntity.typeId.split(":")[1] + ".name"
-                                let rawText = [{"text": "§7你对 §r"},{"translate": target_entity},{"text": " §7造成了 §e§l" + event.damage.toFixed(2) + " §r§7伤害,目标当前血量剩余：§e§l " + event.hurtEntity.getComponent("minecraft:health").currentValue.toFixed(2)}]
-                                event.damageSource.damagingEntity.sendMessage(rawText);
-                            }
-                        }
-                    }
-                } else {
-                    if (event.hurtEntity.getComponent("minecraft:health").currentValue.toFixed(2) <= 0) {
-                        if (event.hurtEntity.nameTag != "") {
-                            event.damageSource.damagingEntity.sendMessage("§7你对 §r" + event.hurtEntity.nameTag + " §7造成了 §e§l" + event.damage.toFixed(2) + " §r§7伤害,对目标生物造成致命一击！");
-                        } else {
-                            let target_entity = "entity." + event.hurtEntity.typeId.split(":")[1] + ".name"
-                            let rawText = [{"text": "§7你对 §r"},{"translate": target_entity},{"text": " §7造成了 §e§l" + event.damage.toFixed(2) + " §r§7伤害,对目标生物造成致命一击！"}]
-                            event.damageSource.damagingEntity.sendMessage(rawText);
-                        }
-                    } else {
-                        if (event.hurtEntity.nameTag != "") {
-                            event.damageSource.damagingEntity.sendMessage("§7你对 §r" + event.hurtEntity.nameTag + " §7造成了 §e§l" + event.damage.toFixed(2) + " §r§7伤害,目标当前血量剩余：§e§l " + event.hurtEntity.getComponent("minecraft:health").currentValue.toFixed(2));
-                        } else {
-                            let target_entity = "entity." + event.hurtEntity.typeId.split(":")[1] + ".name"
-                            let rawText = [{"text": "§7你对 §r"},{"translate": target_entity},{"text": " §7造成了 §e§l" + event.damage.toFixed(2) + " §r§7伤害,目标当前血量剩余：§e§l " + event.hurtEntity.getComponent("minecraft:health").currentValue.toFixed(2)}]
-                            event.damageSource.damagingEntity.sendMessage(rawText);
-                        }
-                    }
-                }
-            }
-        } catch (e) {
-            if (event.hurtEntity.getComponent("minecraft:health").currentValue.toFixed(2) <= 0) {
+        let selectedItem = event.damageSource.damagingEntity.getComponent(EntityComponentTypes.Inventory).container.getItem(event.damageSource.damagingEntity.selectedSlotIndex);
+        if (selectedItem == undefined) {
+            if (event.hurtEntity.getComponent(EntityComponentTypes.Health).currentValue.toFixed(2) <= 0) {
                 if (event.hurtEntity.nameTag != "") {
                     event.damageSource.damagingEntity.sendMessage("§7你对 §r" + event.hurtEntity.nameTag + " §7造成了 §e§l" + event.damage.toFixed(2) + " §r§7伤害,对目标生物造成致命一击！");
                 } else {
@@ -159,13 +39,147 @@ world.afterEvents.entityHurt.subscribe((event) => {
                 }
             } else {
                 if (event.hurtEntity.nameTag != "") {
-                    event.damageSource.damagingEntity.sendMessage("§7你对 §r" + event.hurtEntity.nameTag + " §7造成了 §e§l" + event.damage.toFixed(2) + " §r§7伤害,目标当前血量剩余：§e§l " + event.hurtEntity.getComponent("minecraft:health").currentValue.toFixed(2));
+                    event.damageSource.damagingEntity.sendMessage("§7你对 §r" + event.hurtEntity.nameTag + " §7造成了 §e§l" + event.damage.toFixed(2) + " §r§7伤害,目标当前血量剩余：§e§l " + event.hurtEntity.getComponent(EntityComponentTypes.Health).currentValue.toFixed(2));
                 } else {
                     let target_entity = "entity." + event.hurtEntity.typeId.split(":")[1] + ".name"
-                    let rawText = [{"text": "§7你对 §r"},{"translate": target_entity},{"text": " §7造成了 §e§l" + event.damage.toFixed(2) + " §r§7伤害,目标当前血量剩余：§e§l " + event.hurtEntity.getComponent("minecraft:health").currentValue.toFixed(2)}]
+                    let rawText = [{"text": "§7你对 §r"},{"translate": target_entity},{"text": " §7造成了 §e§l" + event.damage.toFixed(2) + " §r§7伤害,目标当前血量剩余：§e§l " + event.hurtEntity.getComponent(EntityComponentTypes.Health).currentValue.toFixed(2)}]
                     event.damageSource.damagingEntity.sendMessage(rawText);
                 }
             }
+            return;
+        }
+        //判断武器，看有没有特殊效果
+        if (selectedItem.typeId) {
+            let all_damage = event.damage;
+            let before_damage_health = event.hurtEntity.getComponent(EntityComponentTypes.Health).currentValue + event.damage;
+            switch (selectedItem.typeId) {
+                case "mcnia:dark_sword":
+                    all_damage = all_damage + 2;
+                    event.damageSource.damagingEntity.addEffect("minecraft:blindness",40,{"amplifier": 0,"showParticles":false});
+                    break;
+                case "mcnia:fire_sword":
+                    const fire_sword_task_id = system.runInterval(() => {
+                        try {event.hurtEntity.setOnFire(5,false);} catch (e) {}
+                    },1)
+                    system.runTimeout(() => {
+                        system.clearRun(fire_sword_task_id);
+                    }, 100);
+                    break;
+                case "mcnia:wind_sword":
+                    event.hurtEntity.addEffect("minecraft:levitation",40,{"amplifier": 2,"showParticles":false});
+                    event.damageSource.damagingEntity.addEffect("minecraft:speed",400,{"amplifier": 3, "showParticles":false});
+                    break;
+                case "mcnia:rock_sword":
+                    let equ = event.hurtEntity.getComponent(EntityComponentTypes.Equippable);
+                    if (event.hurtEntity.typeId != "minecraft:player") return;
+                    if (equ.getEquipment("Chest")) {
+                        let equ_chest = equ.getEquipment("Chest");
+                        if (equ_chest.getComponent(ItemComponentTypes.Durability).maxDurability >= equ_chest.getComponent(ItemComponentTypes.Durability).damage + 30) {
+                            equ_chest.getComponent(ItemComponentTypes.Durability).damage = equ_chest.getComponent(ItemComponentTypes.Durability).damage + 10;
+                            equ.setEquipment("Chest", equ_chest);
+                        }
+                    }
+                    if (equ.getEquipment("Feet")) {
+                        let equ_feet = equ.getEquipment("Feet");
+                        if (equ_feet.getComponent(ItemComponentTypes.Durability).maxDurability >= equ_feet.getComponent(ItemComponentTypes.Durability).damage + 30) {
+                            equ_feet.getComponent(ItemComponentTypes.Durability).damage = equ_feet.getComponent(ItemComponentTypes.Durability).damage + 10;
+                            equ.setEquipment("Feet", equ_feet);
+                        }
+                    }
+                    if (equ.getEquipment("Head")) {
+                        let equ_head = equ.getEquipment("Head");
+                        if (equ_head.getComponent(ItemComponentTypes.Durability).maxDurability >= equ_head.getComponent(ItemComponentTypes.Durability).damage + 30) {
+                            equ_head.getComponent(ItemComponentTypes.Durability).damage = equ_head.getComponent(ItemComponentTypes.Durability).damage + 10;
+                            equ.setEquipment("Head", equ_head);
+                        }
+                    }
+                    if (equ.getEquipment("Legs")) {
+                        let equ_legs = equ.getEquipment("Legs");
+                        if (equ_legs.getComponent(ItemComponentTypes.Durability).maxDurability >= equ_legs.getComponent(ItemComponentTypes.Durability).damage + 30) {
+                            equ_legs.getComponent(ItemComponentTypes.Durability).damage = equ_legs.getComponent(ItemComponentTypes.Durability).damage + 10;
+                            equ.setEquipment("Legs", equ_legs);
+                        }
+                    }
+                    break;
+                case "mcnia:grass_sword":
+                    event.hurtEntity.addEffect("minecraft:wither",100,{"amplifier": 1,"showParticles":false});
+                    event.hurtEntity.addEffect("minecraft:slowness",100,{"amplifier": 2,"showParticles":false});
+                    break;
+                case "mcnia:thunder_sword":
+                    event.damageSource.damagingEntity.addEffect("minecraft:fire_resistance",40,{"amplifier": 2,"showParticles":false});
+                    event.damageSource.damagingEntity.addEffect("minecraft:absorption",20,{"amplifier": 1,"showParticles":false});
+                    event.hurtEntity.addEffect("minecraft:slowness",60,{"amplifier": 1,"showParticles":false});
+                    event.hurtEntity.runCommand(`summon minecraft:lightning_bolt ${event.hurtEntity.location.x} ${event.hurtEntity.location.y} ${event.hurtEntity.location.z}`);
+                    event.hurtEntity.runCommand(`summon minecraft:lightning_bolt ${event.hurtEntity.location.x} ${event.hurtEntity.location.y} ${event.hurtEntity.location.z}`);
+                    event.hurtEntity.runCommand(`summon minecraft:lightning_bolt ${event.hurtEntity.location.x} ${event.hurtEntity.location.y} ${event.hurtEntity.location.z}`);
+                    break;
+                case "mcnia:water_sword":
+                    event.damageSource.damagingEntity.getComponent(EntityComponentTypes.Health).setCurrentValue(event.damageSource.damagingEntity.getComponent(EntityComponentTypes.Health).currentValue + 2);
+                    event.hurtEntity.addEffect("minecraft:poison",100,{"amplifier": 0,"showParticles":false});
+                    break;
+            }
+
+            if (can_cr_id.includes(selectedItem.typeId) && selectedItem.getLore().length != 0 && selectedItem.getLore()[0].slice(0,3) == "§c+") {
+                //开始计算暴击率
+                let cr = Number(selectedItem.getLore()[1].split("：")[1].slice(2, -1));
+                let cd = Number(selectedItem.getLore()[2].split("：")[1].slice(2, -1));
+                let random = Math.random() * 100;
+                //event.damageSource.damagingEntity.sendMessage("hh"+ cr + " " + cd + " " + random)
+                if (random <= cr) {
+                    //暴击了
+                    //首先先减血
+                    all_damage = all_damage * (1 + cd * 0.01);
+                    //结算血量
+                    event.hurtEntity.getComponent(EntityComponentTypes.Health).setCurrentValue(before_damage_health - all_damage);
+                    //判断怪物血量是否小于0
+                    if (event.hurtEntity.getComponent(EntityComponentTypes.Health).currentValue.toFixed(2) <= 0) {
+                        //判断怪物有没有名称标签
+                        if (event.hurtEntity.nameTag != "") {
+                            event.damageSource.damagingEntity.sendMessage("§7你对 §r" + event.hurtEntity.nameTag + " §7造成了 §c§l" + all_damage.toFixed(2) + " §r§7暴击伤害,对目标生物造成致命一击！");
+                            event.hurtEntity.runCommand("particle mcnia:crit ~ ~1 ~");
+                            event.hurtEntity.runCommand("particle minecraft:critical_hit_emitter ~ ~1 ~");
+                        } else {
+                            let target_entity = "entity." + event.hurtEntity.typeId.split(":")[1] + ".name"
+                            let rawText = [{"text": "§7你对 §r"},{"translate": target_entity},{"text": " §7造成了 §c§l" + all_damage.toFixed(2) + " §r§7暴击伤害,对目标生物造成致命一击！"}]
+                            event.damageSource.damagingEntity.sendMessage(rawText);
+                            event.hurtEntity.runCommand("particle mcnia:crit ~ ~1 ~");
+                            event.hurtEntity.runCommand("particle minecraft:critical_hit_emitter ~ ~1 ~");
+                        }
+                    } else {
+                        if (event.hurtEntity.nameTag != "") {
+                            event.damageSource.damagingEntity.sendMessage("§7你对 §r" + event.hurtEntity.nameTag + " §7造成了 §c§l" + all_damage.toFixed(2) + " §r§7暴击伤害,目标当前血量剩余：§c§l " + event.hurtEntity.getComponent(EntityComponentTypes.Health).currentValue.toFixed(2));
+                            event.hurtEntity.runCommand("particle mcnia:crit ~ ~1 ~");
+                            event.hurtEntity.runCommand("particle minecraft:critical_hit_emitter ~ ~1 ~");
+                        } else {
+                            let target_entity = "entity." + event.hurtEntity.typeId.split(":")[1] + ".name"
+                            let rawText = [{"text": "§7你对 §r"},{"translate": target_entity},{"text": " §7造成了 §c§l" + all_damage.toFixed(2) + " §r§7暴击伤害,目标当前血量剩余：§c§l " + event.hurtEntity.getComponent(EntityComponentTypes.Health).currentValue.toFixed(2)}]
+                            event.damageSource.damagingEntity.sendMessage(rawText);
+                            event.hurtEntity.runCommand("particle mcnia:crit ~ ~1 ~");
+                            event.hurtEntity.runCommand("particle minecraft:critical_hit_emitter ~ ~1 ~");
+                        }
+                    }
+                }
+            }
+            //最后设置血量结算
+            event.hurtEntity.getComponent(EntityComponentTypes.Health).setCurrentValue(before_damage_health - all_damage);
+            if (event.hurtEntity.getComponent(EntityComponentTypes.Health).currentValue.toFixed(2) <= 0) {
+                if (event.hurtEntity.nameTag != "") {
+                    event.damageSource.damagingEntity.sendMessage("§7你对 §r" + event.hurtEntity.nameTag + " §7造成了 §e§l" + all_damage.toFixed(2) + " §r§7伤害,对目标生物造成致命一击！");
+                } else {
+                    let target_entity = "entity." + event.hurtEntity.typeId.split(":")[1] + ".name"
+                    let rawText = [{"text": "§7你对 §r"},{"translate": target_entity},{"text": " §7造成了 §e§l" + all_damage.toFixed(2) + " §r§7伤害,对目标生物造成致命一击！"}]
+                    event.damageSource.damagingEntity.sendMessage(rawText);
+                }
+            } else {
+                if (event.hurtEntity.nameTag != "") {
+                    event.damageSource.damagingEntity.sendMessage("§7你对 §r" + event.hurtEntity.nameTag + " §7造成了 §e§l" + all_damage.toFixed(2) + " §r§7伤害,目标当前血量剩余：§e§l " + event.hurtEntity.getComponent(EntityComponentTypes.Health).currentValue.toFixed(2));
+                } else {
+                    let target_entity = "entity." + event.hurtEntity.typeId.split(":")[1] + ".name"
+                    let rawText = [{"text": "§7你对 §r"},{"translate": target_entity},{"text": " §7造成了 §e§l" + all_damage.toFixed(2) + " §r§7伤害,目标当前血量剩余：§e§l " + event.hurtEntity.getComponent(EntityComponentTypes.Health).currentValue.toFixed(2)}]
+                    event.damageSource.damagingEntity.sendMessage(rawText);
+                }
+            }
+
         }
 
     }
