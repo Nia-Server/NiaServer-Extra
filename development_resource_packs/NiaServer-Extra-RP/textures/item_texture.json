@@ -130,6 +130,9 @@
 		},
 		"item_collector_middle": {
 			"textures": "textures/items/item_collector_middle"
+		},
+		"oxygen_helmet":{
+			"textures": "textures/helmet/oxygen_helmet"
 		}
 	}
 }
