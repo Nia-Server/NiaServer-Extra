@@ -132,7 +132,7 @@
 			"textures": "textures/items/item_collector_middle"
 		},
 		"oxygen_helmet":{
-			"textures": "textures/helmet/oxygen_helmet"
+			"textures": "textures/items/helmet/oxygen_helmet"
 		}
 	}
 }

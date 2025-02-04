@@ -1,4 +1,4 @@
-import {world, system, ScreenDisplay, ItemComponentTypes,  EntityComponentTypes} from "@minecraft/server";
+import {world, system, ScreenDisplay, ItemComponentTypes,  EntityComponentTypes, EffectType, EffectTypes} from "@minecraft/server";
 import { log,warn,error } from "./API/logger.js";
 import './newFunction.js';
 
@@ -135,6 +135,12 @@ world.beforeEvents.worldInitialize.subscribe(({ itemComponentRegistry }) => {
 
 system.runInterval(() => {
     for (const player of world.getPlayers()) {
+        if (player.getComponent(EntityComponentTypes.Equippable).getEquipment("Head")) {
+            let equ_head = player.getComponent(EntityComponentTypes.Equippable).getEquipment("Head");
+            if (equ_head.typeId == "mcnia:oxygen_helmet" && !player.isInWater) {
+                player.addEffect("minecraft:water_breathing",320,{amplifier: 0, showParticles: false});
+            }
+        }
         if (player.getDynamicProperty("sea_potion_time") == undefined) continue;
         if (player.getDynamicProperty("sea_potion_time") <= 0) continue;
         player.setDynamicProperty("sea_potion_time", player.getDynamicProperty("sea_potion_time") - 5);

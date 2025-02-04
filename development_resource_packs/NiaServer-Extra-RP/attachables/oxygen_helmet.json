@@ -9,7 +9,7 @@
 				"enchanted": "entity_alphatest_glint"
 			},
 			"textures": {
-				"default": "textures/items/helmet/oxygen_helmet",
+				"default": "textures/entity/attachable/oxygen_helmet",
 				"enchanted": "textures/misc/enchanted_item_glint"
 			},
 			"geometry": {

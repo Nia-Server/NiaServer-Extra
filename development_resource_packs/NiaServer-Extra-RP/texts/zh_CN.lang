@@ -73,6 +73,8 @@ item.mcnia:item_collector_small=物品收集器Ⅰ
 item.mcnia:item_collector_middle=物品收集器Ⅱ
 item.mcnia:item_collector_big=物品收集器Ⅲ
 
+item.mcnia:oxygen_helmet=玻璃面罩
+
 enchantment.oxygen=海的佑护
 
 potion.waterBreathing=海的佑护
