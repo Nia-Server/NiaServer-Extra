@@ -1,0 +1,29 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "underwater cow",
+		"description": "underwater cow Behavior Pack",
+		"uuid": "5509c65f-8a8f-e9f2-74b8-44b87c9d78c8",
+		"version": [1, 0, 0],
+		"min_engine_version": [1, 16, 0]
+	},
+	"metadata": {
+		"generated_with": {
+			"blockbench_entity_wizard": ["1.6.0"]
+		}
+	},
+	"modules": [
+		{
+			"description": "Behavior",
+			"version": [1, 0, 0],
+			"uuid": "6b4e7a17-3b6e-889a-d71b-5be95b7bb33e",
+			"type": "data"
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "1dd976d7-3094-4064-763d-83248f0caf2d",
+			"version": [1, 0, 0]
+		}
+	]
+}

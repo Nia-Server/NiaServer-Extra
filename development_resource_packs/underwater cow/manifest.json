@@ -1,0 +1,23 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "underwater cow",
+		"description": "underwater cow Resource Pack",
+		"uuid": "1dd976d7-3094-4064-763d-83248f0caf2d",
+		"version": [1, 0, 0],
+		"min_engine_version": [1, 16, 0]
+	},
+	"metadata": {
+		"generated_with": {
+			"blockbench_entity_wizard": ["1.6.0"]
+		}
+	},
+	"modules": [
+		{
+			"description": "underwater cow",
+			"type": "resources",
+			"uuid": "9f073f78-4ded-c0f1-9f55-47893870cc79",
+			"version": [1, 0, 0]
+		}
+	]
+}

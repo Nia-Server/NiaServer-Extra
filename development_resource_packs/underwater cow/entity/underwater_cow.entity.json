@@ -1,0 +1,39 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mcnia:underwater_cow",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/underwater_cow"
+			},
+			"geometry": {
+				"default": "geometry.underwater_cow"
+			},
+			"animations": {
+				"walk": "animation.underwater_cow.walk",
+				"look_at_target": "animation.common.look_at_target",
+				"baby_transform": "animation.underwater_cow.baby_transform"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"walk": "query.modified_move_speed"
+					},
+					"look_at_target",
+					{
+						"baby_transform": "query.is_baby"
+					}
+				]
+			},
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"base_color": "#35d3d4",
+				"overlay_color": "#1998ee"
+			}
+		}
+	}
+}
