@@ -6,7 +6,7 @@
                 {
                     "type": "item",
                     "name": "mcnia:hundred_dollars",
-                    "weight": 1,
+                    "weight": 90,
                     "functions": [
                         {
                             "function": "set_count",
@@ -32,6 +32,34 @@
                             "count": {
                                 "min": 0,
                                 "max": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "mcnia:hundred_dollars",
+                    "weight": 9,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 4,
+                                "max": 6
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "mcnia:hundred_dollars",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 50,
+                                "max": 100
                             }
                         }
                     ]
