@@ -1,0 +1,22 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mcnia:dollar_pig_spawn_egg"
+        },
+
+        "tags": ["crafting_table"],
+        "pattern": ["ABA","BAB","ABA"],
+        "key": {
+            "A": {
+                "item": "mcnia:hundred_dollars"
+            },
+            "B":{
+                "item": "minecraft:porkchop"
+            }
+        },
+        "result": {
+            "item": "mcnia:dollar_pig_spawn_egg"
+        }
+    }
+}
