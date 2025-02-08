@@ -1,0 +1,36 @@
+{
+	"format_version": "1.19.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.hundred_dollars",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 9,
+				"visible_bounds_height": 7,
+				"visible_bounds_offset": [0, 0.5, 0]
+			},
+			"bones": [
+				{
+					"name": "root_item",
+					"pivot": [0, 0, 0],
+					"binding": "q.item_slot_to_bone_name(c.item_slot)",
+					"cubes": [
+						{
+							"origin": [-16, 14, -1.5],
+							"size": [32, -14, 1],
+							"uv": {
+								"north": {"uv": [0, 128], "uv_size": [128, -54]},
+								"east": {"uv": [127, 20], "uv_size": [1, 54]},
+								"south": {"uv": [0, 74.22222], "uv_size": [128, -54]},
+								"west": {"uv": [1, 20], "uv_size": [-1, 54]},
+								"up": {"uv": [128, 21], "uv_size": [-128, -1]},
+								"down": {"uv": [128, 22], "uv_size": [-128, -1]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -133,6 +133,9 @@
 		},
 		"oxygen_helmet":{
 			"textures": "textures/items/helmet/oxygen_helmet"
+		},
+		"hundred_dollars": {
+			"textures": "textures/items/hundred_dollars"
 		}
 	}
 }

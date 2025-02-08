@@ -1,0 +1,24 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.hundred_dollars.first_person_hold": {
+			"loop": true,
+			"bones": {
+				"root_item": {
+					"rotation": [90, 56, -32],
+					"position": [9, 18, 5]
+				}
+			}
+		},
+		"animation.hundred_dollars.third_person_hold": {
+			"loop": true,
+			"bones": {
+				"root_item": {
+					"rotation": [25, 0, 0],
+					"position": [0.5, 19, -2.5],
+					"scale": 0.85
+				}
+			}
+		}
+	}
+}
