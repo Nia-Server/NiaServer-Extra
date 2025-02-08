@@ -1,0 +1,43 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mcnia:dollar_pig",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/dollar_pig/dollar_pig",
+				"saddled": "textures/entity/pig/pig_saddle",
+				"saddle": "textures/entity/dollar_pig/saddle"
+			},
+			"geometry": {
+				"default": "geometry.dollar_pig"
+			},
+			"animations": {
+				"setup": "animation.dollar_pig.setup",
+				"walk": "animation.dollar_pig.walk",
+				"look_at_target": "animation.common.look_at_target",
+				"baby_transform": "animation.dollar_pig.baby_transform"
+			},
+			"scripts": {
+				"animate": [
+					"setup",
+					{
+						"walk": "query.modified_move_speed"
+					},
+					"look_at_target",
+					{
+						"baby_transform": "query.is_baby"
+					}
+				]
+			},
+			"render_controllers": ["controller.render.pig"],
+			"spawn_egg": {
+				"base_color": "#548f34",
+				"overlay_color": "#00ff46"
+			}
+		}
+	}
+}
