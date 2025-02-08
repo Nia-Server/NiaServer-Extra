@@ -9,7 +9,7 @@
 		"name": "NiaServer-Extra-RP",
 		"description": "§bCopyright (C) 2025 Nia-Server\n版本：v1.0.0\n项目地址：https://github.com/Nia-Server/NiaServer-Extra",
 		"uuid": "5eacff27-138c-4b82-a09e-8de7c0f34b3d",
-		"version": [ 1, 0, 0],
+		"version": [ 1, 0, 1],
 		"min_engine_version": [ 1, 21, 50]
 	},
 	"modules": [
