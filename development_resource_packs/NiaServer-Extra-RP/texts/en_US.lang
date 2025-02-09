@@ -1,10 +1,92 @@
-tile.nia:random_ore.name=random ore
+tile.nia:random_ore.name=Rock of Original Root
 
-item.mcnia:op_sword=OP SWORD
-item.mcnia:dark_sword=暗·剑
-item.mcnia:fire_sword=火·剑
-item.mcnia:wind_sword=空·剑
-item.mcnia:rock_sword=岩·剑
-item.mcnia:grass_sword=灵·剑
-item.mcnia:thunder_sword=雷·剑
-item.mcnia:water_sword=水·剑
+tile.mcnia:water_flower.name=Flower of Original Root
+
+item.mcnia:op_sword=OP's Sword
+item.mcnia:dark_sword=Dark·Sword
+item.mcnia:fire_sword=Fire·Sword
+item.mcnia:rock_sword=Rock·Sword
+item.mcnia:grass_sword=Grass·Sword
+item.mcnia:thunder_sword=Thunder·Sword
+item.mcnia:water_sword=Water·Sword
+item.mcnia:wind_sword=Nihil·Sword
+
+item.mcnia:dark_gem=Dark Element Jewel
+item.mcnia:fire_gem=Fire Element Jewel
+item.mcnia:rock_gem=Rock Element Jewel
+item.mcnia:grass_gem=Grass Element Jewel
+item.mcnia:thunder_gem=Thunder Element Jewel
+item.mcnia:water_gem=Water Element Jewel
+item.mcnia:wind_gem=Nihil Element Jewel
+
+item.mcnia:dark_ore=Dark Element Ore
+item.mcnia:fire_ore=Fire Element Ore
+item.mcnia:rock_ore=Rock Element Ore
+item.mcnia:grass_ore=Grass Element Ore
+item.mcnia:thunder_ore=Thunder Element Ore
+item.mcnia:water_ore=Water Element Ore
+item.mcnia:wind_ore=Nihil Element Ore
+
+item.mcnia:dark_crystal=Dark Element Crystal
+item.mcnia:fire_crystal=Fire Element Crystal
+item.mcnia:rock_crystal=Rock Element Crystal
+item.mcnia:grass_crystal=Grass Element Crystal
+item.mcnia:thunder_crystal=Thunder Element Crystal
+item.mcnia:water_crystal=Water Element Crystal
+item.mcnia:wind_crystal=Nihil Element Crystal
+
+tile.mcnia:dark_raw_ore.name=Dark Element Raw Ore
+tile.mcnia:fire_raw_ore.name=Fire Element Raw Ore
+tile.mcnia:rock_raw_ore.name=Rock Element Raw Ore
+tile.mcnia:grass_raw_ore.name=Grass Element Raw Ore
+tile.mcnia:thunder_raw_ore.name=Thunder Element Raw Ore
+tile.mcnia:water_raw_ore.name=Water Element Raw Ore
+tile.mcnia:wind_raw_ore.name=Nihil Element Raw Ore
+
+item.mcnia:dark_bottle=Dark Element bottle
+item.mcnia:fire_bottle=Fire Element bottle
+item.mcnia:rock_bottle=Rock Element bottle
+item.mcnia:grass_bottle=Grass Element bottle
+item.mcnia:thunder_bottle=Thunder Element bottle
+item.mcnia:water_bottle=Water Element bottle
+item.mcnia:wind_bottle=Nihil Element bottle
+
+tile.mcnia:sand_dirt.name=Sandy Dirt
+
+tile.mcnia:grass_dirt.name=Grass Element Dirt
+tile.mcnia:thunder_dirt.name=Thunder Element Dirt
+
+tile.mcnia:marble_block_stone.name=Marble
+tile.mcnia:moss_block_stone.name=Moss Stone
+tile.mcnia:end_grass_block.name=End Grass
+
+tile.mcnia:water_root_board.name=Water-root board
+tile.mcnia:water_root_wood.name=Water-root wood
+tile.mcnia:water_root_leaf.name=Water-root leaf
+
+item.mcnia:seaweed_potion=Seaweed Elixir
+item.mcnia:super_seaweed_potion=Super Seaweed Elixir
+
+item.mcnia:kelp_potion_small=Kelp Potion(Small)
+item.mcnia:kelp_potion_big=kelp Potion(Big)
+item.mcnia:item_collector_small=Item CollectorⅠ
+item.mcnia:item_collector_middle=Item CollectorⅡ
+item.mcnia:item_collector_big=Item CollectorⅢ
+
+item.mcnia:oxygen_helmet=Glass Helmet
+
+enchantment.oxygen=Sea's Blessing
+
+potion.waterBreathing=Sea's Blessing
+potion.waterBreathing.name=Damp Squirt
+potion.waterBreathing.splash.name=Splash Moisture Potion
+potion.waterBreathing.linger.name=Stagnant Dampness Potion
+
+death.attack.inWall=%1$s Dried out and died on land
+
+item.mcnia:hundred_dollars=One Hundred Dollars
+item.spawn_egg.entity.mcnia:dollar_pig.name=Dollar Pig
+tile.mcnia:dollar_block.name=One Billion Dollars
+
+item.mcnia:augmentation_stone=Stone for Equipment's Enhancement
+
