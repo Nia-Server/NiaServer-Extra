@@ -1,0 +1,26 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mcnia:dollar_block"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "AAA",
+            "AAA",
+            "AAA"
+        ],
+        "key": {
+            "A": {
+                "item": "mcnia:hundred_dollars"
+            }
+        },
+        "result": {
+            "item": "mcnia:dollar_block",
+            "count": 1
+        },
+        "priority": 2
+    }
+}
