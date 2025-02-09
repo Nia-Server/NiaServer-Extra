@@ -83,3 +83,9 @@ potion.waterBreathing.splash.name=喷溅型潮湿药水
 potion.waterBreathing.linger.name=滞留型潮湿药水
 
 death.attack.inWall=%1$s 在陆地上干燥而死
+
+item.mcnia:hundred_dollars=一百美元
+item.spawn_egg.entity.mcnia:dollar_pig.name=美元猪
+tile.mcnia:dollar_block.name=一亿美元
+
+
