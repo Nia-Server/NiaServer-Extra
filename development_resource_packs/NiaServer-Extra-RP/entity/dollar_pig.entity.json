@@ -9,7 +9,7 @@
 			},
 			"textures": {
 				"default": "textures/entity/dollar_pig/dollar_pig",
-				"saddled": "textures/entity/pig/pig_saddle",
+				"saddled": "textures/entity/dollar_pig/pig_saddle",
 				"saddle": "textures/entity/dollar_pig/saddle"
 			},
 			"geometry": {
