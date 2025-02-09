@@ -40,7 +40,7 @@
             ]
         },
         "distribution": {
-            "iterations": 8,
+            "iterations": 6,
             "coordinate_eval_order": "zyx",
             "x": {
                 "distribution": "uniform",

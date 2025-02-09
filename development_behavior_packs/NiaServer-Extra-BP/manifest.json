@@ -7,9 +7,9 @@
     },
     "header": {
         "name": "NiaServer-Extra-BP",
-        "description": "§bCopyright (C) 2025 Nia-Server\n版本：v1.0.0\n项目地址：https://github.com/Nia-Server/NiaServer-Extra",
+        "description": "§bCopyright (C) 2025 Nia-Server\n版本：v1.0.6\n项目地址：https://github.com/Nia-Server/NiaServer-Extra",
         "uuid": "679d9e3d-df70-483e-8853-e6e508d9e97e",
-        "version": [1, 0, 0],
+        "version": [1, 0, 6],
         "min_engine_version": [1, 21, 50]
     },
     "modules": [
@@ -25,7 +25,7 @@
             "description": "NiaServer-Extra-BP",
             "type": "data",
             "uuid": "dbab995c-68ca-4357-a6b9-49f746d5960f",
-            "version": [1, 0, 0]
+            "version": [1, 0, 6]
         }
     ],
     "dependencies": [

@@ -136,6 +136,9 @@
 		},
 		"hundred_dollars": {
 			"textures": "textures/items/hundred_dollars"
+		},
+		"augmentation_stone": {
+			"textures": "textures/items/prop/augmentation_stone"
 		}
 	}
 }
