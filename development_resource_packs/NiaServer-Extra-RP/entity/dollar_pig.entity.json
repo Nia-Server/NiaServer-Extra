@@ -5,7 +5,7 @@
 			"identifier": "mcnia:dollar_pig",
 			"min_engine_version": "1.8.0",
 			"materials": {
-				"default": "entity_alphatest"
+				"default": "custom_animated"
 			},
 			"textures": {
 				"default": "textures/entity/dollar_pig/dollar_pig",
@@ -33,7 +33,7 @@
 					}
 				]
 			},
-			"render_controllers": ["controller.render.pig"],
+			"render_controllers": ["controller.render.dollar_pig"],
 			"spawn_egg": {
 				"base_color": "#548f34",
 				"overlay_color": "#00ff46"
