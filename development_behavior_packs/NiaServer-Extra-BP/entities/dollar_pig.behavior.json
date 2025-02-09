@@ -117,6 +117,53 @@
 			}
 		},
 		"components": {
+			"minecraft:behavior.hurt_by_target": {
+  				"priority": 1,
+				"entity_types": [
+					{
+					"filters": {
+						"test": "is_family",
+						"subject": "other",
+						"operator": "!=",
+						"value": "breeze"
+					}
+					}
+				]
+			},
+			"minecraft:behavior.nearest_attackable_target": {
+				"priority": 2,
+				"must_see": true,
+				"reselect_targets": true,
+				"within_radius": 25.0,
+				"must_see_forget_duration": 17.0,
+				"entity_types": [
+					{
+					"filters": {
+						"test": "is_family",
+						"subject": "other",
+						"value": "player"
+					},
+					"max_dist": 35
+					}
+				]
+			},
+			"minecraft:behavior.melee_box_attack": {
+				"can_spread_on_fire": true,
+				"priority": 3
+			},
+			"minecraft:attack": {
+				"damage": 0.5
+			},
+			"minecraft:behavior.melee_attack": {
+				"priority": 1,
+				"speed_multiplier": 1.0,
+				"track_target": true
+			},
+			"minecraft:behavior.target_nearby_player": {
+				"priority": 0,
+				"must_see": true,
+				"within_radius": 16
+			},
 			"minecraft:damage_sensor": {
 				"triggers": {
 					"on_damage": {
@@ -138,7 +185,7 @@
 				}
 			},
 			"minecraft:type_family": {
-				"family": ["pig", "mob"]
+				"family": ["pig", "mob", "monster"]
 			},
 			"minecraft:breathable": {
 				"total_supply": 15,
