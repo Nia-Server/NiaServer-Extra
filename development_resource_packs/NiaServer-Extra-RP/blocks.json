@@ -38,5 +38,8 @@
     },
     "thunder_dirt" : {
         "sound": "grass"
-    }
+    },
+    "dollar_block": {
+		"sound": "azalea_leaves"
+	}
 }
