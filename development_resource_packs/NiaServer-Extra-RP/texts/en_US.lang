@@ -86,6 +86,7 @@ death.attack.inWall=%1$s Dried out and died on land
 
 item.mcnia:hundred_dollars=One Hundred Dollars
 item.spawn_egg.entity.mcnia:dollar_pig.name=Dollar Pig
+entity.mcnia:dollar_pig.name=Dollar Pig
 tile.mcnia:dollar_block.name=One Billion Dollars
 
 item.mcnia:augmentation_stone=Stone for Equipment's Enhancement
