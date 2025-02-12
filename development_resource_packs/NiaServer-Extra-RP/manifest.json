@@ -7,17 +7,17 @@
 	},
 	"header": {
 		"name": "NiaServer-Extra-RP",
-		"description": "§bCopyright (C) 2025 Nia-Server\n版本：v1.0.0\n项目地址：https://github.com/Nia-Server/NiaServer-Extra",
+		"description": "§bCopyright (C) 2025 Nia-Server\n版本：v1.2.0\n项目地址：https://github.com/Nia-Server/NiaServer-Extra",
 		"uuid": "5eacff27-138c-4b82-a09e-8de7c0f34b3d",
-		"version": [ 1, 0, 13],
-		"min_engine_version": [ 1, 21, 50]
+		"version": [ 1, 1, 0],
+		"min_engine_version": [ 1, 21, 60]
 	},
 	"modules": [
 		{
 			"description": "NiaServer-Extra-RP",
 			"type": "resources",
 			"uuid": "7e41869f-82f7-40f5-87c0-4dcfbc61d91b",
-			"version": [ 1, 0, 13]
+			"version": [ 1, 1, 0]
 		}
 	]
 }
