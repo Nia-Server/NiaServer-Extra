@@ -145,6 +145,9 @@
 		},
 		"pink_lollipop": {
 			"textures": "textures/items/ValentineDay/pink_lollipop"
+		},
+		"horror_mask": {
+			"textures": "textures/items/horror_mask.png"
 		}
 	}
 }
