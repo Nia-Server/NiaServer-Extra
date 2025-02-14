@@ -91,5 +91,9 @@ tile.mcnia:dollar_block.name=一亿美元
 
 item.mcnia:augmentation_stone=武器强化石
 
-
+item.mcnia:tootsie_roll=爱心糖果
+item.mcnia:pink_lollipop=粉色棒棒糖
+tile.mcnia:red_candy_bar.name=红色糖果柱
+tile.mcnia:cream_candy_cubes.name=奶油糖果方块
+tile.mcnia:red_heart_candy_cube.name=红色爱心糖果方块
 

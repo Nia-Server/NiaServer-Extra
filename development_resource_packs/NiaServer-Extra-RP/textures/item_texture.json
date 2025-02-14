@@ -139,6 +139,12 @@
 		},
 		"augmentation_stone": {
 			"textures": "textures/items/prop/augmentation_stone"
+		},
+		"tootsie_roll": {
+			"textures": "textures/items/ValentineDay/tootsie_roll"
+		},
+		"pink_lollipop": {
+			"textures": "textures/items/ValentineDay/pink_lollipop"
 		}
 	}
 }

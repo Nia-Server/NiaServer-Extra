@@ -1,0 +1,28 @@
+{
+    "format_version": "1.21.10",
+    "minecraft:block": {
+        "description": {
+            "identifier": "mcnia:cream_candy_cubes",
+            "menu_category": {
+                "category": "items"
+            }
+        },
+        "components": {
+            "minecraft:light_dampening": 15,
+            "minecraft:light_emission": 0,
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 1.2
+            },
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 2
+            },
+            "minecraft:geometry": "minecraft:geometry.full_block",
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "cream_candy_cubes",
+                    "render_method": "opaque"
+                }
+            }
+        }
+    }
+}

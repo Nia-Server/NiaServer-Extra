@@ -72,6 +72,16 @@
         },
         "dollar_block": {
 			"textures": "textures/blocks/dollar_block.png"
-		}
+		},
+        "red_candy_bar": {
+			"textures": "textures/blocks/ValentineDay/red_candy_bar.png"
+		},
+        "cream_candy_cubes": {
+			"textures": "textures/blocks/ValentineDay/cream_candy_cubes.png"
+		},
+        "red_heart_candy_cube": {
+			"textures": "textures/blocks/ValentineDay/red_heart_candy_cube.png"
+        }
     }
+    
 }
