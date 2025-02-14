@@ -121,6 +121,20 @@ const item_collector_big_component = {
 //     }
 // }
 
+const pink_lollipop_component = {
+    onConsume(event) {
+        let player = event.source;
+        player.addEffect("minecraft:regeneration", 100,{amplifier: 1, showParticles: false});
+    }
+}
+
+const tootsie_roll_component = {
+    onConsume(event) {
+        let player = event.source;
+        player.addEffect("minecraft:regeneration", 100,{amplifier: 1, showParticles: false});
+    }
+}
+
 
 
 world.beforeEvents.worldInitialize.subscribe(({ itemComponentRegistry }) => {
@@ -130,6 +144,8 @@ world.beforeEvents.worldInitialize.subscribe(({ itemComponentRegistry }) => {
     itemComponentRegistry.registerCustomComponent("mcnia:item_collector_small", item_collector_small_component);
     itemComponentRegistry.registerCustomComponent("mcnia:item_collector_middle", item_collector_middle_component);
     itemComponentRegistry.registerCustomComponent("mcnia:item_collector_big", item_collector_big_component);
+    itemComponentRegistry.registerCustomComponent("mcnia:pink_lollipop", pink_lollipop_component);
+    itemComponentRegistry.registerCustomComponent("mcnia:tootsie_roll", tootsie_roll_component);
     //itemComponentRegistry.registerCustomComponent("mcnia:dark_sword", dark_sword_component);
 })
 
