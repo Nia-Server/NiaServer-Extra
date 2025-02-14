@@ -8,14 +8,6 @@
             }
         },
         "components": {
-            "effects":[
-                {
-                    "name": "regeneration",
-                    "chance": 1.0,
-                    "duration": 20,
-                    "amplifier": 1
-                }
-            ],
             "minecraft:hand_equipped": false,
             "minecraft:max_stack_size": 64,
             "minecraft:icon": "pink_lollipop",
