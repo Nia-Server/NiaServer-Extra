@@ -114,13 +114,13 @@
 			"textures": "textures/items/pickaxe/test_pickaxe"
 		},
 		"seaweed_potion": {
-			"textures": "textures/items/seaweed_potion"
+			"textures": "textures/items/food/seaweed_potion"
 		},
 		"kelp_potion_small": {
-			"textures": "textures/items/kelp_potion_small"
+			"textures": "textures/items/food/kelp_potion_small"
 		},
 		"kelp_potion_big": {
-			"textures": "textures/items/kelp_potion_big"
+			"textures": "textures/items/food/kelp_potion_big"
 		},
 		"item_collector_small": {
 			"textures": "textures/items/item_collector_small"
@@ -148,6 +148,90 @@
 		},
 		"horror_mask": {
 			"textures": "textures/items/horror_mask.png"
+		},
+		"dark_boots": {
+			"textures": "textures/items/equipment/dark_boots.png"
+		},
+		"dark_leggings": {
+			"textures": "textures/items/equipment/dark_leggings.png"
+		},
+		"dark_chestplate": {
+			"textures": "textures/items/equipment/dark_chestplate.png"
+		},
+		"dark_helmet": {
+			"textures": "textures/items/equipment/dark_helmet.png"
+		},
+		"grass_boots": {
+			"textures": "textures/items/equipment/grass_boots.png"
+		},
+		"grass_leggings": {
+			"textures": "textures/items/equipment/grass_leggings.png"
+		},
+		"grass_chestplate": {
+			"textures": "textures/items/equipment/grass_chestplate.png"
+		},
+		"grass_helmet": {
+			"textures": "textures/items/equipment/grass_helmet.png"
+		},
+		"wind_boots": {
+			"textures": "textures/items/equipment/wind_boots.png"
+		},
+		"wind_leggings": {
+			"textures": "textures/items/equipment/wind_leggings.png"
+		},
+		"wind_chestplate": {
+			"textures": "textures/items/equipment/wind_chestplate.png"
+		},
+		"wind_helmet": {
+			"textures": "textures/items/equipment/wind_helmet.png"
+		},
+		"fire_boots": {
+			"textures": "textures/items/equipment/fire_boots.png"
+		},
+		"fire_leggings": {
+			"textures": "textures/items/equipment/fire_leggings.png"
+		},
+		"fire_chestplate": {
+			"textures": "textures/items/equipment/fire_chestplate.png"
+		},
+		"fire_helmet": {
+			"textures": "textures/items/equipment/fire_helmet.png"
+		},
+		"thunder_boots": {
+			"textures": "textures/items/equipment/thunder_boots.png"
+		},
+		"thunder_leggings": {
+			"textures": "textures/items/equipment/thunder_leggings.png"
+		},
+		"thunder_chestplate": {
+			"textures": "textures/items/equipment/thunder_chestplate.png"
+		},
+		"thunder_helmet": {
+			"textures": "textures/items/equipment/thunder_helmet.png"
+		},
+		"water_boots": {
+			"textures": "textures/items/equipment/water_boots.png"
+		},
+		"water_leggings": {
+			"textures": "textures/items/equipment/water_leggings.png"
+		},
+		"water_helmet": {
+			"textures": "textures/items/equipment/water_helmet.png"
+		},
+		"water_chestplate": {
+			"textures": "textures/items/equipment/water_chestplate.png"
+		},
+		"rock_boots": {
+			"textures": "textures/items/equipment/rock_boots.png"
+		},
+		"rock_leggings": {
+			"textures": "textures/items/equipment/rock_leggings.png"
+		},
+		"rock_chestplate": {
+			"textures": "textures/items/equipment/rock_chestplate.png"
+		},
+		"rock_helmet": {
+			"textures": "textures/items/equipment/rock_helmet.png"
 		}
 	}
 }

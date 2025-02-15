@@ -1,0 +1,42 @@
+{
+	"format_version": "1.19.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.wind_helmet",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "root_item",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "helmet",
+					"parent": "root_item",
+					"pivot": [0, 0, 0],
+					"binding": "'head'",
+					"cubes": [
+						{"origin": [-4, 0, -4], "size": [8, 8, 8], "inflate": 1, "uv": [0, 0]},
+						{"origin": [-5, 10, -2], "size": [1, 1, 4], "uv": [22, 16]},
+						{"origin": [-4, 10, -3], "size": [1, 1, 1], "uv": [2, 1]},
+						{"origin": [-4, 10, 2], "size": [1, 1, 1], "uv": [2, 1]},
+						{"origin": [-3, 10, 3], "size": [1, 1, 1], "uv": [2, 1]},
+						{"origin": [-3, 10, -4], "size": [1, 1, 1], "uv": [2, 1]},
+						{"origin": [-2, 10, -5], "size": [4, 1, 1], "uv": [0, 19]},
+						{"origin": [2, 10, -4], "size": [1, 1, 1], "uv": [2, 1]},
+						{"origin": [3, 10, -3], "size": [1, 1, 1], "uv": [2, 1]},
+						{"origin": [2, 10, 3], "size": [1, 1, 1], "uv": [2, 1]},
+						{"origin": [-2, 10, 4], "size": [4, 1, 1], "uv": [0, 17]},
+						{"origin": [3, 10, 2], "size": [1, 1, 1], "uv": [2, 1]},
+						{"origin": [4, 10, -2], "size": [1, 1, 4], "uv": [11, 16]}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,37 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "mcnia:water_leggings",
+			"menu_category": {
+				"category": "equipment",
+				"group": "itemGroup.name.leggings"
+			}
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:icon": {
+				"texture": "water_leggings"
+			},
+			"minecraft:wearable": {
+				"slot": "slot.armor.legs",
+				"protection": 6
+			},
+			"minecraft:enchantable": {
+				"slot": "armor_legs",
+				"value": 9
+			},
+			"minecraft:durability": {
+				"max_durability": 495
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": ["mcnia:water_crystal"],
+						"repair_amount": 112
+					}
+				]
+			}
+		}
+	}
+}

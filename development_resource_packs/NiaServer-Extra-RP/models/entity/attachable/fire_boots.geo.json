@@ -1,0 +1,52 @@
+{
+	"format_version": "1.19.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.fire_boots",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "left",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "leg_left",
+					"parent": "left",
+					"pivot": [1.9, 12, 0],
+					"rotation": [-0.1, 0, 0]
+				},
+				{
+					"name": "boot_left",
+					"parent": "leg_left",
+					"pivot": [1.9, 12, 0],
+					"binding": "'leftleg'",
+					"cubes": [
+						{"origin": [-0.1, 0, -2], "size": [4, 12, 4], "inflate": 1, "uv": [0, 9], "mirror": true},
+						{"origin": [4, -1, 1], "size": [3, 2, 3], "pivot": [5, -1, 2], "rotation": [0, -45, 0], "uv": [-1, -1]}
+					]
+				},
+				{
+					"name": "leg_right",
+					"parent": "left",
+					"pivot": [-1.9, 12, 0]
+				},
+				{
+					"name": "boot_right",
+					"parent": "leg_right",
+					"pivot": [-1.9, 12, 0],
+					"binding": "'rightleg'",
+					"cubes": [
+						{"origin": [-3.9, 0, -2], "size": [4, 12, 4], "inflate": 1, "uv": [0, 9]},
+						{"origin": [-6, -1, 1], "size": [3, 2, 3], "pivot": [-5, -1, 2], "rotation": [0, -45, 0], "uv": [-1, -1]}
+					]
+				}
+			]
+		}
+	]
+}

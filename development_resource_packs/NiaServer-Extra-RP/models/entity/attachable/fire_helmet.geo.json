@@ -1,0 +1,28 @@
+{
+	"format_version": "1.19.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.fire_helmet",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "helmet",
+					"pivot": [0, 24, 0],
+					"binding": "'head'",
+					"cubes": [
+						{"origin": [-4, 24, -4], "size": [8, 8, 8], "inflate": 1, "uv": [0, 0]},
+						{"origin": [-1, 41, -19.5], "size": [2, 2, 3], "inflate": 1, "pivot": [3, 26, -20.5], "rotation": [-45, 0, 0], "uv": [-1, 17]},
+						{"origin": [-1, 44, -19.5], "size": [2, 0, 0], "inflate": 1, "pivot": [3, 29, -23.5], "rotation": [-45, 0, 0], "uv": [13, 20]},
+						{"origin": [-1, 38, -16], "size": [2, 2, 2], "inflate": 1, "pivot": [3, 23, -18], "rotation": [-45, 0, 0], "uv": [0, 2]}
+					]
+				}
+			]
+		}
+	]
+}

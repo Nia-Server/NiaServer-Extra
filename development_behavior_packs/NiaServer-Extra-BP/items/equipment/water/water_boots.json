@@ -1,0 +1,37 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "mcnia:water_boots",
+			"menu_category": {
+				"category": "equipment",
+				"group": "itemGroup.name.boots"
+			}
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:icon": {
+				"texture": "water_boots"
+			},
+			"minecraft:wearable": {
+				"slot": "slot.armor.feet",
+				"protection": 2
+			},
+			"minecraft:enchantable": {
+				"slot": "armor_feet",
+				"value": 9
+			},
+			"minecraft:durability": {
+				"max_durability": 429
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": ["mcnia:water_crystal"],
+						"repair_amount": 80
+					}
+				]
+			}
+		}
+	}
+}
