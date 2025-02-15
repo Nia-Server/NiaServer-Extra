@@ -1,0 +1,33 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mcnia:water_boots"
+        },
+
+        "tags": ["crafting_table"],
+        "pattern": ["CDC",
+                    "ABA",
+                    "CEC"],
+        "key": {
+            "A": {
+                "item": "mcnia:water_crystal"
+            },
+            "B": {
+                "item": "minecraft:diamond_boots"
+            },
+            "C": {
+                "item": "minecraft:lapis_block"
+            },
+            "D": {
+                "item": "minecraft:glowstone"
+            },
+            "E": {
+                "item": "minecraft:diamond"
+            }
+        },
+        "result": {
+            "item": "mcnia:water_boots"
+        }
+    }
+}

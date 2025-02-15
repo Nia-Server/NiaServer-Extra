@@ -1,0 +1,33 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mcnia:fire_helmet"
+        },
+
+        "tags": ["crafting_table"],
+        "pattern": ["CDC",
+                    "ABA",
+                    "AEA"],
+        "key": {
+            "A": {
+                "item": "mcnia:fire_crystal"
+            },
+            "B": {
+                "item": "minecraft:diamond_helmet"
+            },
+            "C": {
+                "item": "minecraft:magma"
+            },
+            "D": {
+                "item": "minecraft:lava_bucket"
+            },
+            "E": {
+                "item": "minecraft:redstone_block"
+            }
+        },
+        "result": {
+            "item": "mcnia:fire_helmet"
+        }
+    }
+}

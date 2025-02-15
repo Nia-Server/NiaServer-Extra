@@ -1,0 +1,27 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mcnia:dark_leggings"
+        },
+
+        "tags": ["crafting_table"],
+        "pattern": ["CCC",
+                    "ABA",
+                    "CCC"],
+        "key": {
+            "A": {
+                "item": "mcnia:dark_crystal"
+            },
+            "B": {
+                "item": "minecraft:diamond_leggings"
+            },
+            "C": {
+                "item": "minecraft:crying_obsidian"
+            }
+        },
+        "result": {
+            "item": "mcnia:dark_leggings"
+        }
+    }
+}
