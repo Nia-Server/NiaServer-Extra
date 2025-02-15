@@ -1,0 +1,22 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mcnia:milk_dragon",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/milk_dragon"
+			},
+			"geometry": {
+				"default": "geometry.milk_dragon"
+			},
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"base_color": "#ead20d",
+				"overlay_color": "#ffffff"
+			}
+		}
+	}
+}

@@ -1,0 +1,30 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "奶龙BOSS",
+		"description": "奶龙BOSS Behavior Pack",
+		"uuid": "d0fc7ba6-ca5e-6b0e-ba1a-5d88316d0f02",
+		"version": [1, 0, 0],
+		"min_engine_version": [1, 16, 0]
+	},
+	"metadata": {
+		"authors": ["NiaServer"],
+		"generated_with": {
+			"blockbench_entity_wizard": ["1.6.0"]
+		}
+	},
+	"modules": [
+		{
+			"description": "Behavior",
+			"version": [1, 0, 0],
+			"uuid": "b40b257b-afaf-ceaf-c72e-91aaee1968bd",
+			"type": "data"
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "fa3f52ce-8305-00b2-0de2-8c8e2e2337d0",
+			"version": [1, 0, 0]
+		}
+	]
+}
