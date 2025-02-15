@@ -1,0 +1,33 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mcnia:thunder_chestplate"
+        },
+
+        "tags": ["crafting_table"],
+        "pattern": ["CEC",
+                    "ABA",
+                    "ADA"],
+        "key": {
+            "A": {
+                "item": "mcnia:thunder_crystal"
+            },
+            "B": {
+                "item": "minecraft:diamond_chestplate"
+            },
+            "C": {
+                "item": "minecraft:golden_sword"
+            },
+            "D": {
+                "item": "minecraft:golden_apple"
+            },
+            "E": {
+                "item": "minecraft:gold_block"
+            }
+        },
+        "result": {
+            "item": "mcnia:thunder_chestplate"
+        }
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mcnia:wind_boots"
+        },
+
+        "tags": ["crafting_table"],
+        "pattern": ["ACA",
+                    "DBD",
+                    "DED"],
+        "key": {
+            "A": {
+                "item": "mcnia:wind_crystal"
+            },
+            "B": {
+                "item": "minecraft:diamond_boots"
+            },
+            "C": {
+                "item": "minecraft:diamond_block"
+            },
+            "D": {
+                "item": "minecraft:feather"
+            },
+            "E": {
+                "item": "minecraft:sea_lantern"
+            }
+        },
+        "result": {
+            "item": "mcnia:wind_boots"
+        }
+    }
+}
