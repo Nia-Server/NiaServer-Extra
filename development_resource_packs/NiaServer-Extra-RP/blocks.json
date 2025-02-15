@@ -39,6 +39,9 @@
     "thunder_dirt" : {
         "sound": "grass"
     },
+    "water_root_leaf" : {
+        "sound": "cherry_leaves"
+    },
     "dollar_block": {
 		"sound": "azalea_leaves"
 	}
