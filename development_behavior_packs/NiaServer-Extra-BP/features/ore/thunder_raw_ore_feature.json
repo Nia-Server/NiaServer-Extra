@@ -11,7 +11,7 @@
                 "may_replace": ["minecraft:stone"]
             },
             {
-                "places_block": "mcnia:thunder_raw_ore",
+                "places_block": "mcnia:deepslate_thunder_ore",
                 "may_replace": ["minecraft:deepslate"]
             }
         ]

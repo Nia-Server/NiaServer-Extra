@@ -90,6 +90,18 @@
         },
         "sandwiching_chocolate_block": {
             "textures": "textures/blocks/ValentineDay/sandwiching_chocolate_block.png"
+        },
+        "deepslate_grass_ore" : {
+            "textures" : "textures/blocks/raw_ore/deepslate_grass_ore"
+        },
+        "deepslate_thunder_ore" : {
+            "textures" : "textures/blocks/raw_ore/deepslate_thunder_ore"
+        },
+        "deepslate_water_ore" : {
+            "textures" : "textures/blocks/raw_ore/deepslate_water_ore"
+        },
+        "deepslate_rock_ore" : {
+            "textures" : "textures/blocks/raw_ore/deepslate_rock_ore"
         }
     }
 }

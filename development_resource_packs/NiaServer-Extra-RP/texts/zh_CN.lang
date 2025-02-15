@@ -138,5 +138,10 @@ item.mcnia:wind_leggings=空元素护腿
 item.mcnia:wind_chestplate=空元素胸甲
 item.mcnia:wind_helmet=空元素头盔
 
+tile.mcnia:deepslate_grass_ore.name=深层草元素矿石
+tile.mcnia:deepslate_thunder_ore.name=深层雷元素矿石
+tile.mcnia:deepslate_water_ore.name=深层水元素矿石
+tile.mcnia:deepslate_rock_ore.name=深层岩元素矿石
+
 
 

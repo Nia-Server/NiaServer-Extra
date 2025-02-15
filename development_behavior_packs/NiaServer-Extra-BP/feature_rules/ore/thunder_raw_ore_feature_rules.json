@@ -38,7 +38,7 @@
             },
             "y": {
                 "distribution": "uniform",
-                "extent": [0, 180]
+                "extent": [-64, 100]
             },
             "z": {
                 "distribution": "uniform",
