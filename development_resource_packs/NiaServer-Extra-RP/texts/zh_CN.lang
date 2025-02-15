@@ -97,6 +97,10 @@ tile.mcnia:red_candy_bar.name=红色糖果柱
 tile.mcnia:cream_candy_cubes.name=奶油糖果方块
 tile.mcnia:red_heart_candy_cube.name=红色爱心糖果方块
 
+tile.mcnia:red_circle_candy_cube.name=红色圆形糖果方块
+tile.mcnia:lasagna_block.name=千层巧克力方块
+tile.mcnia:sandwiching_chocolate_block.name=夹心巧克力方块
+
 item.mcnia:horror_mask=惊悚面具
 
 item.mcnia:dark_boots=暗元素靴子

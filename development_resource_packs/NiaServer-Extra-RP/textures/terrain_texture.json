@@ -81,7 +81,15 @@
 		},
         "red_heart_candy_cube": {
 			"textures": "textures/blocks/ValentineDay/red_heart_candy_cube.png"
+        },
+        "red_circle_candy_cube": {
+            "textures": "textures/blocks/ValentineDay/red_circle_candy_cube.png"
+        },
+        "lasagna_block": {
+            "textures": "textures/blocks/ValentineDay/lasagna_block.png"
+        },
+        "sandwiching_chocolate_block": {
+            "textures": "textures/blocks/ValentineDay/sandwiching_chocolate_block.png"
         }
     }
-    
 }
