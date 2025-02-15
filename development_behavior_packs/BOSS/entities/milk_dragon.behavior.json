@@ -17,6 +17,9 @@
 			},
 			"minecraft:push_through": {
 				"value": 1
+			},
+			"minecraft:scale": {
+				"value": 10
 			}
 		}
 	}
