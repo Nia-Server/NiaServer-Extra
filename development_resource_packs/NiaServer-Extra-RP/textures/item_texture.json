@@ -232,6 +232,15 @@
 		},
 		"rock_helmet": {
 			"textures": "textures/items/equipment/rock_helmet.png"
-		}
+		},
+		"breakthroughbook": {
+            "textures": "textures/items/UpgradeMaterials/breakthroughbook"
+        },
+        "strengthentheentry": {
+            "textures": "textures/items/UpgradeMaterials/strengthentheentry"
+        },
+        "upgradebook": {
+            "textures": "textures/items/UpgradeMaterials/upgradebook"
+        }
 	}
 }
