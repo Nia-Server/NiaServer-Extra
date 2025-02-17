@@ -1,4 +1,4 @@
-import {world,system, ItemComponentTypes, EntityComponentTypes} from '@minecraft/server';
+import {world,system, ItemComponentTypes, EntityComponentTypes, EquipmentSlot} from '@minecraft/server';
 import { ActionFormData,ModalFormData,MessageFormData } from '@minecraft/server-ui'
 import { log } from './API/logger';
 
@@ -181,8 +181,86 @@ world.afterEvents.entityHurt.subscribe((event) => {
             }
 
         }
+        //判断对方装甲
+        let player = event.damageSource.damagingEntity;
+        if (player.getComponent(EntityComponentTypes.Equippable).getEquipment(EquipmentSlot.Head) &&
+            player.getComponent(EntityComponentTypes.Equippable).getEquipment(EquipmentSlot.Chest) &&
+            player.getComponent(EntityComponentTypes.Equippable).getEquipment(EquipmentSlot.Legs) &&
+            player.getComponent(EntityComponentTypes.Equippable).getEquipment(EquipmentSlot.Feet)) {
+            let equ_head = player.getComponent(EntityComponentTypes.Equippable).getEquipment(EquipmentSlot.Head);
+            let equ_chest = player.getComponent(EntityComponentTypes.Equippable).getEquipment(EquipmentSlot.Chest);
+            let equ_legs = player.getComponent(EntityComponentTypes.Equippable).getEquipment(EquipmentSlot.Legs);
+            let equ_feet = player.getComponent(EntityComponentTypes.Equippable).getEquipment(EquipmentSlot.Feet);
+            
+            //火元素
+            if (equ_head.typeId == "mcnia:fire_helmet" &&
+                equ_chest.typeId == "mcnia:fire_chestplate" &&
+                equ_legs.typeId == "mcnia:fire_leggings" &&
+                equ_feet.typeId == "mcnia:fire_boots") {
+                player.addEffect("minecraft:strength",200,{"amplifier": 4,"showParticles":false});
+            }
+
+            //雷元素
+            if (equ_head.typeId == "mcnia:thunder_helmet" &&
+                equ_chest.typeId == "mcnia:thunder_chestplate" &&
+                equ_legs.typeId == "mcnia:thunder_leggings" &&
+                equ_feet.typeId == "mcnia:thunder_boots") {
+                player.addEffect("minecraft:speed",200,{"amplifier": 0,"showParticles":false});
+            }
+        }
 
     }
+})
+
+
+world.afterEvents.entityHurt.subscribe((event) => {
+    if (event.hurtEntity.typeId != "minecraft:player") return;
+    let player = event.hurtEntity;
+    if (player.getComponent(EntityComponentTypes.Equippable).getEquipment(EquipmentSlot.Head) &&
+        player.getComponent(EntityComponentTypes.Equippable).getEquipment(EquipmentSlot.Chest) &&
+        player.getComponent(EntityComponentTypes.Equippable).getEquipment(EquipmentSlot.Legs) &&
+        player.getComponent(EntityComponentTypes.Equippable).getEquipment(EquipmentSlot.Feet)) {
+        let equ_head = player.getComponent(EntityComponentTypes.Equippable).getEquipment(EquipmentSlot.Head);
+        let equ_chest = player.getComponent(EntityComponentTypes.Equippable).getEquipment(EquipmentSlot.Chest);
+        let equ_legs = player.getComponent(EntityComponentTypes.Equippable).getEquipment(EquipmentSlot.Legs);
+        let equ_feet = player.getComponent(EntityComponentTypes.Equippable).getEquipment(EquipmentSlot.Feet);
+        //草元素
+        if (equ_head.typeId == "mcnia:grass_helmet" &&
+            equ_chest.typeId == "mcnia:grass_chestplate" &&
+            equ_legs.typeId == "mcnia:grass_leggings" &&
+            equ_feet.typeId == "mcnia:grass_boots") {
+                player.addEffect("minecraft:regeneration",100,{"amplifier": 2,"showParticles":false});
+                player.addEffect("minecraft:weakness",100,{"amplifier": 2,"showParticles":false});
+            }
+
+        //岩元素
+        if (equ_head.typeId == "mcnia:rock_helmet" &&
+            equ_chest.typeId == "mcnia:rock_chestplate" &&
+            equ_legs.typeId == "mcnia:rock_leggings" &&
+            equ_feet.typeId == "mcnia:rock_boots") {
+                player.addEffect("minecraft:resistance",100,{"amplifier": 1,"showParticles":false});
+        }
+
+        //风元素
+        if (equ_head.typeId == "mcnia:wind_helmet" &&
+            equ_chest.typeId == "mcnia:wind_chestplate" &&
+            equ_legs.typeId == "mcnia:wind_leggings" &&
+            equ_feet.typeId == "mcnia:wind_boots") {
+                player.addEffect("minecraft:speed",200,{"amplifier": 2,"showParticles":false});
+                player.addEffect("minecraft:regeneration",100,{"amplifier": 0,"showParticles":false});
+        }
+
+        //暗元素
+        if (equ_head.typeId == "mcnia:dark_helmet" &&
+            equ_chest.typeId == "mcnia:dark_chestplate" &&
+            equ_legs.typeId == "mcnia:dark_leggings" &&
+            equ_feet.typeId == "mcnia:dark_boots") {
+                player.addEffect("minecraft:invisibility",200,{"amplifier": 0,"showParticles":false});
+                player.addEffect("minecraft:speed",60,{"amplifier": 0,"showParticles":false});
+        }
+    }
+
+
 })
 
 const EQGUI = {

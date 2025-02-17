@@ -162,6 +162,9 @@ system.runInterval(() => {
             if (equ_head.typeId == "mcnia:oxygen_helmet" && !player.isInWater) {
                 player.addEffect("minecraft:water_breathing",320,{amplifier: 0, showParticles: false});
             }
+            if (equ_head.typeId == "mcnia:fire_helmet" && player.isInLava) {
+                player.addEffect("minecraft:fire_resistance",320,{amplifier: 0, showParticles: false});
+            }
         }
 
         if (player.getComponent(EntityComponentTypes.Equippable).getEquipment(EquipmentSlot.Head) &&
@@ -186,7 +189,8 @@ system.runInterval(() => {
                 equ_chest.typeId == "mcnia:fire_chestplate" &&
                 equ_legs.typeId == "mcnia:fire_leggings" &&
                 equ_feet.typeId == "mcnia:fire_boots") {
-                player.addEffect("minecraft:strength",320,{amplifier: 3, showParticles: false});
+                player.addEffect("minecraft:strength",320,{amplifier: 2, showParticles: false});
+                player.addEffect("minecraft:water_breathing",320,{amplifier: 0, showParticles: false});
             }
 
             if (equ_head.typeId == "mcnia:wind_helmet" &&
@@ -195,6 +199,7 @@ system.runInterval(() => {
                 equ_feet.typeId == "mcnia:wind_boots") {
                 player.addEffect("minecraft:jump_boost",320,{amplifier: 0, showParticles: false});
                 player.addEffect("minecraft:speed",320,{amplifier: 1, showParticles: false});
+                player.addEffect("minecraft:water_breathing",320,{amplifier: 0, showParticles: false});
             }
 
             if (equ_head.typeId == "mcnia:thunder_helmet" &&
@@ -202,6 +207,7 @@ system.runInterval(() => {
                 equ_legs.typeId == "mcnia:thunder_leggings" &&
                 equ_feet.typeId == "mcnia:thunder_boots") {
                 player.addEffect("minecraft:strength",320,{amplifier: 0, showParticles: false});
+                player.addEffect("minecraft:water_breathing",320,{amplifier: 0, showParticles: false});
             }
 
             if (equ_head.typeId == "mcnia:dark_helmet" &&
@@ -209,6 +215,7 @@ system.runInterval(() => {
                 equ_legs.typeId == "mcnia:dark_leggings" &&
                 equ_feet.typeId == "mcnia:dark_boots") {
                 player.addEffect("minecraft:night_vision",320,{amplifier: 0, showParticles: false});
+                player.addEffect("minecraft:water_breathing",320,{amplifier: 0, showParticles: false});
             }
 
             //岩元素
@@ -217,6 +224,15 @@ system.runInterval(() => {
                 equ_legs.typeId == "mcnia:rock_leggings" &&
                 equ_feet.typeId == "mcnia:rock_boots") {
                 player.addEffect("minecraft:slowness",320,{amplifier: 0, showParticles: false});
+                player.addEffect("minecraft:water_breathing",320,{amplifier: 0, showParticles: false});
+            }
+
+            //草元素
+            if (equ_head.typeId == "mcnia:grass_helmet" &&
+                equ_chest.typeId == "mcnia:grass_chestplate" &&
+                equ_legs.typeId == "mcnia:grass_leggings" &&
+                equ_feet.typeId == "mcnia:grass_boots") {
+                player.addEffect("minecraft:water_breathing",320,{amplifier: 0, showParticles: false});
             }
         }
 

@@ -15,7 +15,7 @@
 			},
 			"minecraft:wearable": {
 				"slot": "slot.armor.legs",
-				"protection": 6
+				"protection": 5
 			},
 			"minecraft:enchantable": {
 				"slot": "armor_legs",
