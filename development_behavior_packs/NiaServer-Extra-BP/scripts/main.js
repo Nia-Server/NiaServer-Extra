@@ -1,4 +1,4 @@
-import {world, system, ScreenDisplay, ItemComponentTypes,  EntityComponentTypes, EffectType, EffectTypes} from "@minecraft/server";
+import {world, system, ScreenDisplay, ItemComponentTypes,  EntityComponentTypes, EffectType, EffectTypes, EquipmentSlot} from "@minecraft/server";
 import { log,warn,error } from "./API/logger.js";
 import './newFunction.js';
 
@@ -135,6 +135,10 @@ const tootsie_roll_component = {
     }
 }
 
+const water_equipment_component = {
+
+}
+
 
 
 world.beforeEvents.worldInitialize.subscribe(({ itemComponentRegistry }) => {
@@ -151,12 +155,71 @@ world.beforeEvents.worldInitialize.subscribe(({ itemComponentRegistry }) => {
 
 system.runInterval(() => {
     for (const player of world.getPlayers()) {
-        if (player.getComponent(EntityComponentTypes.Equippable).getEquipment("Head")) {
-            let equ_head = player.getComponent(EntityComponentTypes.Equippable).getEquipment("Head");
+
+
+        if (player.getComponent(EntityComponentTypes.Equippable).getEquipment(EquipmentSlot.Head)) {
+            let equ_head = player.getComponent(EntityComponentTypes.Equippable).getEquipment(EquipmentSlot.Head);
             if (equ_head.typeId == "mcnia:oxygen_helmet" && !player.isInWater) {
                 player.addEffect("minecraft:water_breathing",320,{amplifier: 0, showParticles: false});
             }
         }
+
+        if (player.getComponent(EntityComponentTypes.Equippable).getEquipment(EquipmentSlot.Head) &&
+            player.getComponent(EntityComponentTypes.Equippable).getEquipment(EquipmentSlot.Chest) &&
+            player.getComponent(EntityComponentTypes.Equippable).getEquipment(EquipmentSlot.Legs) &&
+            player.getComponent(EntityComponentTypes.Equippable).getEquipment(EquipmentSlot.Feet)) {
+            let equ_head = player.getComponent(EntityComponentTypes.Equippable).getEquipment(EquipmentSlot.Head);
+            let equ_chest = player.getComponent(EntityComponentTypes.Equippable).getEquipment(EquipmentSlot.Chest);
+            let equ_legs = player.getComponent(EntityComponentTypes.Equippable).getEquipment(EquipmentSlot.Legs);
+            let equ_feet = player.getComponent(EntityComponentTypes.Equippable).getEquipment(EquipmentSlot.Feet);
+            if (equ_head.typeId == "mcnia:water_helmet" &&
+                equ_chest.typeId == "mcnia:water_chestplate" &&
+                equ_legs.typeId == "mcnia:water_leggings" &&
+                equ_feet.typeId == "mcnia:water_boots") {
+                player.addEffect("minecraft:water_breathing",320,{amplifier: 0, showParticles: false});
+                player.addEffect("minecraft:health_boost", 320,{amplifier: 0, showParticles: false});
+                player.addEffect("minecraft:regeneration", 320,{amplifier: 0, showParticles: false});
+                player.addEffect("minecraft:weakness", 320,{amplifier: 1, showParticles: false});
+            }
+
+            if (equ_head.typeId == "mcnia:fire_helmet" &&
+                equ_chest.typeId == "mcnia:fire_chestplate" &&
+                equ_legs.typeId == "mcnia:fire_leggings" &&
+                equ_feet.typeId == "mcnia:fire_boots") {
+                player.addEffect("minecraft:strength",320,{amplifier: 3, showParticles: false});
+            }
+
+            if (equ_head.typeId == "mcnia:wind_helmet" &&
+                equ_chest.typeId == "mcnia:wind_chestplate" &&
+                equ_legs.typeId == "mcnia:wind_leggings" &&
+                equ_feet.typeId == "mcnia:wind_boots") {
+                player.addEffect("minecraft:jump_boost",320,{amplifier: 0, showParticles: false});
+                player.addEffect("minecraft:speed",320,{amplifier: 1, showParticles: false});
+            }
+
+            if (equ_head.typeId == "mcnia:thunder_helmet" &&
+                equ_chest.typeId == "mcnia:thunder_chestplate" &&
+                equ_legs.typeId == "mcnia:thunder_leggings" &&
+                equ_feet.typeId == "mcnia:thunder_boots") {
+                player.addEffect("minecraft:strength",320,{amplifier: 0, showParticles: false});
+            }
+
+            if (equ_head.typeId == "mcnia:dark_helmet" &&
+                equ_chest.typeId == "mcnia:dark_chestplate" &&
+                equ_legs.typeId == "mcnia:dark_leggings" &&
+                equ_feet.typeId == "mcnia:dark_boots") {
+                player.addEffect("minecraft:night_vision",320,{amplifier: 0, showParticles: false});
+            }
+
+            //岩元素
+            if (equ_head.typeId == "mcnia:rock_helmet" &&
+                equ_chest.typeId == "mcnia:rock_chestplate" &&
+                equ_legs.typeId == "mcnia:rock_leggings" &&
+                equ_feet.typeId == "mcnia:rock_boots") {
+                player.addEffect("minecraft:slowness",320,{amplifier: 0, showParticles: false});
+            }
+        }
+
         if (player.getDynamicProperty("sea_potion_time") == undefined) continue;
         if (player.getDynamicProperty("sea_potion_time") <= 0) continue;
         player.setDynamicProperty("sea_potion_time", player.getDynamicProperty("sea_potion_time") - 5);
@@ -166,5 +229,6 @@ system.runInterval(() => {
             player.setDynamicProperty("sea_potion_time", 0);
             player.sendMessage("§7你感觉到一股力量在你的体内消散了...");
         }
+
     }
 }, 100);
