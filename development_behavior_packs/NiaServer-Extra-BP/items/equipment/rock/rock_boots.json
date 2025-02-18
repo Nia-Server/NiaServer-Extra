@@ -10,9 +10,7 @@
 		},
 		"components": {
 			"minecraft:max_stack_size": 1,
-			"minecraft:icon": {
-				"texture": "rock_boots"
-			},
+			"minecraft:icon": "rock_boots",
 			"minecraft:wearable": {
 				"slot": "slot.armor.feet",
 				"protection": 3
@@ -27,8 +25,8 @@
 			"minecraft:repairable": {
 				"repair_items": [
 					{
-						"items": ["rock_crystal"],
-						"repair_amount": 107
+						"items": ["mcnia:equipment_repair_scroll"],
+						"repair_amount": 429
 					}
 				]
 			}

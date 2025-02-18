@@ -10,9 +10,7 @@
 		},
 		"components": {
 			"minecraft:max_stack_size": 1,
-			"minecraft:icon": {
-				"texture": "horror_mask"
-			},
+			"minecraft:icon": "horror_mask",
 			"minecraft:wearable": {
 				"slot": "slot.armor.head",
 				"protection": 20

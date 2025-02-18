@@ -10,9 +10,7 @@
 		},
 		"components": {
 			"minecraft:max_stack_size": 1,
-			"minecraft:icon": {
-				"texture": "water_chestplate"
-			},
+			"minecraft:icon": "water_chestplate",
 			"minecraft:wearable": {
 				"slot": "slot.armor.chest",
 				"protection": 6
@@ -27,8 +25,8 @@
 			"minecraft:repairable": {
 				"repair_items": [
 					{
-						"items": ["mcnia:water_crystal"],
-						"repair_amount": 96
+						"items": ["mcnia:equipment_repair_scroll"],
+						"repair_amount": 528
 					}
 				]
 			}

@@ -145,6 +145,6 @@ tile.mcnia:deepslate_rock_ore.name=深层岩元素矿石
 
 
 
-item.mcnia:breakthroughbook=突破书
-item.mcnia:strengthentheentry=强化词条
-item.mcnia:upgradebook=升级书
+item.mcnia:break_through_book=突破书
+item.mcnia:equipment_repair_scroll=装备修复卷轴
+item.mcnia:upgrade_book=升级书

@@ -12,10 +12,16 @@
 			},
 			"bones": [
 				{
-					"name": "bb_main",
+					"name": "body",
+					"pivot": [0, 14, 0]
+				},
+				{
+					"name": "chestplate",
+					"parent": "body",
 					"pivot": [0, 0, 0],
+					"binding": "'body'",
 					"cubes": [
-						{"origin": [-4, 12, -2], "size": [8, 12, 4], "inflate": 1.01, "uv": [8, 16]}
+						{"origin": [-4, 2, -2], "size": [8, 12, 4], "inflate": 1.01, "uv": [8, 16]}
 					]
 				},
 				{
@@ -25,20 +31,25 @@
 				{
 					"name": "arm_plate_right",
 					"parent": "arm_right",
-					"pivot": [-5, 3, 0],
+					"pivot": [-5, 12, 0],
 					"binding": "'rightarm'",
 					"cubes": [
-						{"origin": [-11, 16, -8], "size": [1, 1, 2], "inflate": 1, "pivot": [-16, 2, -6], "rotation": [-180, -45, -135], "uv": [0, 16], "mirror": true},
+						{"origin": [-10, 14, 1], "size": [1, 1, 1], "inflate": 1, "pivot": [-5, 12, 3], "rotation": [-45, -45, 0], "uv": [2, 17]},
 						{"origin": [-8, 2, -2], "size": [4, 12, 4], "inflate": 1, "uv": [0, 0]}
 					]
 				},
 				{
+					"name": "arm_left",
+					"pivot": [5, 12, 0]
+				},
+				{
 					"name": "arm_plate_left",
-					"pivot": [5, 14, 0],
+					"parent": "arm_left",
+					"pivot": [5, 12, 0],
 					"binding": "'leftarm'",
 					"cubes": [
-						{"origin": [0, 14, -2], "size": [4, 12, 4], "inflate": 1, "uv": [0, 0], "mirror": true},
-						{"origin": [12, 30, -14], "size": [1, 1, 2], "inflate": 1, "pivot": [7, 16, -12], "rotation": [-45, -45, 0], "uv": [0, 16], "mirror": true}
+						{"origin": [4, 2, -2], "size": [4, 12, 4], "inflate": 1, "uv": [0, 0], "mirror": true},
+						{"origin": [9, 19, -6], "size": [1, 1, 1], "inflate": 1, "pivot": [2, 17, -4], "rotation": [0, -45, 45], "uv": [2, 18], "mirror": true}
 					]
 				}
 			]

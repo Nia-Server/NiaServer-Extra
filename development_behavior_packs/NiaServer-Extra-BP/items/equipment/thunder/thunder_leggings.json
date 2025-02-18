@@ -10,9 +10,7 @@
 		},
 		"components": {
 			"minecraft:max_stack_size": 1,
-			"minecraft:icon": {
-				"texture": "thunder_leggings"
-			},
+			"minecraft:icon": "thunder_leggings",
 			"minecraft:wearable": {
 				"slot": "slot.armor.legs",
 				"protection": 6
@@ -27,8 +25,8 @@
 			"minecraft:repairable": {
 				"repair_items": [
 					{
-						"items": ["thunder_crystal"],
-						"repair_amount": 123
+						"items": ["mcnia:equipment_repair_scroll"],
+						"repair_amount": 495
 					}
 				]
 			}
