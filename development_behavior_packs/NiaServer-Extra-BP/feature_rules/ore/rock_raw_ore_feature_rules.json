@@ -9,46 +9,31 @@
             "placement_pass": "underground_pass",
             "minecraft:biome_filter": [
                 {
-                    "any_of": [
-                        {
-                            "test": "has_biome_tag",
-                            "operator": "==",
-                            "value": "mesa"
-                        },
-                        {
-                            "test": "has_biome_tag",
-                            "operator": "==",
-                            "value": "mesa_bryce"
-                        },
-                        {
-                            "test": "has_biome_tag",
-                            "operator": "==",
-                            "value": "mesa_plateau_mutated"
-                        },
-                        {
-                            "test": "has_biome_tag",
-                            "operator": "==",
-                            "value": "mesa_plateau_stone"
-                        },
-                        {
-                            "test": "has_biome_tag",
-                            "operator": "==",
-                            "value": "mesa_plateau_stone_mutated"
-                        }
-                    ]
-                }
+					"any_of": [
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "overworld"
+						},
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "overworld_generation"
+						}
+					]
+				}
             ]
         },
         "distribution": {
-            "iterations": 6,
+            "iterations": 16,
             "coordinate_eval_order": "zyx",
             "x": {
                 "distribution": "uniform",
                 "extent": [0, 16]
             },
             "y": {
-                "distribution": "uniform",
-                "extent": [-64, 50]
+                "distribution": "triangle",
+                "extent": [60, 200]
             },
             "z": {
                 "distribution": "uniform",

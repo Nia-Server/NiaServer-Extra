@@ -9,14 +9,19 @@
             "placement_pass": "underground_pass",
             "minecraft:biome_filter": [
                 {
-                    "any_of": [
-                        {
-                            "test": "has_biome_tag",
-                            "operator": "==",
-                            "value": "overworld"
-                        }
-                    ]
-                }
+					"any_of": [
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "overworld"
+						},
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "overworld_generation"
+						}
+					]
+				}
             ]
         },
         "distribution": {
@@ -28,7 +33,7 @@
             },
             "y": {
                 "distribution": "uniform",
-                "extent": [-64, 40]
+                "extent": [-64, 64]
             },
             "z": {
                 "distribution": "uniform",

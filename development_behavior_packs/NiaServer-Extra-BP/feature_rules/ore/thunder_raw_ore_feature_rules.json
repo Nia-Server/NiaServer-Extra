@@ -8,37 +8,32 @@
         "conditions": {
             "placement_pass": "underground_pass",
             "minecraft:biome_filter": [
-                {
-                    "any_of": [
-                        {
-                            "test": "has_biome_tag",
-                            "operator": "==",
-                            "value": "swampland"
-                        },
-                        {
-                            "test": "has_biome_tag",
-                            "operator": "==",
-                            "value": "swampland_mutated"
-                        },
-                        {
-                            "test": "has_biome_tag",
-                            "operator": "==",
-                            "value": "mangrove_swamp"
-                        }
-                    ]
-                }
-            ]
+				{
+					"any_of": [
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "overworld"
+						},
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "overworld_generation"
+						}
+					]
+				}
+			]
         },
         "distribution": {
-            "iterations": 3,
+            "iterations": 6,
             "coordinate_eval_order": "zyx",
             "x": {
                 "distribution": "uniform",
                 "extent": [0, 16]
             },
             "y": {
-                "distribution": "uniform",
-                "extent": [-64, 100]
+                "distribution": "gaussian",
+                "extent": [-144, 16]
             },
             "z": {
                 "distribution": "uniform",

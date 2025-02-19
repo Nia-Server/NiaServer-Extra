@@ -4,7 +4,7 @@
         "description": {
             "identifier": "mcnia:ore/rock_raw_ore_feature"
         },
-        "count": 8,
+        "count": 12,
         "replace_rules": [
             {
                 "places_block": "mcnia:rock_raw_ore",
@@ -17,3 +17,4 @@
         ]
     }
 }
+d

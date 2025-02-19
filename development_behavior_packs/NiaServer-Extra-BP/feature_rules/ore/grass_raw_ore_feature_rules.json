@@ -9,86 +9,31 @@
             "placement_pass": "underground_pass",
             "minecraft:biome_filter": [
                 {
-                    "any_of": [
-                        {
-                            "test": "has_biome_tag",
-                            "operator": "==",
-                            "value": "jungle"
-                        },
-                        {
-                            "test": "has_biome_tag",
-                            "operator": "==",
-                            "value": "jungle_edge"
-                        },
-                        {
-                            "test": "has_biome_tag",
-                            "operator": "==",
-                            "value": "jungle_edge_mutated"
-                        },
-                        {
-                            "test": "has_biome_tag",
-                            "operator": "==",
-                            "value": "jungle_hills"
-                        },
-                        {
-                            "test": "has_biome_tag",
-                            "operator": "==",
-                            "value": "jungle_mutated"
-                        },
-                        {
-                            "test": "has_biome_tag",
-                            "operator": "==",
-                            "value": "bamboo_jungle_hills"
-                        },
-                        {
-                            "test": "has_biome_tag",
-                            "operator": "==",
-                            "value": "forest"
-                        },
-                        {
-                            "test": "has_biome_tag",
-                            "operator": "==",
-                            "value": "forest_hills"
-                        },
-                        {
-                            "test": "has_biome_tag",
-                            "operator": "==",
-                            "value": "birch_forest_hills"
-                        },
-                        {
-                            "test": "has_biome_tag",
-                            "operator": "==",
-                            "value": "birch_forest_hills_mutated"
-                        },
-                        {
-                            "test": "has_biome_tag",
-                            "operator": "==",
-                            "value": "birch_forest_mutated"
-                        },
-                        {
-                            "test": "has_biome_tag",
-                            "operator": "==",
-                            "value": "roofed_forest_mutated"
-                        },
-                        {
-                            "test": "has_biome_tag",
-                            "operator": "==",
-                            "value": "lush_caves"
-                        }
-                    ]
-                }
+					"any_of": [
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "overworld"
+						},
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "overworld_generation"
+						}
+					]
+				}
             ]
         },
         "distribution": {
-            "iterations": 3,
+            "iterations": 6,
             "coordinate_eval_order": "zyx",
             "x": {
                 "distribution": "uniform",
                 "extent": [0, 16]
             },
             "y": {
-                "distribution": "uniform",
-                "extent": [-64, 50]
+                "distribution": "gaussian",
+                "extent": [-16, 64]
             },
             "z": {
                 "distribution": "uniform",
