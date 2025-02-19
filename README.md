@@ -1,14 +1,43 @@
 # NiaServer-Extra
 
-NIA服务器额外扩展玩法相关实现代码
+NIA服务器额外扩展玩法 **“海洋限定版 V5”** 相关实现代码
 
 ## 写在前面
 
 本项目为[NiaServer-Core](https://github.com/Nia-Server/NiaServer-Core)子项目，项目主体文件内容为Minecraft基岩版的addons附加包。
 
-本项目addons的完整运行**依赖于**主项目[NiaServer-Core](https://github.com/Nia-Server/NiaServer-Core)的addons包，如果你没有正确的安装主项目addons，可能出现部分功能异常。所以在安装本addons的同时请确保正确安装[NiaServer-Core](https://github.com/Nia-Server/NiaServer-Core)！
-
 **启用存档中所有BETA选项以及教育版模式**
+
+## 玩法开发进度一览表
+
+| 名称 | 开发状态 | 贡献者 | 备注 |
+| --- | --- | --- | --- |
+| 水世界生成 | **开发完成** | @NIANIANKNIA | |
+| 玩家呼吸组件调整 | **开发完成** | @NIANIANKNIA | |
+| 原版世界水下视野文件调整 | **开发完成** | @NIANIANKNIA | |
+| 七元素矿石 | **开发完成** | @lonely-233 @Li-IsLa @NIANIANKNIA | |
+| 七元素矿石合成 | **开发完成** | @Li-IsLa | |
+| 七元素矿石生成 | **开发完成** | @Li-IsLa @NIANIANKNIA | |
+| 七元素剑 | **开发完成** | @lonely-233 @NIANIANKNIA | |
+| 七元素剑合成 | **开发完成** | @Li-IsLa | |
+| 七元素剑功能实现 | **开发完成** | @lonely-233 @NIANIANKNIA | 调整中数值 |
+| 武器强化系统 | **开发完成** | @NIANIANKNIA | |
+| 七元素盔甲 | **开发完成** | @DeanAmbr @NIANIANKNIA | |
+| 七元素盔甲合成 | **开发完成** | @NIANIANKNIA | |
+| 七元素盔甲功能实现 | **开发完成** | @DeanAmbr @NIANIANKNIA | 调整中数值 |
+| 盔甲免伤系统 | 开发中 | @NIANIANKNIA | |
+| 七元素植物 | 开发中 | | |
+| 七元素植物生成 | 开发中 | | |
+| 原版生物生成 | 开发中 | | |
+| 七元素生物（基于原版生物） | 开发中 | @jiansyuan | |
+| 七元素生物（原创生物） | 开发中 | | |
+| 七元素生物生成 | 开发中 | | |
+| 世界BOSS | 开发中 | | |
+| 基于粒子的任务指引系统 | 开发中 | @jiansyuan @NIANIANKNIA | 依赖于[Handy-Tools](https://github.com/Nia-Server/Handy-Tools)生成的任务指引 |
+| 水上随机生成结构 | 开发中 | | |
+| 空中随机生成结构 | 开发中 | | |
+
+**所有功能我们预计2025Q3完成开发**
 
 ## 特别感谢
 
