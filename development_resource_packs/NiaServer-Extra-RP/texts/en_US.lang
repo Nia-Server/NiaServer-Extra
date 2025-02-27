@@ -2,7 +2,7 @@ tile.nia:random_ore.name=Rock of Original Root
 
 tile.mcnia:water_flower.name=Flower of Original Root
 
-item.mcnia:op_sword=OP's Sword
+item.mcnia:op_sword=§6Super OP Sword
 item.mcnia:dark_sword=Dark·Sword
 item.mcnia:fire_sword=Fire·Sword
 item.mcnia:rock_sword=Rock·Sword
@@ -100,4 +100,5 @@ tile.mcnia:red_heart_candy_cube.name=Red Heart Candy Cube
 item.mcnia:breakthroughbook=Breakthrough Book
 item.mcnia:strengthentheentry=Strengthen the Entry
 item.mcnia:upgradebook=Upgrade Book
+
 

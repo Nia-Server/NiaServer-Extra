@@ -2,9 +2,6 @@
 	"resource_pack_name": "NiaServer-Extra RP",
 	"texture_name": "atlas.items",
 	"texture_data": {
-		"op_sword": {
-			"textures": "textures/items/op_sword"
-		},
 		"dark_sword": {
 			"textures": "textures/items/sword/dark_sword"
 		},
@@ -241,6 +238,9 @@
         },
         "upgrade_book": {
             "textures": "textures/items/UpgradeMaterials/upgrade_book"
-        }
+        },
+		"op_sword": {
+			"textures": "textures/items/sword/op_sword"
+		}
 	}
 }

@@ -256,7 +256,8 @@ world.afterEvents.entityHurt.subscribe((event) => {
             equ_legs.typeId == "mcnia:dark_leggings" &&
             equ_feet.typeId == "mcnia:dark_boots") {
                 player.addEffect("minecraft:invisibility",200,{"amplifier": 0,"showParticles":false});
-                player.addEffect("minecraft:speed",60,{"amplifier": 0,"showParticles":false});
+                player.addEffect("minecraft:speed",200,{"amplifier": 0,"showParticles":false});
+                player.addEffect("minecraft:strength",100,{"amplifier": 0,"showParticles":false});
         }
     }
 

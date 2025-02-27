@@ -2,7 +2,7 @@ tile.nia:random_ore.name=原初之石
 
 tile.mcnia:water_flower.name=原初之花
 
-item.mcnia:op_sword=OP之剑
+item.mcnia:op_sword=§6§l管理员之光辉圣剑
 item.mcnia:dark_sword=暗·剑
 item.mcnia:fire_sword=火·剑
 item.mcnia:rock_sword=岩·剑
@@ -148,3 +148,4 @@ tile.mcnia:deepslate_rock_ore.name=深层岩元素矿石
 item.mcnia:break_through_book=突破书
 item.mcnia:equipment_repair_scroll=装备修复卷轴
 item.mcnia:upgrade_book=升级书
+
