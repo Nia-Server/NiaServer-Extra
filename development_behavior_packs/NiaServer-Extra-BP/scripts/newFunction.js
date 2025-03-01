@@ -517,6 +517,41 @@ const EQGUI = {
             })
     },
 
+    AdminChange(player) {
+        const AdminChangeForm = new ModalFormData()
+            .title("武器强化开发者工具")
+            let InventoryData = ["-无-"]
+            let HaveItemIndex = []
+            for (let i = 0; i < 36; i++) {
+                if (player.getComponent(EntityComponentTypes.Inventory).container.getItem(i) != undefined && can_cr_id.includes(player.getComponent(EntityComponentTypes.Inventory).container.getItem(i).typeId) && player.getComponent(EntityComponentTypes.Inventory).container.getItem(i).getLore().length != 0) {
+                    if (player.getComponent(EntityComponentTypes.Inventory).container.getItem(i).nameTag != undefined) {
+                        InventoryData.push("§c槽id：" + i + " §r" + player.getComponent(EntityComponentTypes.Inventory).container.getItem(i).nameTag)
+                        HaveItemIndex.push(i)
+                    } else {
+                        InventoryData.push("§c槽id：" + i + " §r" + can_cr_data[player.getComponent(EntityComponentTypes.Inventory).container.getItem(i).typeId] + " §r§c等级：§r " + player.getComponent(EntityComponentTypes.Inventory).container.getItem(i).getLore()[0].slice(2))
+                        HaveItemIndex.push(i)
+                    }
+                }
+            }
+            AdminChangeForm.dropdown("请选择要修改的武器",InventoryData)
+            AdminChangeForm.show(player).then((response) => {
+                if (response.canceled) {
+                    this.Main(player)
+                } else if (response.formValues[0] == 0) {
+                    player.sendMessage("§c请选择要修改的武器...")
+                    system.runTimeout(() => {this.AdminChange(player)},1000)
+                } else {
+                    
+                }
+            })
+    },
+
+    AdminChangeSub(player, sword_data, sword_level, slot) {
+        const AdminChangeSubForm = new ModalFormData()
+            .title("武器强化开发者工具")
+            .textField
+    },
+
     Info(player,info,title,Form) {
         const InfoForm = new MessageFormData()
             .title(title)
