@@ -1,0 +1,203 @@
+{
+	"namespace": "server_form",
+	"$schema": "https://kalmemarq.github.io/Bugrock-JSON-UI-Schemas/ui.schema.json",
+
+	"long_form": {
+		"type": "panel",
+		"size": ["100%", "100%"],
+		"controls": [
+			{
+				"default_long_form@common_dialogs.main_panel_no_buttons": {
+					"$title_panel": "common_dialogs.standard_title_label",
+					"$title_size": ["100% - 14px", 10],
+					"size": [225, 200],
+					"$text_name": "#title_text",
+					"$title_text_binding_type": "none",
+					"$child_control": "server_form.long_form_panel",
+					"layer": 2,
+					"bindings": [
+						{
+							"binding_name": "#title_text"
+						},
+						{
+							"binding_type": "view",
+							"source_property_name": "((#title_text - '合成表') = #title_text)",
+							"target_property_name": "#visible"
+						}
+					]
+				}
+			},
+			{
+				"cutsom_long_form@common_dialogs.main_panel_no_buttons": {
+					"$title_panel": "common_dialogs.standard_title_label",
+					"$title_size": ["100% - 14px", 10],
+					"size": [278, 225],
+					"$text_name": "#title_text",
+					"$title_text_binding_type": "none",
+					"$child_control": "server_form.my_super_custom_panel_main",
+					"layer": 2,
+					"bindings": [
+						{
+							"binding_name": "#title_text"
+						},
+						{
+							"binding_type": "view",
+							"source_property_name": "(#title_text = '合成表')",
+							"target_property_name": "#visible"
+						}
+					]
+				}
+			}
+		]
+	},
+
+	"my_super_custom_panel_main": {
+		"type": "stack_panel",
+		"size": ["100%", "100%"],
+		"orientation": "vertical",
+		"layer": 1,
+		"anchor_from": "top_left",
+		"anchor_to": "top_left",
+		"controls": [
+			{
+				"scrolling_panel@common.scrolling_panel": {
+					"anchor_to": "top_left",
+					"anchor_from": "top_left",
+					"$show_background": false,
+					"size": ["100%", "100%"],
+					"$scrolling_content": "server_form.my_super_custom_panel",
+					"$scroll_size": [5, "100% - 4px"],
+					"$scrolling_pane_size": ["100% - 4px", "100% - 2px"],
+					"$scrolling_pane_offset": [2, 0],
+					"$scroll_bar_right_padding_size": [0, 0]
+				}
+			}
+		]
+	},
+
+	"my_super_custom_panel": {
+		"type": "panel",
+		"size": ["100%", "100%c"],
+		"controls": [
+			{
+				"long_form_dynamic_buttons_panel": {
+					"type": "grid",
+					"size": ["100%", "100%c"],
+					"grid_dimensions": [3, 3],
+					"grid_item_template": "server_form.custom_button",
+					"grid_fill_direction": "horizontal",
+					"grid_rescaling_type": "horizontal",
+					"anchor_from": "center",
+					"anchor_to": "center",
+
+					"factory": {
+						"name": "buttons",
+						"control_name": "server_form.custom_button"
+					},
+
+					"collection_name": "form_buttons",
+					"bindings": [
+						{
+							"binding_name": "#form_button_length",
+							"binding_name_override": "#maximum_grid_items"
+						}
+					]
+				}
+			}
+		]
+	},
+	"custom_button": {
+		"type": "panel",
+		"size": [64, 64],
+		"controls": [
+			{
+				"main_ui": {
+					"type": "panel",
+					"size": [58, 58],
+					"controls": [
+						{
+							"panel_name": {
+								"type": "panel",
+								"size": [58, 58],
+								"bindings": [
+									{
+										"binding_type": "view",
+										"source_control_name": "image",
+										"resolve_sibling_scope": true,
+										"source_property_name": "(not (#texture = ''))",
+										"target_property_name": "#visible"
+									}
+								],
+
+								"controls": [
+									{
+										"image": {
+											"type": "image",
+											"layer": 200,
+											"size": [40, 40],
+											"offset": [0, -5],
+											"bindings": [
+												{
+													"binding_name": "#form_button_texture",
+													"binding_name_override": "#texture",
+													"binding_type": "collection",
+													"binding_collection_name": "form_buttons"
+												},
+												{
+													"binding_name": "#form_button_texture_file_system",
+													"binding_name_override": "#texture_file_system",
+													"binding_type": "collection",
+													"binding_collection_name": "form_buttons"
+												},
+												{
+													"binding_type": "view",
+													"source_property_name": "(not ((#texture = '') or (#texture = 'loading')))",
+													"target_property_name": "#visible"
+												}
+											]
+										}
+									},
+									{
+										"text": {
+											"type": "label",
+											"text": "#form_button_text",
+											"layer": 32,
+											"color": [0, 0, 0],
+											"offset": [0, -8],
+											"anchor_from": "bottom_middle",
+											"bindings": [
+												{
+													"binding_name": "#form_button_text",
+													"binding_type": "collection",
+													"binding_collection_name": "form_buttons"
+												}
+											]
+										}
+									}
+								]
+							}
+						},
+						{
+							"form_button@common_buttons.light_text_button": {
+								"$pressed_button_name": "button.form_button_click",
+								"anchor_from": "top_left",
+								"anchor_to": "top_left",
+								"size": [58, 58],
+								"$button_text": "#null",
+								"$button_text_binding_type": "collection",
+								"$button_text_grid_collection_name": "form_buttons",
+								"$button_text_max_size": ["100%", 20],
+								"bindings": [
+									{
+										"binding_type": "collection_details",
+										"binding_collection_name": "form_buttons"
+									}
+								]
+							}
+						}
+					]
+				}
+			}
+		]
+	}
+}

@@ -45,6 +45,8 @@ NIA服务器额外扩展玩法 **“海洋限定版 V5”** 相关实现代码
 
 mcpedl源项目链接：[https://mcpedl.com/atlas-trees-3-flourishing-trees/](https://mcpedl.com/atlas-trees-3-flourishing-trees/)
 
+合成表UI来自[https://skyls.de/samples/ui3/RP/ui/server_form.json](https://skyls.de/samples/ui3/RP/ui/server_form.json)
+
 ## 许可证
 
 首先，您必须接受 Minecraft 的最终用户许可协议(EULA).
