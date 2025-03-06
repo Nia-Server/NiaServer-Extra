@@ -22,7 +22,7 @@
             "minecraft:material_instances": {
                 "*": {
                     "texture": "fire_raw_ore",
-                    "render_method": "opaque"
+                    "render_method": "opaque" 
                 }
             }
         }
