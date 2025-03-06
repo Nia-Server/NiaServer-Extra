@@ -7,15 +7,21 @@ const recipes = {
     "mcnia:dark_crystal": {
         "result": "mcnia:dark_crystal",
         "recipe": {
-            "1": "mcnia:dark_ore",
-            "2": "mcnia:dark_ore",
-            "3": "mcnia:dark_ore",
-            "4": "mcnia:dark_ore",
-            "5": "mcnia:dark_ore",
-            "6": "mcnia:dark_ore",
-            "7": "mcnia:dark_ore",
-            "8": "mcnia:dark_ore",
-            "9": "mcnia:dark_ore",
+            "pattern": [
+                "AAA",
+                "ABA",
+                "AAA"
+            ],
+            "key": {
+                "A": {
+                    "type": "mcnia:dark_ore",
+                    "texture": "textures/items/ore/dark_ore"
+                },
+                "B": {
+                    "type": "minecraft:stick",
+                    "texture": "textures/items/stick"
+                }
+            }
         }
     }
 }
