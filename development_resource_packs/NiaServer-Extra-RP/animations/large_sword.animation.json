@@ -1,0 +1,27 @@
+{
+    "format_version": "1.10.0",
+    "animations": {
+        "animation.large_sword.hold": {
+            "loop": true,
+            "bones": {
+                "rightitem": {
+                    "position": [
+                        "c.is_first_person ? -6 : 2",
+                        "c.is_first_person ? 0 : -0.5",
+                        "c.is_first_person ? -1 : -16"
+                    ],
+                    "rotation": [
+                        "c.is_first_person ? -30 : 0",
+                        "c.is_first_person ? -45 : 45",
+                        "c.is_first_person ? 150 : 90"
+                    ],
+                    "scale": [
+                        "c.is_first_person ? 1 : 2.5",
+                        "c.is_first_person ? 1 : 2.5",
+                        "c.is_first_person ? 1 : 2.5"
+                    ]
+                }
+            }
+        }
+    }
+}

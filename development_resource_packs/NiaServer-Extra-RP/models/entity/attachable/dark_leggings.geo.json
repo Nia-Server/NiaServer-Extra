@@ -21,7 +21,7 @@
 					"pivot": [0, 12, 0],
 					"binding": "'belt'",
 					"cubes": [
-						{"origin": [-4, 12, -2], "size": [8, 12, 4], "inflate": 0.51, "uv": [0, 0]}
+						{"origin": [-4, 12, -2], "size": [8, 12, 4], "inflate": 1.1, "uv": [0, 0]}
 					]
 				},
 				{
@@ -32,10 +32,7 @@
 					"name": "leggings_right",
 					"parent": "leg_right",
 					"pivot": [-1.9, 12, 0],
-					"binding": "'rightleg'",
-					"cubes": [
-						{"origin": [-3.9, 0, -2], "size": [4, 12, 4], "inflate": 0.5, "uv": [6, 15]}
-					]
+					"binding": "'rightleg'"
 				},
 				{
 					"name": "leg_left",
@@ -45,10 +42,7 @@
 					"name": "leggings_left",
 					"parent": "leg_left",
 					"pivot": [1.9, 12, 0],
-					"binding": "'leftleg'",
-					"cubes": [
-						{"origin": [-0.1, 0, -2], "size": [4, 12, 4], "inflate": 0.5, "uv": [6, 15], "mirror": true}
-					]
+					"binding": "'leftleg'"
 				}
 			]
 		}

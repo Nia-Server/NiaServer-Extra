@@ -288,7 +288,7 @@ export const EQGUI = {
     AdminChangeSub(player, sword_data, sword_level, slot) {
         const AdminChangeSubForm = new ModalFormData()
             .title("武器强化开发者工具")
-            .textField
+            .textField()
     },
 
     Info(player,info,title,Form) {

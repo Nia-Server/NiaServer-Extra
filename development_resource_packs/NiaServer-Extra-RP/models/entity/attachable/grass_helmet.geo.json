@@ -21,7 +21,8 @@
 					"pivot": [0, 0, 0],
 					"binding": "'head'",
 					"cubes": [
-						{"origin": [-4, 0, -4], "size": [8, 8, 8], "inflate": 1, "uv": [0, 0]}
+						{"origin": [-4, 0, -4], "size": [8, 8, 8], "inflate": 1, "uv": [0, 0]},
+						{"origin": [0, 7, -7], "size": [0, 6, 10], "uv": [0, 8]}
 					]
 				}
 			]
