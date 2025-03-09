@@ -209,7 +209,7 @@ world.afterEvents.entityHurt.subscribe((event) => {
             equ_legs.typeId == "mcnia:grass_leggings" &&
             equ_feet.typeId == "mcnia:grass_boots") {
                 player.addEffect("minecraft:regeneration",100,{"amplifier": 2,"showParticles":false});
-                player.addEffect("minecraft:weakness",100,{"amplifier": 2,"showParticles":false});
+                player.addEffect("minecraft:weakness",100,{"amplifier": 0,"showParticles":false});
             }
 
         //岩元素
@@ -218,6 +218,7 @@ world.afterEvents.entityHurt.subscribe((event) => {
             equ_legs.typeId == "mcnia:rock_leggings" &&
             equ_feet.typeId == "mcnia:rock_boots") {
                 player.addEffect("minecraft:resistance",100,{"amplifier": 1,"showParticles":false});
+                player.addEffect("minecraft:weakness",100,{"amplifier": 1,"showParticles":false});
         }
 
         //风元素
@@ -237,6 +238,7 @@ world.afterEvents.entityHurt.subscribe((event) => {
                 player.addEffect("minecraft:invisibility",200,{"amplifier": 0,"showParticles":false});
                 player.addEffect("minecraft:speed",200,{"amplifier": 0,"showParticles":false});
                 player.addEffect("minecraft:strength",100,{"amplifier": 0,"showParticles":false});
+                world.getDimension(player.dimension.id).spawnParticle("minecraft:portal",player.location);
         }
     }
 
