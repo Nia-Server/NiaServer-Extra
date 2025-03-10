@@ -1,0 +1,29 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "mutant dolphin",
+		"description": "mutant dolphin Behavior Pack",
+		"uuid": "46e51f07-721b-2dc1-a7f4-9bf4facee92d",
+		"version": [1, 0, 0],
+		"min_engine_version": [1, 16, 0]
+	},
+	"metadata": {
+		"generated_with": {
+			"blockbench_entity_wizard": ["1.7.0"]
+		}
+	},
+	"modules": [
+		{
+			"description": "Behavior",
+			"version": [1, 0, 0],
+			"uuid": "363a2b24-0c3e-102d-7102-31378d34058d",
+			"type": "data"
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "a61458f6-3b4c-3578-6799-f71c718dea4f",
+			"version": [1, 0, 0]
+		}
+	]
+}

@@ -1,4 +1,4 @@
-import { system } from "@minecraft/server";
+import { world,system } from "@minecraft/server";
 import { EQGUI } from "./equipment_enhancement";
 import { error } from "./API/logger";
 

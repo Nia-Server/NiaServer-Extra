@@ -1,0 +1,23 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "mutant dolphin",
+		"description": "mutant dolphin Resource Pack",
+		"uuid": "a61458f6-3b4c-3578-6799-f71c718dea4f",
+		"version": [1, 0, 0],
+		"min_engine_version": [1, 16, 0]
+	},
+	"metadata": {
+		"generated_with": {
+			"blockbench_entity_wizard": ["1.7.0"]
+		}
+	},
+	"modules": [
+		{
+			"description": "mutant dolphin",
+			"type": "resources",
+			"uuid": "74fe6518-26d7-e501-231c-943cef816eec",
+			"version": [1, 0, 0]
+		}
+	]
+}

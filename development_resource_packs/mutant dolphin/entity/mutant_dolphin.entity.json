@@ -1,0 +1,30 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mcnia:mutant_dolphin",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/mutant_dolphin"
+			},
+			"geometry": {
+				"default": "geometry.mutant_dolphin"
+			},
+			"animations": {
+				"move": "animation.mutant_dolphin.move"
+			},
+			"animation_controllers": [
+				{
+					"general": "controller.animation.dolphin.general"
+				}
+			],
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"base_color": "#cc7a5d",
+				"overlay_color": "#5577d0"
+			}
+		}
+	}
+}
