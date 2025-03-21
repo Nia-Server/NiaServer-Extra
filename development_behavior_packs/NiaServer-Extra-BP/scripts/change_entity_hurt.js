@@ -27,6 +27,7 @@ world.afterEvents.entityHurt.subscribe((event) => {
             }
             return;
         }
+
         //判断武器，看有没有特殊效果
         if (selectedItem.typeId) {
             let all_damage = event.damage;
@@ -245,7 +246,6 @@ world.afterEvents.entityHurt.subscribe((event) => {
 })
 
 
-
 // system.runInterval(() => {
 //     for (let player of world.getAllPlayers()) {
 //         let view_entity = world.getDimension(player.dimension.id).getEntitiesFromRay(player.getHeadLocation(),player.getViewDirection());
@@ -260,7 +260,6 @@ world.afterEvents.entityHurt.subscribe((event) => {
 //             }
 //         }
 //     }
-
 // },1)
 
 // system.runInterval(() => {
@@ -283,8 +282,6 @@ world.afterEvents.entityHurt.subscribe((event) => {
 //                 }
 //             }
 //         }
-
-
 //     }
 // },20)
 

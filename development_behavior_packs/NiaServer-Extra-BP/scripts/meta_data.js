@@ -10,7 +10,7 @@ export const can_cr_id = [
 ]
 
 export const can_cr_data = {
-    "mcnia:op_sword": "op之剑",
+    "mcnia:op_sword": "管理员之剑",
     "mcnia:dark_sword": "暗·剑",
     "mcnia:fire_sword": "火·剑",
     "mcnia:rock_sword": "岩·剑",
