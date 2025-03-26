@@ -8,11 +8,11 @@
                     "position": [
                         "c.is_first_person ? -6 : 1",
                         "c.is_first_person ? 0 : -0.5",
-                        "c.is_first_person ? -1 : -8.5"
+                        "c.is_first_person ? 2 : -8.5"
                     ],
                     "rotation": [
                         "c.is_first_person ? -30 : 0",
-                        "c.is_first_person ? -45 : 45",
+                        "c.is_first_person ? -60 : 45",
                         "c.is_first_person ? 150 : 90"
                     ],
                     "scale": [
