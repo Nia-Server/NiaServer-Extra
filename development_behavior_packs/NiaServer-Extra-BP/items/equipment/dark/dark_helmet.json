@@ -13,7 +13,7 @@
 			"minecraft:icon": "dark_helmet",
 			"minecraft:wearable": {
 				"slot": "slot.armor.head",
-				"protection": 2
+				"protection": 3
 			},
 			"minecraft:enchantable": {
 				"slot": "armor_head",

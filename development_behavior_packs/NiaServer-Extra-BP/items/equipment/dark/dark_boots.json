@@ -13,7 +13,7 @@
 			"minecraft:icon": "dark_boots",
 			"minecraft:wearable": {
 				"slot": "slot.armor.feet",
-				"protection": 2
+				"protection": 3
 			},
 			"minecraft:enchantable": {
 				"slot": "armor_feet",

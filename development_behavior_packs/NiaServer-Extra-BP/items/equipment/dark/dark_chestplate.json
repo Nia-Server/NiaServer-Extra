@@ -13,7 +13,7 @@
 			"minecraft:icon": "dark_chestplate",
 			"minecraft:wearable": {
 				"slot": "slot.armor.chest",
-				"protection": 6
+				"protection": 8
 			},
 			"minecraft:enchantable": {
 				"slot": "armor_torso",

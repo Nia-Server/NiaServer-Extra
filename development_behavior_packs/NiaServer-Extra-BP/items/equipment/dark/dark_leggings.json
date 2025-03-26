@@ -13,7 +13,7 @@
 			"minecraft:icon": "dark_leggings",
 			"minecraft:wearable": {
 				"slot": "slot.armor.legs",
-				"protection": 5
+				"protection": 6
 			},
 			"minecraft:enchantable": {
 				"slot": "armor_legs",

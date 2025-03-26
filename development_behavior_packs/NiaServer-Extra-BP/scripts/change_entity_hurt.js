@@ -35,7 +35,7 @@ world.afterEvents.entityHurt.subscribe((event) => {
             switch (selectedItem.typeId) {
                 case "mcnia:dark_sword":
                     all_damage = all_damage + 2;
-                    event.damageSource.damagingEntity.addEffect("minecraft:blindness",40,{"amplifier": 0,"showParticles":false});
+                    event.hurtEntity.addEffect("minecraft:blindness",40,{"amplifier": 0,"showParticles":false});
                     break;
                 case "mcnia:fire_sword":
                     const fire_sword_task_id = system.runInterval(() => {
