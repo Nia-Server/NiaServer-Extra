@@ -163,7 +163,7 @@ world.afterEvents.entityHurt.subscribe((event) => {
 
         }
 
-        //判断对方装甲
+        //判断自己装甲
         let player = event.damageSource.damagingEntity;
         if (player.getComponent(EntityComponentTypes.Equippable).getEquipment(EquipmentSlot.Head) &&
             player.getComponent(EntityComponentTypes.Equippable).getEquipment(EquipmentSlot.Chest) &&
@@ -189,6 +189,17 @@ world.afterEvents.entityHurt.subscribe((event) => {
                 equ_feet.typeId == "mcnia:thunder_boots") {
                 player.addEffect("minecraft:speed",200,{"amplifier": 0,"showParticles":false});
             }
+
+            //暗元素
+            if (equ_head.typeId == "mcnia:dark_helmet" &&
+                equ_chest.typeId == "mcnia:dark_chestplate" &&
+                equ_legs.typeId == "mcnia:dark_leggings" &&
+                equ_feet.typeId == "mcnia:dark_boots") {
+                player.addEffect("minecraft:absorption",80,{"amplifier": 0,"showParticles":false});
+                player.addEffect("minecraft:resistance",20,{"amplifier": 0,"showParticles":false});
+                world.getDimension(player.dimension.id).spawnParticle("minecraft:portal",player.location);
+            }
+
         }
 
     }
@@ -238,7 +249,8 @@ world.afterEvents.entityHurt.subscribe((event) => {
             equ_feet.typeId == "mcnia:dark_boots") {
                 player.addEffect("minecraft:invisibility",200,{"amplifier": 0,"showParticles":false});
                 player.addEffect("minecraft:speed",200,{"amplifier": 0,"showParticles":false});
-                player.addEffect("minecraft:strength",100,{"amplifier": 0,"showParticles":false});
+                player.addEffect("minecraft:strength",40,{"amplifier": 0,"showParticles":false});
+                player.addEffect("minecraft:regeneration",20,{"amplifier": 1,"showParticles":false});
                 world.getDimension(player.dimension.id).spawnParticle("minecraft:portal",player.location);
         }
     }
