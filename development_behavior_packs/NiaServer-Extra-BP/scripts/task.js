@@ -6,7 +6,7 @@ import { log } from "./API/logger.js";
 const task_data = {
     "ZHCN0100000":{
         "type": "text",
-        "name": "第一章 如何在这个世界活下去？",
+        "name": "第一章 如何在这个世界生存下去？",
         "format": "center",
         "description": [
             "§b========================",
@@ -47,12 +47,12 @@ const task_data = {
             }
         ],
         "button": {
-            "启动！": "ZHCN0100100"
+            "开始游戏": "ZHCN0100100"
         }
     },
     "ZHCN0100100":{
         "type": "text",
-        "name": "第一章 重生之我是鱼人",
+        "name": "第一章 如何在这个世界生存下去？",
         "format": "left",
         "description": [
             "§6任务目标：",
@@ -410,6 +410,11 @@ const GUI = {
     }
 }
 
+// world.afterEvents.itemUse.subscribe((event) => {
+//     if (event.itemStack.typeId == "minecraft:stick") {
+//         GUI.TaskSub(event.source,"ZHCN0100000");
+//     }
+// })
 
 
 
