@@ -3,20 +3,20 @@
     "minecraft:attachable": {
         "description": {
 
-            "identifier": "mcnia:op_sword",
+            "identifier": "mcnia:dark_sword",
             "materials": {
                 "default": "entity_alphatest",
                 "enchanted": "entity_alphatest_glint"
             },
             "textures": {
-                "default": "textures/items/sword/op_sword",
+                "default": "textures/items/sword/dark_sword",
                 "enchanted": "textures/misc/enchanted_item_glint"
             },
             "geometry": {
                 "default": "geometry.large_item"
             },
             "animations": {
-                "hold": "animation.op_sword.hold"
+                "hold": "animation.large_sword.hold"
             },
             "scripts": {
                 "animate": ["hold"]

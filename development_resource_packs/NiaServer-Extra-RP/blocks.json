@@ -44,5 +44,11 @@
     },
     "dollar_block": {
 		"sound": "azalea_leaves"
-	}
+	},
+    "water_brick" : {
+        "sound": "stone"
+    },
+    "water_stonebrick" : {
+        "sound": "stone"
+    }
 }

@@ -101,4 +101,7 @@ item.mcnia:breakthroughbook=Breakthrough Book
 item.mcnia:strengthentheentry=Strengthen the Entry
 item.mcnia:upgradebook=Upgrade Book
 
+tile.mcnia:water_brick.name=水元素砖块
+tile.mcnia:water_stonebrick.name=水元素石砖块
+
 

@@ -149,3 +149,7 @@ item.mcnia:break_through_book=突破书
 item.mcnia:equipment_repair_scroll=装备修复卷轴
 item.mcnia:upgrade_book=升级书
 
+tile.mcnia:water_brick.name=水元素砖块
+tile.mcnia:water_stonebrick.name=水元素石砖块
+
+

@@ -102,6 +102,12 @@
         },
         "deepslate_rock_ore" : {
             "textures" : "textures/blocks/raw_ore/deepslate_rock_ore"
+        },
+        "water_brick" : {
+            "textures" : "textures/blocks/elemental_blcok/water_brick.png"
+        },
+        "water_stonebrick" : {
+            "textures" : "textures/blocks/elemental_blcok/water_stonebrick.png"
         }
     }
 }

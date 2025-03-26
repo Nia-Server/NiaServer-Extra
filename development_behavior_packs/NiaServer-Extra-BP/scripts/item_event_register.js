@@ -137,8 +137,7 @@ const water_equipment_component = {
 }
 
 
-
-world.beforeEvents.worldInitialize.subscribe(({ itemComponentRegistry }) => {
+system.beforeEvents.startup.subscribe(({ itemComponentRegistry }) => {
     itemComponentRegistry.registerCustomComponent("mcnia:seaweed_potion", seaweed_potion_component);
     itemComponentRegistry.registerCustomComponent("mcnia:kelp_potion_small", kelp_potion_small_component);
     itemComponentRegistry.registerCustomComponent("mcnia:kelp_potion_big", kelp_potion_big_component);
@@ -149,6 +148,9 @@ world.beforeEvents.worldInitialize.subscribe(({ itemComponentRegistry }) => {
     itemComponentRegistry.registerCustomComponent("mcnia:tootsie_roll", tootsie_roll_component);
     //itemComponentRegistry.registerCustomComponent("mcnia:dark_sword", dark_sword_component);
 })
+// world.afterEvents.worldLoad.subscribe(({ itemComponentRegistry }) => {
+
+// })
 
 system.runInterval(() => {
     for (const player of world.getPlayers()) {
