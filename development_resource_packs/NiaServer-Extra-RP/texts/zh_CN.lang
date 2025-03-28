@@ -103,10 +103,10 @@ tile.mcnia:sandwiching_chocolate_block.name=夹心巧克力方块
 
 item.mcnia:horror_mask=§2§l惊悚面具
 
-item.mcnia:dark_boots=§5§l暗黑咏唱者-头巾
-item.mcnia:dark_leggings=§5§l暗黑咏唱者-披风
-item.mcnia:dark_chestplate=§5§l暗黑咏唱者-腰带
-item.mcnia:dark_helmet=§5§l暗黑咏唱者-护腿
+item.mcnia:dark_boots=§5§l暗黑咏唱者·护腿
+item.mcnia:dark_leggings=§5§l暗黑咏唱者·腰带
+item.mcnia:dark_chestplate=§5§l暗黑咏唱者·披风
+item.mcnia:dark_helmet=§5§l暗黑咏唱者·头巾
 
 item.mcnia:fire_boots=火元素战斗靴子
 item.mcnia:fire_leggings=火元素战斗护腿
