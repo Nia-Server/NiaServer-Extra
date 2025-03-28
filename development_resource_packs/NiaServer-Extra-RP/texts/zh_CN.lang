@@ -101,42 +101,42 @@ tile.mcnia:red_circle_candy_cube.name=红色圆形糖果方块
 tile.mcnia:lasagna_block.name=千层巧克力方块
 tile.mcnia:sandwiching_chocolate_block.name=夹心巧克力方块
 
-item.mcnia:horror_mask=惊悚面具
+item.mcnia:horror_mask=§2§l惊悚面具
 
-item.mcnia:dark_boots=暗元素靴子
-item.mcnia:dark_leggings=暗元素护腿
-item.mcnia:dark_chestplate=暗元素胸甲
-item.mcnia:dark_helmet=暗元素头盔
+item.mcnia:dark_boots=§5§l暗黑咏唱者-头巾
+item.mcnia:dark_leggings=§5§l暗黑咏唱者-披风
+item.mcnia:dark_chestplate=§5§l暗黑咏唱者-腰带
+item.mcnia:dark_helmet=§5§l暗黑咏唱者-护腿
 
-item.mcnia:fire_boots=火元素靴子
-item.mcnia:fire_leggings=火元素护腿
-item.mcnia:fire_chestplate=火元素胸甲
-item.mcnia:fire_helmet=火元素头盔
+item.mcnia:fire_boots=火元素战斗靴子
+item.mcnia:fire_leggings=火元素战斗护腿
+item.mcnia:fire_chestplate=火元素战斗胸甲
+item.mcnia:fire_helmet=火元素战斗头盔
 
-item.mcnia:rock_boots=岩元素靴子
-item.mcnia:rock_leggings=岩元素护腿
-item.mcnia:rock_chestplate=岩元素胸甲
-item.mcnia:rock_helmet=岩元素头盔
+item.mcnia:rock_boots=岩元素防护靴子
+item.mcnia:rock_leggings=岩元素防护护腿
+item.mcnia:rock_chestplate=岩元素防护胸甲
+item.mcnia:rock_helmet=岩元素防护头盔
 
-item.mcnia:grass_boots=草元素靴子
-item.mcnia:grass_leggings=草元素护腿
-item.mcnia:grass_chestplate=草元素胸甲
-item.mcnia:grass_helmet=草元素头盔
+item.mcnia:grass_boots=草元素防护靴子
+item.mcnia:grass_leggings=草元素防护护腿
+item.mcnia:grass_chestplate=草元素防护胸甲
+item.mcnia:grass_helmet=草元素防护头盔
 
-item.mcnia:thunder_boots=雷元素靴子
-item.mcnia:thunder_leggings=雷元素护腿
-item.mcnia:thunder_chestplate=雷元素胸甲
-item.mcnia:thunder_helmet=雷元素头盔
+item.mcnia:thunder_boots=雷元素战斗靴子
+item.mcnia:thunder_leggings=雷元素战斗护腿
+item.mcnia:thunder_chestplate=雷元素战斗胸甲
+item.mcnia:thunder_helmet=雷元素战斗头盔
 
-item.mcnia:water_boots=水元素靴子
-item.mcnia:water_leggings=水元素护腿
-item.mcnia:water_chestplate=水元素胸甲
-item.mcnia:water_helmet=水元素头盔
+item.mcnia:water_boots=水元素防护靴子
+item.mcnia:water_leggings=水元素防护护腿
+item.mcnia:water_chestplate=水元素防护胸甲
+item.mcnia:water_helmet=水元素防护头盔
 
-item.mcnia:wind_boots=空元素靴子
-item.mcnia:wind_leggings=空元素护腿
-item.mcnia:wind_chestplate=空元素胸甲
-item.mcnia:wind_helmet=空元素头盔
+item.mcnia:wind_boots=空元素休闲靴子
+item.mcnia:wind_leggings=空元素休闲护腿
+item.mcnia:wind_chestplate=空元素休闲胸甲
+item.mcnia:wind_helmet=空元素休闲头盔
 
 tile.mcnia:deepslate_grass_ore.name=深层草元素矿石
 tile.mcnia:deepslate_thunder_ore.name=深层雷元素矿石
